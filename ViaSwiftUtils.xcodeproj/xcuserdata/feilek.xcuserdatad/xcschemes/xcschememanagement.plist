@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ViaSwiftUtils Example Watch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ViaSwiftUtils Example Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>ViaSwiftUtils Example.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ViaSwiftUtils iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>ViaSwiftUtils tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>ViaSwiftUtils watchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>ViaSwiftUtilsTests tvOSTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>74DC1C601D1D8CF5007F1853</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DC1C6F1D1D8D17007F1853</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DC1C841D1D8D17007F1853</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DC1C931D1D8D6E007F1853</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DC1CBE1D1D8DA0007F1853</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E063CC1D1D7E1600C0B56B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E063DA1D1D7E8000C0B56B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E063E31D1D7E8000C0B56B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E063F61D1D7F4700C0B56B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E064031D1D7F7D00C0B56B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E0640C1D1D7F7D00C0B56B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

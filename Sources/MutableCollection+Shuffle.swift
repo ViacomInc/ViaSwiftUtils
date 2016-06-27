@@ -9,6 +9,8 @@
 import Foundation
 
 public extension MutableCollectionType where Index == Int {
+
+    /// implements [FisherYates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle) to shuffle elements in place
     mutating func shuffleInPlace() {
         if count <= 1 { return }
         

@@ -38,6 +38,13 @@
 		74DC1D0F1D215052007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1D0E1D215052007F1853 /* Assets.xcassets */; };
 		74DC1D111D215094007F1853 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1D101D215094007F1853 /* PushNotificationPayload.apns */; };
 		74DC1D131D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D121D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */; };
+		74DC1D161D218473007F1853 /* SequenceType+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */; };
+		74DC1D171D218473007F1853 /* SequenceType+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */; };
+		74DC1D181D218473007F1853 /* SequenceType+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */; };
+		74DC1D1A1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
+		74DC1D1B1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
+		74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
+		74DC1D1E1D218780007F1853 /* SequenceTypeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +158,9 @@
 		74DC1D101D215094007F1853 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PushNotificationPayload.apns; path = "Example Watch Extension/PushNotificationPayload.apns"; sourceTree = SOURCE_ROOT; };
 		74DC1D121D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViaSwiftUtilsTests_tvOSTests.swift; path = tvOSTests/ViaSwiftUtilsTests_tvOSTests.swift; sourceTree = SOURCE_ROOT; };
 		74DC1D141D2150BD007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = tvOSTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+Helpers.swift"; sourceTree = "<group>"; };
+		74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+MapValues.swift"; sourceTree = "<group>"; };
+		74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequenceTypeHelperTests.swift; path = Sources/SequenceTypeHelperTests.swift; sourceTree = SOURCE_ROOT; };
 		74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +232,8 @@
 				74DC1C371D1D87E5007F1853 /* Info.plist */,
 				74DC1C331D1D87E5007F1853 /* CGRect+AspectRatio.swift */,
 				74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */,
+				74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */,
+				74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -242,6 +254,7 @@
 				74DC1CCD1D212967007F1853 /* Info.plist */,
 				74DC1CCE1D212967007F1853 /* CGRectTests.swift */,
 				74DC1CF31D214D45007F1853 /* CollectionShuffledTest.swift */,
+				74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */,
 			);
 			name = iOSTests;
 			path = "ViaSwiftUtils iOSTests";
@@ -648,6 +661,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1D1E1D218780007F1853 /* SequenceTypeHelperTests.swift in Sources */,
 				74DC1CF71D214D5F007F1853 /* CollectionShuffledTest.swift in Sources */,
 				74DC1CD01D212967007F1853 /* CGRectTests.swift in Sources */,
 			);
@@ -685,6 +699,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1D1A1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
+				74DC1D161D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CE91D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74DC1C391D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
@@ -694,6 +710,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1D1B1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
+				74DC1D171D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CEA1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74DC1C3A1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
@@ -703,6 +721,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
+				74DC1D181D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CEB1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74DC1C3B1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);

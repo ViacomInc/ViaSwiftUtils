@@ -13,24 +13,31 @@
 		74DC1C4C1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4D1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4E1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74DC1C641D1D8CF5007F1853 /* ViaSwiftUtils_CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1C631D1D8CF5007F1853 /* ViaSwiftUtils_CGRectTests.swift */; };
 		74DC1C661D1D8CF5007F1853 /* ViaSwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */; };
-		74DC1C731D1D8D17007F1853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1C721D1D8D17007F1853 /* AppDelegate.swift */; };
-		74DC1C751D1D8D17007F1853 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1C741D1D8D17007F1853 /* FirstViewController.swift */; };
-		74DC1C771D1D8D17007F1853 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1C761D1D8D17007F1853 /* SecondViewController.swift */; };
-		74DC1C7A1D1D8D17007F1853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1C781D1D8D17007F1853 /* Main.storyboard */; };
-		74DC1C7C1D1D8D17007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1C7B1D1D8D17007F1853 /* Assets.xcassets */; };
-		74DC1C7F1D1D8D17007F1853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1C7D1D1D8D17007F1853 /* LaunchScreen.storyboard */; };
-		74DC1C981D1D8D6E007F1853 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1C961D1D8D6E007F1853 /* Interface.storyboard */; };
-		74DC1C9A1D1D8D6E007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1C991D1D8D6E007F1853 /* Assets.xcassets */; };
 		74DC1CA11D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74DC1CA01D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		74DC1CA81D1D8D6E007F1853 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CA71D1D8D6E007F1853 /* InterfaceController.swift */; };
-		74DC1CAA1D1D8D6E007F1853 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CA91D1D8D6E007F1853 /* ExtensionDelegate.swift */; };
-		74DC1CAC1D1D8D6E007F1853 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CAB1D1D8D6E007F1853 /* NotificationController.swift */; };
-		74DC1CAE1D1D8D6E007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1CAD1D1D8D6E007F1853 /* Assets.xcassets */; };
 		74DC1CB21D1D8D6E007F1853 /* ViaSwiftUtils Example Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 74DC1C941D1D8D6E007F1853 /* ViaSwiftUtils Example Watch.app */; };
-		74DC1CC21D1D8DA0007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CC11D1D8DA0007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */; };
 		74DC1CC41D1D8DA0007F1853 /* ViaSwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */; };
+		74DC1CD01D212967007F1853 /* CGRectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CCE1D212967007F1853 /* CGRectTests.swift */; };
+		74DC1CDB1D2129C1007F1853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CD11D2129C1007F1853 /* AppDelegate.swift */; };
+		74DC1CDC1D2129C1007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1CD21D2129C1007F1853 /* Assets.xcassets */; };
+		74DC1CDF1D2129C1007F1853 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CD81D2129C1007F1853 /* FirstViewController.swift */; };
+		74DC1CE11D2129C1007F1853 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CDA1D2129C1007F1853 /* SecondViewController.swift */; };
+		74DC1CE61D212A1B007F1853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1CE21D212A1B007F1853 /* LaunchScreen.storyboard */; };
+		74DC1CE71D212A1B007F1853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1CE41D212A1B007F1853 /* Main.storyboard */; };
+		74DC1CE91D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */; };
+		74DC1CEA1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */; };
+		74DC1CEB1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */; };
+		74DC1CEE1D214B97007F1853 /* ViaSwiftUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */; };
+		74DC1CEF1D214B97007F1853 /* ViaSwiftUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		74DC1CF71D214D5F007F1853 /* CollectionShuffledTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1CF31D214D45007F1853 /* CollectionShuffledTest.swift */; };
+		74DC1D051D214FD7007F1853 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1D001D214FAA007F1853 /* Interface.storyboard */; };
+		74DC1D061D214FDD007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1CF81D214F91007F1853 /* Assets.xcassets */; };
+		74DC1D091D21502C007F1853 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D071D21502C007F1853 /* InterfaceController.swift */; };
+		74DC1D0A1D21502C007F1853 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D081D21502C007F1853 /* NotificationController.swift */; };
+		74DC1D0C1D215039007F1853 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D0B1D215039007F1853 /* ExtensionDelegate.swift */; };
+		74DC1D0F1D215052007F1853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1D0E1D215052007F1853 /* Assets.xcassets */; };
+		74DC1D111D215094007F1853 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 74DC1D101D215094007F1853 /* PushNotificationPayload.apns */; };
+		74DC1D131D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D121D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +69,13 @@
 			remoteGlobalIDString = 74E064031D1D7F7D00C0B56B;
 			remoteInfo = "ViaSwiftUtils tvOS";
 		};
+		74DC1CF01D214B97007F1853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E063C21D1D7DB300C0B56B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74E063DA1D1D7E8000C0B56B;
+			remoteInfo = "ViaSwiftUtils iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +101,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74DC1CF21D214B98007F1853 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				74DC1CEF1D214B97007F1853 /* ViaSwiftUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -100,30 +125,32 @@
 		74DC1C511D1D8B61007F1853 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74DC1C521D1D8B61007F1853 /* ViaSwiftUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViaSwiftUtils.podspec; sourceTree = "<group>"; };
 		74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViaSwiftUtils iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74DC1C631D1D8CF5007F1853 /* ViaSwiftUtils_CGRectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaSwiftUtils_CGRectTests.swift; sourceTree = "<group>"; };
-		74DC1C651D1D8CF5007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1C701D1D8D17007F1853 /* ViaSwiftUtils Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74DC1C721D1D8D17007F1853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74DC1C741D1D8D17007F1853 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		74DC1C761D1D8D17007F1853 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		74DC1C791D1D8D17007F1853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		74DC1C7B1D1D8D17007F1853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74DC1C7E1D1D8D17007F1853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		74DC1C801D1D8D17007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1C941D1D8D6E007F1853 /* ViaSwiftUtils Example Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74DC1C971D1D8D6E007F1853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		74DC1C991D1D8D6E007F1853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74DC1C9B1D1D8D6E007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1CA01D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ViaSwiftUtils Example Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74DC1CA61D1D8D6E007F1853 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		74DC1CA71D1D8D6E007F1853 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		74DC1CA91D1D8D6E007F1853 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		74DC1CAB1D1D8D6E007F1853 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		74DC1CAD1D1D8D6E007F1853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74DC1CAF1D1D8D6E007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1CBF1D1D8DA0007F1853 /* ViaSwiftUtilsTests tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViaSwiftUtilsTests tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		74DC1CC11D1D8DA0007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaSwiftUtilsTests_tvOSTests.swift; sourceTree = "<group>"; };
-		74DC1CC31D1D8DA0007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DC1CCD1D212967007F1853 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOSTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		74DC1CCE1D212967007F1853 /* CGRectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGRectTests.swift; path = iOSTests/CGRectTests.swift; sourceTree = SOURCE_ROOT; };
+		74DC1CD11D2129C1007F1853 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Example/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		74DC1CD21D2129C1007F1853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Example/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		74DC1CD81D2129C1007F1853 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Example/FirstViewController.swift; sourceTree = SOURCE_ROOT; };
+		74DC1CD91D2129C1007F1853 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Example/Info.plist; sourceTree = SOURCE_ROOT; };
+		74DC1CDA1D2129C1007F1853 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Example/SecondViewController.swift; sourceTree = SOURCE_ROOT; };
+		74DC1CE31D212A1B007F1853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		74DC1CE51D212A1B007F1853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Shuffle.swift"; sourceTree = "<group>"; };
+		74DC1CF31D214D45007F1853 /* CollectionShuffledTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionShuffledTest.swift; sourceTree = SOURCE_ROOT; };
+		74DC1CF81D214F91007F1853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Example Watch/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		74DC1CFC1D214F99007F1853 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Example Watch/Info.plist"; sourceTree = SOURCE_ROOT; };
+		74DC1D011D214FAA007F1853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Example Watch/Base.lproj/Interface.storyboard"; sourceTree = SOURCE_ROOT; };
+		74DC1D071D21502C007F1853 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InterfaceController.swift; path = "Example Watch Extension/InterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		74DC1D081D21502C007F1853 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationController.swift; path = "Example Watch Extension/NotificationController.swift"; sourceTree = SOURCE_ROOT; };
+		74DC1D0B1D215039007F1853 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExtensionDelegate.swift; path = "Example Watch Extension/ExtensionDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		74DC1D0D1D215047007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Example Watch Extension/Info.plist"; sourceTree = SOURCE_ROOT; };
+		74DC1D0E1D215052007F1853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Example Watch Extension/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		74DC1D101D215094007F1853 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = PushNotificationPayload.apns; path = "Example Watch Extension/PushNotificationPayload.apns"; sourceTree = SOURCE_ROOT; };
+		74DC1D121D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViaSwiftUtilsTests_tvOSTests.swift; path = tvOSTests/ViaSwiftUtilsTests_tvOSTests.swift; sourceTree = SOURCE_ROOT; };
+		74DC1D141D2150BD007F1853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = tvOSTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +169,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1CEE1D214B97007F1853 /* ViaSwiftUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,11 +216,12 @@
 			isa = PBXGroup;
 			children = (
 				74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */,
-				74DC1C331D1D87E5007F1853 /* CGRect+AspectRatio.swift */,
 				74DC1C341D1D87E5007F1853 /* Info-iOS.plist */,
 				74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */,
 				74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */,
 				74DC1C371D1D87E5007F1853 /* Info.plist */,
+				74DC1C331D1D87E5007F1853 /* CGRect+AspectRatio.swift */,
+				74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -207,66 +236,72 @@
 			path = Metadata;
 			sourceTree = "<group>";
 		};
-		74DC1C621D1D8CF5007F1853 /* ViaSwiftUtils iOSTests */ = {
+		74DC1C621D1D8CF5007F1853 /* iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1C631D1D8CF5007F1853 /* ViaSwiftUtils_CGRectTests.swift */,
-				74DC1C651D1D8CF5007F1853 /* Info.plist */,
+				74DC1CCD1D212967007F1853 /* Info.plist */,
+				74DC1CCE1D212967007F1853 /* CGRectTests.swift */,
+				74DC1CF31D214D45007F1853 /* CollectionShuffledTest.swift */,
 			);
+			name = iOSTests;
 			path = "ViaSwiftUtils iOSTests";
 			sourceTree = "<group>";
 		};
-		74DC1C711D1D8D17007F1853 /* ViaSwiftUtils Example */ = {
+		74DC1C711D1D8D17007F1853 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1C721D1D8D17007F1853 /* AppDelegate.swift */,
-				74DC1C741D1D8D17007F1853 /* FirstViewController.swift */,
-				74DC1C761D1D8D17007F1853 /* SecondViewController.swift */,
-				74DC1C781D1D8D17007F1853 /* Main.storyboard */,
-				74DC1C7B1D1D8D17007F1853 /* Assets.xcassets */,
-				74DC1C7D1D1D8D17007F1853 /* LaunchScreen.storyboard */,
-				74DC1C801D1D8D17007F1853 /* Info.plist */,
+				74DC1CD11D2129C1007F1853 /* AppDelegate.swift */,
+				74DC1CD21D2129C1007F1853 /* Assets.xcassets */,
+				74DC1CD81D2129C1007F1853 /* FirstViewController.swift */,
+				74DC1CDA1D2129C1007F1853 /* SecondViewController.swift */,
+				74DC1CD91D2129C1007F1853 /* Info.plist */,
+				74DC1CE21D212A1B007F1853 /* LaunchScreen.storyboard */,
+				74DC1CE41D212A1B007F1853 /* Main.storyboard */,
 			);
+			name = Example;
 			path = "ViaSwiftUtils Example";
 			sourceTree = "<group>";
 		};
-		74DC1C951D1D8D6E007F1853 /* ViaSwiftUtils Example Watch */ = {
+		74DC1C951D1D8D6E007F1853 /* Example Watch */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1C961D1D8D6E007F1853 /* Interface.storyboard */,
-				74DC1C991D1D8D6E007F1853 /* Assets.xcassets */,
-				74DC1C9B1D1D8D6E007F1853 /* Info.plist */,
+				74DC1D001D214FAA007F1853 /* Interface.storyboard */,
+				74DC1CF81D214F91007F1853 /* Assets.xcassets */,
+				74DC1CFC1D214F99007F1853 /* Info.plist */,
 			);
+			name = "Example Watch";
 			path = "ViaSwiftUtils Example Watch";
 			sourceTree = "<group>";
 		};
-		74DC1CA41D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension */ = {
+		74DC1CA41D1D8D6E007F1853 /* Example Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1CA71D1D8D6E007F1853 /* InterfaceController.swift */,
-				74DC1CA91D1D8D6E007F1853 /* ExtensionDelegate.swift */,
-				74DC1CAB1D1D8D6E007F1853 /* NotificationController.swift */,
-				74DC1CAD1D1D8D6E007F1853 /* Assets.xcassets */,
-				74DC1CAF1D1D8D6E007F1853 /* Info.plist */,
+				74DC1D0B1D215039007F1853 /* ExtensionDelegate.swift */,
+				74DC1D071D21502C007F1853 /* InterfaceController.swift */,
+				74DC1D081D21502C007F1853 /* NotificationController.swift */,
+				74DC1D0E1D215052007F1853 /* Assets.xcassets */,
+				74DC1D0D1D215047007F1853 /* Info.plist */,
 				74DC1CA51D1D8D6E007F1853 /* Supporting Files */,
 			);
+			name = "Example Watch Extension";
 			path = "ViaSwiftUtils Example Watch Extension";
 			sourceTree = "<group>";
 		};
 		74DC1CA51D1D8D6E007F1853 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1CA61D1D8D6E007F1853 /* PushNotificationPayload.apns */,
+				74DC1D101D215094007F1853 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		74DC1CC01D1D8DA0007F1853 /* ViaSwiftUtilsTests tvOSTests */ = {
+		74DC1CC01D1D8DA0007F1853 /* tvOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1CC11D1D8DA0007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */,
-				74DC1CC31D1D8DA0007F1853 /* Info.plist */,
+				74DC1D141D2150BD007F1853 /* Info.plist */,
+				74DC1D121D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */,
 			);
+			name = tvOSTests;
 			path = "ViaSwiftUtilsTests tvOSTests";
 			sourceTree = "<group>";
 		};
@@ -275,11 +310,11 @@
 			children = (
 				74DC1C4F1D1D8B61007F1853 /* Metadata */,
 				74DC1C321D1D87E5007F1853 /* Sources */,
-				74DC1C621D1D8CF5007F1853 /* ViaSwiftUtils iOSTests */,
-				74DC1C711D1D8D17007F1853 /* ViaSwiftUtils Example */,
-				74DC1C951D1D8D6E007F1853 /* ViaSwiftUtils Example Watch */,
-				74DC1CA41D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension */,
-				74DC1CC01D1D8DA0007F1853 /* ViaSwiftUtilsTests tvOSTests */,
+				74DC1C711D1D8D17007F1853 /* Example */,
+				74DC1C621D1D8CF5007F1853 /* iOSTests */,
+				74DC1C951D1D8D6E007F1853 /* Example Watch */,
+				74DC1CA41D1D8D6E007F1853 /* Example Watch Extension */,
+				74DC1CC01D1D8DA0007F1853 /* tvOSTests */,
 				74E063CE1D1D7E1600C0B56B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -355,11 +390,13 @@
 				74DC1C6D1D1D8D17007F1853 /* Frameworks */,
 				74DC1C6E1D1D8D17007F1853 /* Resources */,
 				74DC1CBA1D1D8D6E007F1853 /* Embed Watch Content */,
+				74DC1CF21D214B98007F1853 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				74DC1CB11D1D8D6E007F1853 /* PBXTargetDependency */,
+				74DC1CF11D214B97007F1853 /* PBXTargetDependency */,
 			);
 			name = "ViaSwiftUtils Example";
 			productName = "ViaSwiftUtils Example";
@@ -498,7 +535,6 @@
 					};
 					74E063DA1D1D7E8000C0B56B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = W7PDGJHBGF;
 						DevelopmentTeamName = "Viacom International Inc.";
 						ProvisioningStyle = Automatic;
 					};
@@ -553,9 +589,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1C7F1D1D8D17007F1853 /* LaunchScreen.storyboard in Resources */,
-				74DC1C7C1D1D8D17007F1853 /* Assets.xcassets in Resources */,
-				74DC1C7A1D1D8D17007F1853 /* Main.storyboard in Resources */,
+				74DC1CE61D212A1B007F1853 /* LaunchScreen.storyboard in Resources */,
+				74DC1CDC1D2129C1007F1853 /* Assets.xcassets in Resources */,
+				74DC1CE71D212A1B007F1853 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,8 +599,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1C9A1D1D8D6E007F1853 /* Assets.xcassets in Resources */,
-				74DC1C981D1D8D6E007F1853 /* Interface.storyboard in Resources */,
+				74DC1D061D214FDD007F1853 /* Assets.xcassets in Resources */,
+				74DC1D051D214FD7007F1853 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +608,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1CAE1D1D8D6E007F1853 /* Assets.xcassets in Resources */,
+				74DC1D0F1D215052007F1853 /* Assets.xcassets in Resources */,
+				74DC1D111D215094007F1853 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,7 +648,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1C641D1D8CF5007F1853 /* ViaSwiftUtils_CGRectTests.swift in Sources */,
+				74DC1CF71D214D5F007F1853 /* CollectionShuffledTest.swift in Sources */,
+				74DC1CD01D212967007F1853 /* CGRectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,9 +657,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1C771D1D8D17007F1853 /* SecondViewController.swift in Sources */,
-				74DC1C731D1D8D17007F1853 /* AppDelegate.swift in Sources */,
-				74DC1C751D1D8D17007F1853 /* FirstViewController.swift in Sources */,
+				74DC1CE11D2129C1007F1853 /* SecondViewController.swift in Sources */,
+				74DC1CDF1D2129C1007F1853 /* FirstViewController.swift in Sources */,
+				74DC1CDB1D2129C1007F1853 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,9 +667,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1CAC1D1D8D6E007F1853 /* NotificationController.swift in Sources */,
-				74DC1CAA1D1D8D6E007F1853 /* ExtensionDelegate.swift in Sources */,
-				74DC1CA81D1D8D6E007F1853 /* InterfaceController.swift in Sources */,
+				74DC1D0A1D21502C007F1853 /* NotificationController.swift in Sources */,
+				74DC1D0C1D215039007F1853 /* ExtensionDelegate.swift in Sources */,
+				74DC1D091D21502C007F1853 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +677,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DC1CC21D1D8DA0007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift in Sources */,
+				74DC1D131D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1CE91D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74DC1C391D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +694,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1CEA1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74DC1C3A1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +703,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1CEB1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74DC1C3B1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,29 +731,34 @@
 			target = 74E064031D1D7F7D00C0B56B /* ViaSwiftUtils tvOS */;
 			targetProxy = 74DC1CC51D1D8DA0007F1853 /* PBXContainerItemProxy */;
 		};
+		74DC1CF11D214B97007F1853 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils iOS */;
+			targetProxy = 74DC1CF01D214B97007F1853 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		74DC1C781D1D8D17007F1853 /* Main.storyboard */ = {
+		74DC1CE21D212A1B007F1853 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74DC1C791D1D8D17007F1853 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		74DC1C7D1D1D8D17007F1853 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74DC1C7E1D1D8D17007F1853 /* Base */,
+				74DC1CE31D212A1B007F1853 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		74DC1C961D1D8D6E007F1853 /* Interface.storyboard */ = {
+		74DC1CE41D212A1B007F1853 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74DC1C971D1D8D6E007F1853 /* Base */,
+				74DC1CE51D212A1B007F1853 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74DC1D001D214FAA007F1853 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DC1D011D214FAA007F1853 /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -757,7 +803,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtils iOSTests/Info.plist";
+				INFOPLIST_FILE = iOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -800,7 +846,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtils iOSTests/Info.plist";
+				INFOPLIST_FILE = iOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -833,6 +879,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -849,7 +896,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtils Example/Info.plist";
+				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -884,6 +931,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -894,7 +942,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtils Example/Info.plist";
+				INFOPLIST_FILE = Example/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -942,7 +990,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtils Example Watch Extension/Info.plist";
+				INFOPLIST_FILE = "Example Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -986,7 +1034,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtils Example Watch Extension/Info.plist";
+				INFOPLIST_FILE = "Example Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vimn.ViaSwiftUtils-Example.watchkitapp.watchkitextension";
@@ -1038,7 +1086,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBSC_MODULE = ViaSwiftUtils_Example_Watch_Extension;
-				INFOPLIST_FILE = "ViaSwiftUtils Example Watch/Info.plist";
+				INFOPLIST_FILE = "Example Watch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vimn.ViaSwiftUtils-Example.watchkitapp";
@@ -1084,7 +1132,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBSC_MODULE = ViaSwiftUtils_Example_Watch_Extension;
-				INFOPLIST_FILE = "ViaSwiftUtils Example Watch/Info.plist";
+				INFOPLIST_FILE = "Example Watch/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vimn.ViaSwiftUtils-Example.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1132,7 +1180,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtilsTests tvOSTests/Info.plist";
+				INFOPLIST_FILE = tvOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1174,7 +1222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "ViaSwiftUtilsTests tvOSTests/Info.plist";
+				INFOPLIST_FILE = tvOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vimn.ViaSwiftUtilsTests-tvOSTests";

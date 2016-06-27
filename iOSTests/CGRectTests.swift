@@ -9,7 +9,7 @@
 import XCTest
 @testable import ViaSwiftUtils
 
-class ViaSwiftUtils_iOSTests: XCTestCase {
+class CGRectTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

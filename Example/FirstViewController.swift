@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import ViaSwiftUtils
 
 class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let rect = CGRect(x: 0, y: 0, width: 10, height: 5)
+        print("aspect ratio: \(rect.aspectRatio)")
+        
+        var mutableNumberList = [1,2,3,4,5,6]
+        mutableNumberList.shuffleInPlace()
+        print("shuffled numbers: \( mutableNumberList )")
     }
 
     override func didReceiveMemoryWarning() {

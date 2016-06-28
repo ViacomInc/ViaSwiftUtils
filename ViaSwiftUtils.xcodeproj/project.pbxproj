@@ -45,6 +45,7 @@
 		74DC1D1B1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
 		74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
 		74DC1D1E1D218780007F1853 /* SequenceTypeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */; };
+		74DC1D201D227007007F1853 /* Dictionary+MapValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D1F1D227007007F1853 /* Dictionary+MapValuesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,8 +129,6 @@
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		74DC1C371D1D87E5007F1853 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViaSwiftUtils.h; sourceTree = "<group>"; };
-		74DC1C501D1D8B61007F1853 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		74DC1C511D1D8B61007F1853 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74DC1C521D1D8B61007F1853 /* ViaSwiftUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViaSwiftUtils.podspec; sourceTree = "<group>"; };
 		74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViaSwiftUtils iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC1C701D1D8D17007F1853 /* ViaSwiftUtils Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +160,9 @@
 		74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+Helpers.swift"; sourceTree = "<group>"; };
 		74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+MapValues.swift"; sourceTree = "<group>"; };
 		74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequenceTypeHelperTests.swift; path = Sources/SequenceTypeHelperTests.swift; sourceTree = SOURCE_ROOT; };
+		74DC1D1F1D227007007F1853 /* Dictionary+MapValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+MapValuesTests.swift"; path = "Sources/Dictionary+MapValuesTests.swift"; sourceTree = SOURCE_ROOT; };
+		74DC1D211D227075007F1853 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		74DC1D221D2276AB007F1853 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,9 +233,9 @@
 				74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */,
 				74DC1C371D1D87E5007F1853 /* Info.plist */,
 				74DC1C331D1D87E5007F1853 /* CGRect+AspectRatio.swift */,
+				74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */,
 				74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */,
 				74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */,
-				74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -241,8 +243,8 @@
 		74DC1C4F1D1D8B61007F1853 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				74DC1C501D1D8B61007F1853 /* LICENSE */,
-				74DC1C511D1D8B61007F1853 /* README.md */,
+				74DC1D211D227075007F1853 /* README.md */,
+				74DC1D221D2276AB007F1853 /* LICENSE */,
 				74DC1C521D1D8B61007F1853 /* ViaSwiftUtils.podspec */,
 			);
 			path = Metadata;
@@ -255,6 +257,7 @@
 				74DC1CCE1D212967007F1853 /* CGRectTests.swift */,
 				74DC1CF31D214D45007F1853 /* CollectionShuffledTest.swift */,
 				74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */,
+				74DC1D1F1D227007007F1853 /* Dictionary+MapValuesTests.swift */,
 			);
 			name = iOSTests;
 			path = "ViaSwiftUtils iOSTests";
@@ -661,6 +664,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DC1D201D227007007F1853 /* Dictionary+MapValuesTests.swift in Sources */,
 				74DC1D1E1D218780007F1853 /* SequenceTypeHelperTests.swift in Sources */,
 				74DC1CF71D214D5F007F1853 /* CollectionShuffledTest.swift in Sources */,
 				74DC1CD01D212967007F1853 /* CGRectTests.swift in Sources */,

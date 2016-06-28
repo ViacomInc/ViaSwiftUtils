@@ -25,6 +25,50 @@ class SequenceTypeHelperTests: XCTestCase {
         }
         XCTAssertEqual(dict.findFirst({ $0.1 > 4 })?.1, 5, "Expected first element to be larger then 4 to be 5")
     }
+    
+    func test2_FindInEmptyArray() {
+        //for an empty array
+        let elements = [Int]()
         
+        XCTAssertEqual(elements.findFirst({ $0 > 0 }), nil, "Expected no element to be found")
+    }
+
+    func test3_FindInNonExistent() {
+        //for a valid set with elements
+        let elements = [1, 2, 3, 4, 5, 6]
+
+        XCTAssertEqual(elements.findFirst({ $0 > 6 }), nil, "Expected no element to be larger then 6")
+    }
+    
+    func test4_FindFirstExistentOfMultiple() {
+        struct testElement {
+            let number: Int
+            let value: Int
+        }
+        
+        // given a set of items with multiple values over 10
+        let elements = [testElement(number: 0, value: 10),
+                        testElement(number: 1, value: 10),
+                        testElement(number: 2, value: 20),
+                        testElement(number: 3, value: 10),
+                        testElement(number: 4, value: 20),
+                        testElement(number: 5, value: 10),
+                        testElement(number: 6, value: 20),
+                        testElement(number: 7, value: 10)]
+        
+        XCTAssertEqual(elements.findFirst({ $0.value > 10 })?.number, 2, "Expected first element to be larger then 10 to be 2")
+    }
+    
+    func test5_UniqueElements() {
+        //for an already unique arrays of elements
+        let elements = [1, 2, 3, 4, 5, 6]
+        
+        XCTAssertEqual(elements.unique().count, elements.count, "Expected elements to be equal to unique elements")
+
+        //for a bigger array of elements
+        let moreElements = [1, 2, 3, 4, 5, 6, 1, 2, 3, 8]
+        
+        XCTAssertEqual(moreElements.unique().count, 7, "Expected elements to be equal to unique elements")
+    }
     
 }

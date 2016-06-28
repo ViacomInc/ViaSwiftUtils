@@ -10,6 +10,8 @@ import Foundation
 
 public extension SequenceType {
     
+    /// Find the first matching element in the collection
+    /// - parameter match: The predicate the element has to fit
     func findFirst(@noescape match: (Generator.Element) throws -> Bool) rethrows -> Generator.Element? {
         for element in self where try match(element) {
             return element
@@ -21,6 +23,7 @@ public extension SequenceType {
 
 public extension SequenceType where Generator.Element: Hashable {
     
+    /// Creates an array of unique elements from the elements of the collection
     func unique() -> [Generator.Element] {
         var seen: Set<Generator.Element> = []
         return filter({ (element) -> Bool in

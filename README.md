@@ -12,11 +12,11 @@ import ViaSwiftUtils
 let elements = [1, 2, 3, 4, 5, 6]
 let firstLarger4 = elements.findFirst { $0 > 4 }
 
-var mutableNumberList = [1,2,3,4,5,6]
+var mutableNumberList = [1, 2, 3, 4, 5, 6]
 mutableNumberList.shuffleInPlace() //e.g. [4, 1, 5, 2, 6, 3]
 
-let moreElements = [1, 2, 3, -1, 5, 3, 1, 2, 3, -1]
-let uniqueElements = moreElements.unique() // [1, 2, 3, -1, 5]
+let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
+let uniqueEmojis = emojis.unique() // ["😀", "👀", "😱", "😡"]
 
 ```
 

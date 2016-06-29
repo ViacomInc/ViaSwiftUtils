@@ -12,3 +12,9 @@ print("combined: \(rect.linearCombinedWith(otherRect, by: 0.5) )")
 
 var mutableNumberList = [1,2,3,4,5,6]
 mutableNumberList.shuffleInPlace()
+
+let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
+let uniqueEmojis = emojis.unique()
+
+let image = UIImage(named: "puppy")
+let roundedCornerImage = image?.cornersRounded(usingRadius: 100)

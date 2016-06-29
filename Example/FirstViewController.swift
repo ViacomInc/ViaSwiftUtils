@@ -11,6 +11,8 @@ import ViaSwiftUtils
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,8 @@ class FirstViewController: UIViewController {
         var mutableNumberList = [1,2,3,4,5,6]
         mutableNumberList.shuffleInPlace()
         print("shuffled numbers: \( mutableNumberList )")
+        
+        imageView.image = UIImage(named: "puppy")?.cornersRounded(usingRadius: 30)
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,6 +31,4 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-

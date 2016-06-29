@@ -11,16 +11,6 @@ import XCTest
 
 class CGRectTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
     func test1_two2one() {
         //for a rect sized 10 x 5
         let rect = CGRect(x: 0.0, y: 0.0, width: 10.0, height: 5.0)

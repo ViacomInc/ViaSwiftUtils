@@ -37,5 +37,4 @@ class Dictionary_MapValuesTests: XCTestCase {
         XCTAssertEqual(Array(dict.keys), Array(mappedDict.keys), "Expected both dicts to have the same keys")
     }
     
-    
 }

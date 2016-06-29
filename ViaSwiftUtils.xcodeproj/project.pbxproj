@@ -46,6 +46,9 @@
 		74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
 		74DC1D1E1D218780007F1853 /* SequenceTypeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D1D1D218780007F1853 /* SequenceTypeHelperTests.swift */; };
 		74DC1D201D227007007F1853 /* Dictionary+MapValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D1F1D227007007F1853 /* Dictionary+MapValuesTests.swift */; };
+		74DC1D281D228453007F1853 /* UIImage+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D271D228453007F1853 /* UIImage+Rounding.swift */; };
+		74DC1D291D228453007F1853 /* UIImage+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D271D228453007F1853 /* UIImage+Rounding.swift */; };
+		74DC1D2A1D228453007F1853 /* UIImage+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D271D228453007F1853 /* UIImage+Rounding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +166,7 @@
 		74DC1D1F1D227007007F1853 /* Dictionary+MapValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+MapValuesTests.swift"; path = "Sources/Dictionary+MapValuesTests.swift"; sourceTree = SOURCE_ROOT; };
 		74DC1D211D227075007F1853 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		74DC1D221D2276AB007F1853 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		74DC1D271D228453007F1853 /* UIImage+Rounding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Rounding.swift"; sourceTree = "<group>"; };
 		74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +240,7 @@
 				74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */,
 				74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */,
 				74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */,
+				74DC1D271D228453007F1853 /* UIImage+Rounding.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -706,6 +711,7 @@
 				74DC1D1A1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
 				74DC1D161D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CE91D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
+				74DC1D281D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74DC1C391D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +723,7 @@
 				74DC1D1B1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
 				74DC1D171D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CEA1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
+				74DC1D291D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74DC1C3A1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +735,7 @@
 				74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
 				74DC1D181D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CEB1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
+				74DC1D2A1D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74DC1C3B1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1307,6 +1315,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1364,6 +1373,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1425,6 +1435,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1481,6 +1492,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1541,6 +1553,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1596,6 +1609,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

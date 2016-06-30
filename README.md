@@ -20,6 +20,29 @@ let uniqueEmojis = emojis.unique() // ["😀", "👀", "😱", "😡"]
 
 ```
 
+## Installation
+
+### Via Cocoapods
+
+```
+pod 'ViaSwiftUtils', '0.0.1'
+```
+
+
+### Via Carthage
+
+Add the following to your `Cartfile`
+
+```
+github "vimn-north/ViaSwiftUtils" ~> 0.0.1
+```
+
+### Importing
+
+```swift
+import ViaSwiftUtils
+```
+
 
 ## License
 

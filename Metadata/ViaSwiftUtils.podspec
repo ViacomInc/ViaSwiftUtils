@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
 # This description is used to generate tags and improve search results.
   s.description      = ""
 
-#  s.homepage         = "https://github.com/Bersaelor/KDTree"
+#  s.homepage         = "https://github.com/vimn-north/ViaSwiftUtils"
 #  s.screenshots      = "https://raw.githubusercontent.com/Bersaelor/KDTree/master/Screenshots/kNearest.png", "https://raw.githubusercontent.com/Bersaelor/KDTree/master/Screenshots/tesselations.png"
 #  s.license          = 'MIT'
   s.author           = { "Konrad Feiler" => "konrad.feiler@vimn.com" }
-#  s.source           = { :git => "https://github.com/Bersaelor/KDTree.git", :tag => s.version.to_s }
+#  s.source           = { :git => "https://github.com/vimn-north/ViaSwiftUtils.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.4'
   s.watchos.deployment_target = '2.0'

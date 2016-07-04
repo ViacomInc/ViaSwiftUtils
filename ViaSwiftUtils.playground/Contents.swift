@@ -18,3 +18,34 @@ let uniqueEmojis = emojis.unique()
 
 let image = UIImage(named: "puppy")
 let roundedCornerImage = image?.cornersRounded(usingRadius: 100)
+
+//Example type-safe Observer Pattern
+struct DateEventReceiver: ObserverType {
+    let name: String
+    
+    func receive(event: NSDate) {
+        print("\(name) received \(event)")
+    }
+}
+
+struct DateEventGenerator: Observable {
+    typealias Event = NSDate
+    
+    var observers: [NSDate -> ()] = []
+    
+    mutating func register<O: ObserverType where O.Event == Event>(observer: O) {
+        observers.append({ observer.receive($0) })
+    }
+    
+    func fireEvent(event: NSDate) {
+        for observer in observers { observer(event) }
+    }
+}
+
+var generator = DateEventGenerator()
+let receiver1 = DateEventReceiver(name: "adam")
+let receiver2 = DateEventReceiver(name: "eve")
+generator.register(receiver1)
+generator.register(receiver2)
+generator.fireEvent(NSDate())
+

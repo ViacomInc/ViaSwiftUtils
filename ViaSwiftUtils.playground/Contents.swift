@@ -20,32 +20,38 @@ let image = UIImage(named: "puppy")
 let roundedCornerImage = image?.cornersRounded(usingRadius: 100)
 
 //Example type-safe Observer Pattern
-struct DateEventReceiver: ObserverType {
+enum VideoEvent {
+    case Started
+    case Ended
+}
+
+struct VideoEventEventReceiver: ObserverType {
     let name: String
     
-    func receive(event: NSDate) {
+    func receive(event: VideoEvent) {
         print("\(name) received \(event)")
     }
 }
 
-struct DateEventGenerator: Observable {
-    typealias Event = NSDate
+struct Player: Observable {
+    typealias Event = VideoEvent
     
-    var observers: [NSDate -> ()] = []
+    //    var observes: [ObserverType] = []
+    var observers: [Event -> ()] = []
     
     mutating func register<O: ObserverType where O.Event == Event>(observer: O) {
         observers.append({ observer.receive($0) })
     }
     
-    func fireEvent(event: NSDate) {
+    func fireEvent(event: VideoEvent) {
         for observer in observers { observer(event) }
     }
 }
 
-var generator = DateEventGenerator()
-let receiver1 = DateEventReceiver(name: "adam")
-let receiver2 = DateEventReceiver(name: "eve")
-generator.register(receiver1)
-generator.register(receiver2)
-generator.fireEvent(NSDate())
+var player = Player()
+let sko = VideoEventEventReceiver(name: "SKO")
+var gallup = VideoEventEventReceiver(name: "Gallup")
+player.register(sko)
+player.register(gallup)
+player.fireEvent(.Started)
 

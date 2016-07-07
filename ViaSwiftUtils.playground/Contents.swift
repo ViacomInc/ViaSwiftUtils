@@ -55,3 +55,5 @@ player.register(sko)
 player.register(gallup)
 player.fireEvent(.Started)
 
+print("weekday: \(NSDate().year)")
+

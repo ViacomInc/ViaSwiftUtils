@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIImage {
     
-    func cornersRounded(usingRadius radius: CGFloat) -> UIImage? {
+    final func cornersRounded(usingRadius radius: CGFloat) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
 
         guard let context = UIGraphicsGetCurrentContext() else {

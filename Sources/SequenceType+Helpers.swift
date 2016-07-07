@@ -12,7 +12,7 @@ public extension SequenceType {
     
     /// Find the first matching element in the collection
     /// - parameter match: The predicate the element has to fit
-    func findFirst(@noescape match: (Generator.Element) throws -> Bool) rethrows -> Generator.Element? {
+    final func findFirst(@noescape match: (Generator.Element) throws -> Bool) rethrows -> Generator.Element? {
         for element in self where try match(element) {
             return element
         }
@@ -24,7 +24,7 @@ public extension SequenceType {
 public extension SequenceType where Generator.Element: Hashable {
     
     /// Creates an array of unique elements from the elements of the collection
-    func unique() -> [Generator.Element] {
+    final func unique() -> [Generator.Element] {
         var seen: Set<Generator.Element> = []
         return filter({ (element) -> Bool in
             if seen.contains(element) {
@@ -42,7 +42,7 @@ public extension SequenceType {
     
     /// Logical method that returns true if at least one element fits the predicate
     /// - parameter predicate: The predicate that the elements are tested with
-    func any(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
+    final func any(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
         for element in self where try predicate(element) {
             return true
         }
@@ -51,7 +51,7 @@ public extension SequenceType {
 
     /// Logical method that returns true if all elements fit the predicate
     /// - parameter predicate: The predicate that the elements are tested with
-    func all(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
+    final func all(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
         for element in self where try !predicate(element) {
             return false
         }
@@ -60,7 +60,7 @@ public extension SequenceType {
 
     /// Logical method that returns true if none of the elements fit the predicate
     /// - parameter predicate: The predicate that the elements are tested with
-    func none(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
+    final func none(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
         return try all { try !predicate($0)}
     }
 

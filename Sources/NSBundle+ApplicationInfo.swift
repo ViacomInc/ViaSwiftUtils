@@ -8,11 +8,11 @@
 
 extension NSBundle {
     
-    class func applicationVersion() -> String? {
+    static func applicationVersion() -> String? {
         return NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as? String
     }
     
-    class func applicationName() -> String? {
+    static func applicationName() -> String? {
         return NSBundle.mainBundle().infoDictionary?["CFBundleDisplayName"] as? String
     }
 }

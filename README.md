@@ -46,4 +46,4 @@ import ViaSwiftUtils
 
 ## License
 
-ViaSwiftUtils is available under the MIT license. See the LICENSE file for more info.
+ViaSwiftUtils is available under the APACHE 2.0 license. See the LICENSE file for more info.

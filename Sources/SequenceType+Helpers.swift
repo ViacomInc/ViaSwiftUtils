@@ -37,3 +37,31 @@ public extension SequenceType where Generator.Element: Hashable {
     }
     
 }
+
+public extension SequenceType {
+    
+    /// Logical method that returns true if at least one element fits the predicate
+    /// - parameter predicate: The predicate that the elements are tested with
+    func any(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
+        for element in self where try predicate(element) {
+            return true
+        }
+        return false
+    }
+
+    /// Logical method that returns true if all elements fit the predicate
+    /// - parameter predicate: The predicate that the elements are tested with
+    func all(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
+        for element in self where try !predicate(element) {
+            return false
+        }
+        return true
+    }
+
+    /// Logical method that returns true if none of the elements fit the predicate
+    /// - parameter predicate: The predicate that the elements are tested with
+    func none(@noescape predicate: (Generator.Element) throws -> Bool) rethrows -> Bool {
+        return try all { try !predicate($0)}
+    }
+
+}

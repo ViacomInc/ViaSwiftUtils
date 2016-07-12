@@ -7,9 +7,9 @@
 //
 
 import XCTest
+@testable import ViaSwiftUtils
 
 class SequenceTypeHelperTests: XCTestCase {
-    
     
     func test1_FindElement() {
         //for a valid set with elements

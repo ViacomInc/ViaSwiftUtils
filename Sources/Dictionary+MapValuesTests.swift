@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import ViaSwiftUtils
 
 class Dictionary_MapValuesTests: XCTestCase {
     

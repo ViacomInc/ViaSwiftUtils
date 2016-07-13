@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
 #  s.homepage         = "https://github.com/vimn-north/ViaSwiftUtils"
 #  s.screenshots      = "https://raw.githubusercontent.com/Bersaelor/KDTree/master/Screenshots/kNearest.png", "https://raw.githubusercontent.com/Bersaelor/KDTree/master/Screenshots/tesselations.png"
-#  s.license          = 'MIT'
+#  s.license          = { :type => 'Apache License, Version 2.0' }
   s.author           = { "Konrad Feiler" => "konrad.feiler@vimn.com" }
 #  s.source           = { :git => "https://github.com/vimn-north/ViaSwiftUtils.git", :tag => s.version.to_s }
 

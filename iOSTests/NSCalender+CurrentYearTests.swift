@@ -11,7 +11,7 @@ import XCTest
 
 class NSCalender_CurrentYearTests: XCTestCase {
     
-    func test1() {
+    func test1_CurrentYear() {
         //given the current date
         XCTAssertEqual(NSCalendar.currentYear.characters.count, 4, "Expected currentyear to have 4 characters")
     }

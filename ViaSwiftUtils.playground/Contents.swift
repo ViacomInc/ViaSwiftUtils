@@ -10,7 +10,7 @@ print("aspect ratio: \(rect.aspectRatio)")
 let otherRect = CGRect(x: 5, y: -5, width: 20, height: 5)
 print("combined: \(rect.linearCombinedWith(otherRect, by: 0.5) )")
 
-var mutableNumberList = [1,2,3,4,5,6]
+var mutableNumberList = [1, 2, 3, 4, 5, 6]
 mutableNumberList.shuffleInPlace()
 
 let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
@@ -55,5 +55,5 @@ player.register(sko)
 player.register(gallup)
 player.fireEvent(.Started)
 
-print("weekday: \(NSDate().year)")
-
+NSDate().year
+NSDate().dayOfWeek

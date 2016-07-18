@@ -12,7 +12,6 @@ import XCTest
 class UIButton_StateTests: XCTestCase {
     
     func test0_AllStates() {
-
         for state in [UIControlState.Normal, .Highlighted, .Selected, .Disabled, .Application, .Reserved ] {
             XCTAssertTrue(UIControlState.allValues.contains(state), "Expected allValues to contain \(state)")
         }

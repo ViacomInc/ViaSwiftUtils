@@ -41,7 +41,7 @@ public extension UIImageView {
     
     
     ///  Starts animating the image like an activityIndicator.
-    ///
+    /// - parameter duration: an NSTimeInterval duration the animation should take
     final func startRotating(duration: NSTimeInterval = AnimationDuration.Normal.duration) {
         self.layer.removeAllAnimations()
         self.hidden = false

@@ -40,11 +40,13 @@ class SequenceTypeHelperTests: XCTestCase {
         XCTAssertEqual(elements.findFirst({ $0 > 6 }), nil, "Expected no element to be larger then 6")
     }
     
+    private struct testElement {
+        let number: Int
+        let value: Int
+    }
+    
     func test4_FindFirstExistentOfMultiple() {
-        struct testElement {
-            let number: Int
-            let value: Int
-        }
+
         
         // given a set of items with multiple values over 10
         let elements = [testElement(number: 0, value: 10),

@@ -35,7 +35,7 @@ extension UIButton {
     }
     
     /// convenience method to set a title color for all possible states of the receiver
-    /// - parameter image: the color being set for all states
+    /// - parameter color: the color being set for all states
     final func setTitleColorForAllStates(color: UIColor?) {
         for controlstate in UIControlState.allValues {
             setTitleColor(color, forState: controlstate)

@@ -9,11 +9,13 @@
 public extension NSBundle {
     
     /// fetches the CFBundleShortVersionString from the NSBundle.mainBundle
+    /// - returns: the version as a String
     static func applicationVersion() -> String? {
         return NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString") as? String
     }
     
     /// fetches the CFBundleDisplayName from the NSBundle.mainBundle
+    /// - returns: the version as a String
     static func applicationName() -> String? {
         return NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleDisplayName") as? String
     }

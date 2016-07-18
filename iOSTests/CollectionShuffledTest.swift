@@ -11,14 +11,15 @@ import XCTest
 
 class CollectionShuffledTest: XCTestCase {
     
-    func test1() {
+    func test1_shuffle() {
         //given a shuffled
         var mutableNumberList = [1, 2, 3, 4, 5, 6]
         let originalNumbers = mutableNumberList
         mutableNumberList.shuffleInPlace()
 
         //shuffled array should have the same amount of elements
-        XCTAssertEqual(originalNumbers.count, mutableNumberList.count, "Expected equal count of shuffled Collection to Original")
+        XCTAssertEqual(originalNumbers.count, mutableNumberList.count,
+                       "Expected equal count of shuffled Collection to Original")
     }
     
     func test2_same_elements() {
@@ -30,7 +31,8 @@ class CollectionShuffledTest: XCTestCase {
 
             //each element should occurs in equally often in both original and shuffled array
             for element in array.unique() {
-                XCTAssertEqual(shuffledArray.filter({element == $0}).count, array.filter({element == $0}).count, "Expected the same elements in the shuffled array as in the original")
+                XCTAssertEqual(shuffledArray.filter({element == $0}).count, array.filter({element == $0}).count,
+                               "Expected the same elements in the shuffled array as in the original")
             }
         }
     }

@@ -27,6 +27,7 @@ public extension Dictionary {
 
     /// Maps the values of a dictionary into new values, creating a new dictionary with the same keys
     /// - parameter transform: The transformation the values will be going through
+    /// - returns: new dictionary with the mapped values but the same keys
     func mapValues<NewValue>(transform: Value -> NewValue) -> [Key: NewValue] {
         return Dictionary<Key, NewValue>(map {(key, value) in
             return (key, transform(value))

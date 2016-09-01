@@ -12,33 +12,33 @@ extension UIButton {
     
     /// convenience method to set a title for all possible states of the receiver
     /// - parameter title: the title being set
-    final func setTitleForAllStates(title: String?) {
+    final func setTitleForAllStates(_ title: String?) {
         for controlstate in UIControlState.allValues {
-            setTitle(title, forState: controlstate)
+            setTitle(title, for: controlstate)
         }
     }
 
     /// convenience method to set a background image for all possible states of the receiver
     /// - parameter image: the image being set for all states
-    final func setBackgroundImageForAllStates(image: UIImage?) {
+    final func setBackgroundImageForAllStates(_ image: UIImage?) {
         for controlstate in UIControlState.allValues {
-            setBackgroundImage(image, forState: controlstate)
+            setBackgroundImage(image, for: controlstate)
         }
     }
 
     /// convenience method to set an image for all possible states of the receiver
     /// - parameter image: the image being set for all states
-    final func setImageForAllStates(image: UIImage?) {
+    final func setImageForAllStates(_ image: UIImage?) {
         for controlstate in UIControlState.allValues {
-            setImage(image, forState: controlstate)
+            setImage(image, for: controlstate)
         }
     }
     
     /// convenience method to set a title color for all possible states of the receiver
     /// - parameter color: the color being set for all states
-    final func setTitleColorForAllStates(color: UIColor?) {
+    final func setTitleColorForAllStates(_ color: UIColor?) {
         for controlstate in UIControlState.allValues {
-            setTitleColor(color, forState: controlstate)
+            setTitleColor(color, for: controlstate)
         }
     }
     

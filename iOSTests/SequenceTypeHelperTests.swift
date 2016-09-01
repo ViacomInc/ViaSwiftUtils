@@ -23,7 +23,7 @@ class SequenceTypeHelperTests: XCTestCase {
         
         // When applied to dictionaries
         var dict = [String: Int]()
-        elements.enumerate().forEach { index, element in
+        elements.enumerated().forEach { index, element in
             dict[String(index)] = element
         }
         

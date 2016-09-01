@@ -13,20 +13,20 @@ private let rotationAnimationKey = "SpinAnimation"
 public extension UIImageView {
     
     enum AnimationDuration {
-        case Slow
-        case Normal
-        case Fast
-        case Custom(time: NSTimeInterval)
+        case slow
+        case normal
+        case fast
+        case custom(time: TimeInterval)
         
-        private var duration: NSTimeInterval {
+        fileprivate var duration: TimeInterval {
             switch self {
-            case .Slow:
+            case .slow:
                 return 2.0
-            case .Normal:
+            case .normal:
                 return 2.0
-            case .Fast:
+            case .fast:
                 return 2.0
-            case .Custom(let time):
+            case .custom(let time):
                 return time
             }
         }
@@ -35,36 +35,36 @@ public extension UIImageView {
     
     final var isRotating: Bool {
         get {
-            return self.layer.animationForKey(rotationAnimationKey) != nil
+            return self.layer.animation(forKey: rotationAnimationKey) != nil
         }
     }
     
     
     ///  Starts animating the image like an activityIndicator.
     /// - parameter duration: an NSTimeInterval duration the animation should take
-    final func startRotating(duration: NSTimeInterval = AnimationDuration.Normal.duration) {
+    final func startRotating(_ duration: TimeInterval = AnimationDuration.normal.duration) {
         self.layer.removeAllAnimations()
-        self.hidden = false
+        self.isHidden = false
         let animation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = CGFloat(0.0)
         animation.toValue = CGFloat(2*M_PI)
         animation.duration = duration
         animation.repeatCount = HUGE
-        self.layer.addAnimation(animation, forKey: rotationAnimationKey)
+        self.layer.add(animation, forKey: rotationAnimationKey)
     }
     
     
     /// Stops rotating the image
     final func stopRotating() {
         self.layer.removeAllAnimations()
-        self.hidden = true
+        self.isHidden = true
     }
     
     /// makes the image of UIImageView AlwaysTemplate and sets the tintColor provided
     /// - parameter color: color that is set as a tintColor of the templated image
-    final func colorize(color: UIColor) {
+    final func colorize(_ color: UIColor) {
         if let image = self.image {
-            self.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.image = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
             self.tintColor = color
         }
     }

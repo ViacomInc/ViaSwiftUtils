@@ -7,16 +7,20 @@
 
 import Foundation
 
-public extension MutableCollectionType where Index == Int {
+// swiftlint:disable line_length
+
+public extension MutableCollection where Indices.SubSequence: Sequence, Indices.SubSequence.Iterator.Element == Index, Index: Strideable, Index.Stride: SignedInteger {
 
     /// implements [FisherYates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle) to shuffle elements in place
     final mutating func shuffleInPlace() {
         if count <= 1 { return }
         
-        for i in 0..<count - 1 {
-            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+        for i in indices.dropLast() {
+            let j = (i..<endIndex).arc4random
             if i == j { continue }
             swap(&self[i], &self[j])
         }
     }
 }
+
+// swiftlint:enable line_length

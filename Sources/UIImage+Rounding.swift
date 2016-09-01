@@ -23,10 +23,10 @@ public extension UIImage {
         
         let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
 
-        CGContextAddPath(context, UIBezierPath(roundedRect: rect, cornerRadius: radius).CGPath)
-        CGContextClip(context)
+        context.addPath(UIBezierPath(roundedRect: rect, cornerRadius: radius).cgPath)
+        context.clip()
         
-        self.drawInRect(rect)
+        self.draw(in: rect)
         let output = UIGraphicsGetImageFromCurrentImageContext()
         
         UIGraphicsEndImageContext()

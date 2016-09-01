@@ -13,7 +13,7 @@ class Date_ComponentAccessorsTest: XCTestCase {
     
     func testDateComponentAsInts() {
         // Given, When
-        let eightAM1970 = NSDate(timeIntervalSince1970: 8 * NSTimeInterval.hour + 0.5 * NSTimeInterval.minute)
+        let eightAM1970 = Date(timeIntervalSince1970: 8 * TimeInterval.hour + 0.5 * TimeInterval.minute)
 
         // Then
         XCTAssertEqual(eightAM1970.hourOfDay, 9, "Expected 8:00AM 1/1/1970 to be in the 9th hour of the day")
@@ -24,7 +24,7 @@ class Date_ComponentAccessorsTest: XCTestCase {
     
     func testCurrentYear() {
         // Given the current date
-        let currentYear = NSDate().localizedYear
+        let currentYear = Date().localizedYear
         
         // Then
         XCTAssertEqual(currentYear.characters.count, 4, "Expected currentyear to have 4 characters")
@@ -32,7 +32,7 @@ class Date_ComponentAccessorsTest: XCTestCase {
         
     func testHistoricalYear() {
         // Given the fall of the west roman empire
-        let fallOfRome = NSDate(timeIntervalSince1970: -NSTimeInterval.year * (1970 - 476))
+        let fallOfRome = Date(timeIntervalSince1970: -TimeInterval.year * (1970 - 476))
         
         // When converting to localized string
         let localizedString = fallOfRome.localizedYear

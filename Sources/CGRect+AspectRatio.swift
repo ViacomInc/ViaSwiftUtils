@@ -20,7 +20,7 @@ public extension CGRect {
     /// - parameter otherRect: The other rect to which linearly combine the receiver
     /// - parameter value: linear factor, clamped to [0,1]
     /// - returns: A new CGRect that represents the linear combination
-    func linearCombinedWith(otherRect: CGRect, by value: CGFloat) -> CGRect {
+    func linearCombined(with otherRect: CGRect, by value: CGFloat) -> CGRect {
         let minMaxValue = min(1.0, max(0.0, value))
         
         return CGRect(x: (1-minMaxValue) * self.origin.x + minMaxValue * otherRect.origin.x,

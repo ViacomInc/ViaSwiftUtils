@@ -8,11 +8,11 @@
 
 import Foundation
 
-public extension NSTimeInterval {
-    static let second: NSTimeInterval = 1
-    static let minute: NSTimeInterval = 60 * second
-    static let hour: NSTimeInterval = 60 * minute
-    static let day: NSTimeInterval = 24 * hour
-    static let week: NSTimeInterval = 7 * day
-    static let year: NSTimeInterval = 365 * day
+public extension TimeInterval {
+    static let second: TimeInterval = 1
+    static let minute: TimeInterval = 60 * second
+    static let hour: TimeInterval = 60 * minute
+    static let day: TimeInterval = 24 * hour
+    static let week: TimeInterval = 7 * day
+    static let year: TimeInterval = 365 * day
 }

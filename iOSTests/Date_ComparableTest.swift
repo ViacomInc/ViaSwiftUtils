@@ -12,7 +12,7 @@ import XCTest
 class Date_ComparableTest: XCTestCase {
     
     func test1_Comparable() {
-        //given two dates
+        //given some dates
         let earlyDate = NSDate(timeIntervalSince1970: 0)
         let laterDate = NSDate(timeIntervalSince1970: 1000)
         let otherDate = NSDate(timeIntervalSince1970: 1000)
@@ -24,24 +24,26 @@ class Date_ComparableTest: XCTestCase {
     }
     
     func test1_TimesBetweenDates() {
-        //given two dates
+        //given the current date
         let now = NSDate()
-        let tomorrow = NSDate(timeIntervalSinceNow: NSTimeInterval.day)
         
+        //when comparing to tomorrow
+        let tomorrow = NSDate(timeIntervalSinceNow: NSTimeInterval.day)
         //then
         XCTAssertEqual(now.daysTo(tomorrow), 1, "Expected today to be 1 day from tomorrow")
         
-        //given
+        //when comparing to next minute
         let nextMinute = NSDate(timeIntervalSinceNow: NSTimeInterval.minute)
-        
         //then
         XCTAssertEqual(now.minutesTo(nextMinute), 1, "Expected nextMinute to be 1 minute from now")
      
-        //given
+        //when comparing to next second
         let nextSecond = NSDate(timeIntervalSinceNow: NSTimeInterval.second)
         //then
         XCTAssertEqual(now.secondsTo(nextSecond), 1, "Expected nextSecond to be 1 second from now")
-        
+    }
+    
+    func test1_DateComponentAsInts() {
         //given
         let eightAM1970 = NSDate(timeIntervalSince1970: 8 * NSTimeInterval.hour + 0.5 * NSTimeInterval.minute)
         //then

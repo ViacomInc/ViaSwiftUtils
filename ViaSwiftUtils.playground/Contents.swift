@@ -10,7 +10,7 @@ print("aspect ratio: \(rect.aspectRatio)")
 let otherRect = CGRect(x: 5, y: -5, width: 20, height: 5)
 print("combined: \(rect.linearCombinedWith(otherRect, by: 0.5) )")
 
-var mutableNumberList = [1,2,3,4,5,6]
+var mutableNumberList = [1, 2, 3, 4, 5, 6]
 mutableNumberList.shuffleInPlace()
 
 let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
@@ -55,3 +55,17 @@ player.register(sko)
 player.register(gallup)
 player.fireEvent(.Started)
 
+NSDate().year
+NSDate().dayOfWeek
+
+let formatter = NSDateFormatter()
+formatter.dateFormat = "y"
+let fallOfRome = NSDate(timeIntervalSince1970: -NSTimeInterval.year * (1970 - 476))
+
+formatter.stringFromDate(fallOfRome)
+formatter.stringFromDate(NSDate())
+
+formatter.locale = NSLocale(localeIdentifier: "hi_IN")
+
+formatter.stringFromDate(fallOfRome)
+formatter.stringFromDate(NSDate())

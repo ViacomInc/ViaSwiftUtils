@@ -10,6 +10,9 @@ import UIKit
 
 public extension UIImage {
     
+    /// returns a rounded corner image, rerendered using the receiver
+    /// - parameter radius: the radius of the rounded corners
+    /// - returns: the image created by the method
     final func cornersRounded(usingRadius radius: CGFloat) -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
 

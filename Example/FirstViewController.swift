@@ -19,7 +19,7 @@ class FirstViewController: UIViewController {
         let rect = CGRect(x: 0, y: 0, width: 10, height: 5)
         print("aspect ratio: \(rect.aspectRatio)")
         
-        var mutableNumberList = [1,2,3,4,5,6]
+        var mutableNumberList = [1, 2, 3, 4, 5, 6]
         mutableNumberList.shuffleInPlace()
         print("shuffled numbers: \( mutableNumberList )")
         

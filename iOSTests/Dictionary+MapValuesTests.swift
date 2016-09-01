@@ -11,39 +11,41 @@ import XCTest
 
 class Dictionary_MapValuesTests: XCTestCase {
     
-    func test1_Merge() {
-        //given two dictionarys of the same types
+    func testMergeDictionariesOfEqualType() {
+        // Given two dictionarys of the same types
         var dict1 = ["One": 1, "Two": 2, "Three": 3]
         let dict2 = ["Four": 10, "Five": 2, "Six": 3]
         
-        //when
+        // When
         dict1.merge(dict2)
 
-        //then
+        // Then
         XCTAssertEqual(dict1.count, 6, "Expected count of the combined arrays to be 6")
-
-        //given two dictionarys with overlapping keys
+    }
+    
+    func testMergeDictionariesWithOverlappingKeys() {
+        // Given two dictionarys with overlapping keys
         var dict3 = ["One": 1, "Two": 2, "Three": 3]
         let dict4 = ["Four": 10, "Two": 2, "Six": 3]
 
-        //when
+        // When
         dict3.merge(dict4)
         
-        //then
+        // Then
         XCTAssertEqual(dict3.count, 5, "Expected count of the combined arrays to be 5")
     }
     
-    func test2_MapValues() {
-        //given two dictionarys [String: Int]
+    func testMapValues() {
+        // Given two dictionarys [String: Int]
         let dict = ["One": 1, "Two": 2, "Three": 3]
         
-        //when
+        // When
         let mappedDict = dict.mapValues { number -> String in
             let numberFormatter = NSNumberFormatter()
             return numberFormatter.stringFromNumber(number) ?? "N.A."
         }
         
-        //then
+        // Then
         XCTAssertEqual(Array(dict.keys), Array(mappedDict.keys), "Expected both dicts to have the same keys")
     }
     

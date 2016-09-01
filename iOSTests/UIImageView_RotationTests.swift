@@ -11,23 +11,34 @@ import XCTest
 
 class UIImageView_RotationTests: XCTestCase {
     
-    func test1_Rotation() {
-        //given a UIImageView
+    func testIsRotating() {
+        // Given, When
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
-        //then
+        // Then
         XCTAssertFalse(imageView.isRotating, "Expected imageView to not be rotating before starts")
+    }
+    
+    func testStartRotating() {
+        // Given, When
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
-        //when starting to rotate
+        // When
         imageView.startRotating()
 
-        //then
+        // Then
         XCTAssertTrue(imageView.isRotating, "Expected imageView to be rotating after startRotating")
+    }
+    
+    func testStopRotating() {
+        // Given, When
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
 
-        //when
+        // When
+        imageView.startRotating()
         imageView.stopRotating()
 
-        //then
+        // Then
         XCTAssertFalse(imageView.isRotating, "Expected imageView to not be rotating after stopRotating")
     }
     

@@ -69,5 +69,3 @@ formatter.locale = NSLocale(localeIdentifier: "hi_IN")
 
 formatter.stringFromDate(fallOfRome)
 formatter.stringFromDate(NSDate())
-
-

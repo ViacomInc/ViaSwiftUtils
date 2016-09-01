@@ -11,27 +11,30 @@ import XCTest
 
 class UIButton_StateTests: XCTestCase {
     
-    func test0_AllStates() {
+    func testAllControlStates() {
+        // Given
         for state in [UIControlState.Normal, .Highlighted, .Selected, .Disabled, .Application, .Reserved ] {
+            
+            // When, Then
             XCTAssertTrue(UIControlState.allValues.contains(state), "Expected allValues to contain \(state)")
         }
     }
     
-    func test1_FunctionsForAllStates() {
-        //given a button
+    func testFunctionsForAllControlStates() {
+        // Given a button
         let button = UIButton(type: UIButtonType.Custom)
         let title = "Click me!"
         let backgroundImage = UIImage()
         let frontImage = UIImage()
         let color = UIColor.brownColor()
         
-        //when
+        // When
         button.setTitleForAllStates(title)
         button.setImageForAllStates(frontImage)
         button.setBackgroundImageForAllStates(backgroundImage)
         button.setTitleColorForAllStates(color)
         
-        //then
+        // Then
         for state in UIControlState.allValues {
             //title is set for all states
             XCTAssertEqual(button.titleForState(state), title, "Expected title for state \(state) to be \(title)")

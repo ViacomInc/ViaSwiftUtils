@@ -47,8 +47,15 @@ public extension NSDate {
         return NSCalendar.currentCalendar().component(.Weekday, fromDate: self)
     }
     
-    /// returns the day of the year of the receiver 'NSDate' as Int anno domini
+    /// returns the year of the receiver 'NSDate' as Int anno domini
     final var year: Int? {
         return NSCalendar.currentCalendar().component(.Year, fromDate: self)
+    }
+    
+    /// returns the year of the receiver NSDate as localized String anno domini and a fixed dateFormat
+    final var localizedYear: String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "y"
+        return formatter.stringFromDate(self)
     }
 }

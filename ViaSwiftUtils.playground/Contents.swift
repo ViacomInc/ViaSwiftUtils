@@ -57,3 +57,17 @@ player.fireEvent(.Started)
 
 NSDate().year
 NSDate().dayOfWeek
+
+let formatter = NSDateFormatter()
+formatter.dateFormat = "y"
+let fallOfRome = NSDate(timeIntervalSince1970: -NSTimeInterval.year * (1970 - 476))
+
+formatter.stringFromDate(fallOfRome)
+formatter.stringFromDate(NSDate())
+
+formatter.locale = NSLocale(localeIdentifier: "hi_IN")
+
+formatter.stringFromDate(fallOfRome)
+formatter.stringFromDate(NSDate())
+
+

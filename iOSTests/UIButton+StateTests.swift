@@ -25,11 +25,13 @@ class UIButton_StateTests: XCTestCase {
         let frontImage = UIImage()
         let color = UIColor.brownColor()
         
+        //when
         button.setTitleForAllStates(title)
         button.setImageForAllStates(frontImage)
         button.setBackgroundImageForAllStates(backgroundImage)
         button.setTitleColorForAllStates(color)
         
+        //then
         for state in UIControlState.allValues {
             //title is set for all states
             XCTAssertEqual(button.titleForState(state), title, "Expected title for state \(state) to be \(title)")

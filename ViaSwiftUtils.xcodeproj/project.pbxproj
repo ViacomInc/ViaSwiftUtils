@@ -169,7 +169,7 @@
 		740682781D3696AA00FEA974 /* Date_ComparableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_ComparableTest.swift; path = iOSTests/Date_ComparableTest.swift; sourceTree = SOURCE_ROOT; };
 		7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+StateTests.swift"; path = "iOSTests/UIButton+StateTests.swift"; sourceTree = SOURCE_ROOT; };
 		7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView_RotationTests.swift; path = iOSTests/UIImageView_RotationTests.swift; sourceTree = SOURCE_ROOT; };
-		742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_TimesBetween.swift; path = iOSTests/Date_TimesBetween.swift; sourceTree = "<group>"; };
+		742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_TimesBetween.swift; path = iOSTests/Date_TimesBetween.swift; sourceTree = SOURCE_ROOT; };
 		742194971D785DAC00A73CF0 /* Date+ComponentAccessors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ComponentAccessors.swift"; sourceTree = "<group>"; };
 		74229A6E1D2A9E7E0057AA3C /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		74229A721D2A9E900057AA3C /* ObserverType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverType.swift; sourceTree = "<group>"; };
@@ -340,8 +340,7 @@
 				7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */,
 				7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */,
 			);
-			name = iOSTests;
-			path = "ViaSwiftUtils iOSTests";
+			path = iOSTests;
 			sourceTree = "<group>";
 		};
 		74DC1C711D1D8D17007F1853 /* Example */ = {
@@ -355,8 +354,7 @@
 				74DC1CE21D212A1B007F1853 /* LaunchScreen.storyboard */,
 				74DC1CE41D212A1B007F1853 /* Main.storyboard */,
 			);
-			name = Example;
-			path = "ViaSwiftUtils Example";
+			path = Example;
 			sourceTree = "<group>";
 		};
 		74DC1C951D1D8D6E007F1853 /* Example Watch */ = {
@@ -366,8 +364,7 @@
 				74DC1CF81D214F91007F1853 /* Assets.xcassets */,
 				74DC1CFC1D214F99007F1853 /* Info.plist */,
 			);
-			name = "Example Watch";
-			path = "ViaSwiftUtils Example Watch";
+			path = "Example Watch";
 			sourceTree = "<group>";
 		};
 		74DC1CA41D1D8D6E007F1853 /* Example Watch Extension */ = {
@@ -380,8 +377,7 @@
 				74DC1D0D1D215047007F1853 /* Info.plist */,
 				74DC1CA51D1D8D6E007F1853 /* Supporting Files */,
 			);
-			name = "Example Watch Extension";
-			path = "ViaSwiftUtils Example Watch Extension";
+			path = "Example Watch Extension";
 			sourceTree = "<group>";
 		};
 		74DC1CA51D1D8D6E007F1853 /* Supporting Files */ = {
@@ -398,8 +394,7 @@
 				74DC1D141D2150BD007F1853 /* Info.plist */,
 				74DC1D121D2150B5007F1853 /* ViaSwiftUtilsTests_tvOSTests.swift */,
 			);
-			name = tvOSTests;
-			path = "ViaSwiftUtilsTests tvOSTests";
+			path = tvOSTests;
 			sourceTree = "<group>";
 		};
 		74E063C11D1D7DB300C0B56B = {

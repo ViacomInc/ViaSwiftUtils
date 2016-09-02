@@ -8,7 +8,7 @@ let rect = CGRect(x: 0, y: 0, width: 10, height: 5)
 print("aspect ratio: \(rect.aspectRatio)")
 
 let otherRect = CGRect(x: 5, y: -5, width: 20, height: 5)
-print("combined: \(rect.linearCombinedWith(otherRect, by: 0.5) )")
+print("combined: \(rect.linearCombined(with: otherRect, by: 0.5) )")
 
 var mutableNumberList = [1, 2, 3, 4, 5, 6]
 mutableNumberList.shuffleInPlace()
@@ -21,14 +21,14 @@ let roundedCornerImage = image?.cornersRounded(usingRadius: 100)
 
 //Example type-safe Observer Pattern
 enum VideoEvent {
-    case Started
-    case Ended
+    case started
+    case ended
 }
 
 struct VideoEventEventReceiver: ObserverType {
     let name: String
     
-    func receive(event: VideoEvent) {
+    func receive(_ event: VideoEvent) {
         print("\(name) received \(event)")
     }
 }
@@ -37,13 +37,13 @@ struct Player: Observable {
     typealias Event = VideoEvent
     
     //    var observes: [ObserverType] = [] would not work, because ObserverType has an associated type
-    var observers: [Event -> ()] = []
+    var observers: [(Event) -> ()] = []
     
-    mutating func register<O: ObserverType where O.Event == Event>(observer: O) {
+    mutating func register<O: ObserverType>(_ observer: O) where O.Event == Event {
         observers.append({ observer.receive($0) })
     }
     
-    func fireEvent(event: VideoEvent) {
+    func fire(event: VideoEvent) {
         for observer in observers { observer(event) }
     }
 }
@@ -53,19 +53,19 @@ let sko = VideoEventEventReceiver(name: "SKO")
 var gallup = VideoEventEventReceiver(name: "Gallup")
 player.register(sko)
 player.register(gallup)
-player.fireEvent(.Started)
+player.fire(event: .started)
 
-NSDate().year
-NSDate().dayOfWeek
+Date().year
+Date().dayOfWeek
 
-let formatter = NSDateFormatter()
+let formatter = DateFormatter()
 formatter.dateFormat = "y"
-let fallOfRome = NSDate(timeIntervalSince1970: -NSTimeInterval.year * (1970 - 476))
+let fallOfRome = Date(timeIntervalSince1970: -TimeInterval.year * (1970 - 476))
 
-formatter.stringFromDate(fallOfRome)
-formatter.stringFromDate(NSDate())
+formatter.string(from: fallOfRome)
+formatter.string(from: Date())
 
-formatter.locale = NSLocale(localeIdentifier: "hi_IN")
+formatter.locale = NSLocale(localeIdentifier: "hi_IN") as Locale!
 
-formatter.stringFromDate(fallOfRome)
-formatter.stringFromDate(NSDate())
+formatter.string(from: fallOfRome)
+formatter.string(from: Date())

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Viacom. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIButton {
     

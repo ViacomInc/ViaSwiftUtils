@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71070E7E1D79AB1D00BAB340 /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151571D787CA600BDF488 /* SignedInteger+Random.swift */; };
+		71070E7F1D79AB1E00BAB340 /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151571D787CA600BDF488 /* SignedInteger+Random.swift */; };
+		71070E801D79AB2100BAB340 /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151551D787B8100BDF488 /* CountableRange+Random.swift */; };
+		71070E811D79AB2100BAB340 /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151551D787B8100BDF488 /* CountableRange+Random.swift */; };
 		740682711D3630AA00FEA974 /* CollectionShuffledTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740682701D3630AA00FEA974 /* CollectionShuffledTest.swift */; };
 		740682741D36969D00FEA974 /* SequenceTypeHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */; };
 		740682751D36969D00FEA974 /* Dictionary+MapValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */; };
@@ -64,7 +68,6 @@
 		74DC1D1B1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
 		74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */; };
 		74DC1D281D228453007F1853 /* UIImage+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D271D228453007F1853 /* UIImage+Rounding.swift */; };
-		74DC1D291D228453007F1853 /* UIImage+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D271D228453007F1853 /* UIImage+Rounding.swift */; };
 		74DC1D2A1D228453007F1853 /* UIImage+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DC1D271D228453007F1853 /* UIImage+Rounding.swift */; };
 		74EA22F21D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F11D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift */; };
 		74EA22F31D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F11D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift */; };
@@ -73,16 +76,13 @@
 		74EA22FB1D2E9EEC007070C8 /* NSTimeInterval+intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* NSTimeInterval+intervals.swift */; };
 		74EA22FC1D2E9EEC007070C8 /* NSTimeInterval+intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* NSTimeInterval+intervals.swift */; };
 		74EA23061D2EA01E007070C8 /* UIControlState+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23051D2EA01E007070C8 /* UIControlState+States.swift */; };
-		74EA23071D2EA01E007070C8 /* UIControlState+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23051D2EA01E007070C8 /* UIControlState+States.swift */; };
 		74EA23081D2EA01E007070C8 /* UIControlState+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23051D2EA01E007070C8 /* UIControlState+States.swift */; };
 		74EA230A1D2EA05D007070C8 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23091D2EA05D007070C8 /* String+Localized.swift */; };
 		74EA230B1D2EA05D007070C8 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23091D2EA05D007070C8 /* String+Localized.swift */; };
 		74EA230C1D2EA05D007070C8 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23091D2EA05D007070C8 /* String+Localized.swift */; };
 		74EA23121D2EA400007070C8 /* UIButton+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23111D2EA400007070C8 /* UIButton+States.swift */; };
-		74EA23131D2EA400007070C8 /* UIButton+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23111D2EA400007070C8 /* UIButton+States.swift */; };
 		74EA23141D2EA400007070C8 /* UIButton+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23111D2EA400007070C8 /* UIButton+States.swift */; };
 		74EA23161D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23151D2EA430007070C8 /* UIImageView+Rotation.swift */; };
-		74EA23171D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23151D2EA430007070C8 /* UIImageView+Rotation.swift */; };
 		74EA23181D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23151D2EA430007070C8 /* UIImageView+Rotation.swift */; };
 /* End PBXBuildFile section */
 
@@ -644,13 +644,11 @@
 					};
 					74E063F61D1D7F4700C0B56B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = W7PDGJHBGF;
 						DevelopmentTeamName = "Viacom International Inc.";
 						ProvisioningStyle = Automatic;
 					};
 					74E064031D1D7F7D00C0B56B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = W7PDGJHBGF;
 						DevelopmentTeamName = "Viacom International Inc.";
 						ProvisioningStyle = Automatic;
 					};
@@ -838,16 +836,14 @@
 			files = (
 				74B818541D2EB0630051F2CA /* NSDate+TimesBetweenDates.swift in Sources */,
 				74DC1D1B1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
-				74EA23071D2EA01E007070C8 /* UIControlState+States.swift in Sources */,
 				74DC1D171D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				74DC1CEA1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74EA230B1D2EA05D007070C8 /* String+Localized.swift in Sources */,
-				74DC1D291D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74229A701D2A9E7E0057AA3C /* Observable.swift in Sources */,
-				74EA23171D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */,
 				74229A741D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				74EA22FB1D2E9EEC007070C8 /* NSTimeInterval+intervals.swift in Sources */,
-				74EA23131D2EA400007070C8 /* UIButton+States.swift in Sources */,
+				71070E801D79AB2100BAB340 /* CountableRange+Random.swift in Sources */,
+				71070E7E1D79AB1D00BAB340 /* SignedInteger+Random.swift in Sources */,
 				74DC1C3A1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 				74EA22F31D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift in Sources */,
 			);
@@ -869,6 +865,8 @@
 				74229A751D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				74EA22FC1D2E9EEC007070C8 /* NSTimeInterval+intervals.swift in Sources */,
 				74EA23141D2EA400007070C8 /* UIButton+States.swift in Sources */,
+				71070E811D79AB2100BAB340 /* CountableRange+Random.swift in Sources */,
+				71070E7F1D79AB1E00BAB340 /* SignedInteger+Random.swift in Sources */,
 				74DC1C3B1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 				74EA22F41D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift in Sources */,
 			);
@@ -1572,6 +1570,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1635,6 +1634,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1690,6 +1690,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1752,6 +1753,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

@@ -12,7 +12,8 @@ extension UIControlState {
     
     /// array of all values of UIControlState
     static var allValues: [UIControlState] {
-        return [UIControlState.highlighted,
+        return [UIControlState.normal,
+                UIControlState.highlighted,
                 UIControlState.selected,
                 UIControlState.disabled,
                 UIControlState.application,

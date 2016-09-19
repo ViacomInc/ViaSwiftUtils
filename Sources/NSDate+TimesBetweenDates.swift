@@ -15,7 +15,7 @@ public extension Date {
     /// - returns: the days between the two dates as Int
     func days(to date: Date) -> Int? {
         let calendar = NSCalendar.current
-        let components = (calendar as NSCalendar).components([.weekday], from: self, to: date, options: [])
+        let components = (calendar as NSCalendar).components([.day], from: self, to: date, options: [])
         return components.day
     }
     

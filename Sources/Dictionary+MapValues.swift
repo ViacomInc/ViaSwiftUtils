@@ -9,10 +9,10 @@
 import Foundation
 
 public extension Dictionary {
-    
+
     /// Merges the Dictionary with a Sequence of (Key, Value)
     /// - parameter other: The Sequence that is merged in
-    mutating func merge<S: Sequence>(_ other: S) where S.Iterator.Element == (Key, Value) {
+    mutating func merge<S: Sequence>(_ other: S) where S.Iterator.Element == Element {
         for (key, value) in other {
             self[key] = value
         }
@@ -20,7 +20,7 @@ public extension Dictionary {
 
     /// Initializes a Dictionary with a Sequence of (Key, Value)
     /// - parameter sequence: The Sequence of elements that this Dictionary will contain after initialization
-    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (Key, Value) {
+    init<S: Sequence>(_ sequence: S) where S.Iterator.Element == Element {
         self = [:]
         self.merge(sequence)
     }

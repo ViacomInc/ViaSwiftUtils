@@ -69,3 +69,10 @@ formatter.locale = NSLocale(localeIdentifier: "hi_IN") as Locale!
 
 formatter.string(from: fallOfRome)
 formatter.string(from: Date())
+
+var dict1 = ["One": 1, "Two": 2, "Three": 3]
+let dict2 = ["Four": 10, "Five": 2, "Six": 3]
+
+dict1.merge(dict2)
+
+print(dict1)

@@ -88,6 +88,10 @@
 		CE18E1791D912A73003C8267 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18E1771D912A6F003C8267 /* CGPoint+Operators.swift */; };
 		CE18E17A1D912A74003C8267 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18E1771D912A6F003C8267 /* CGPoint+Operators.swift */; };
 		CE18E17D1D912A87003C8267 /* CGPoint+OperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18E17B1D912A82003C8267 /* CGPoint+OperatorsTest.swift */; };
+		CE2433231D913E9E001D6CC1 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */; };
+		CE2433241D913EA1001D6CC1 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */; };
+		CE2433251D913EA2001D6CC1 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */; };
+		CE2433281D913EB4001D6CC1 /* CGVector+OperatorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2433261D913EB0001D6CC1 /* CGVector+OperatorsTest.swift */; };
 		CE65B35E1D8AAD0E00AA9B2B /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65B35D1D8AAD0E00AA9B2B /* String+Words.swift */; };
 		CE65B35F1D8AAD0E00AA9B2B /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65B35D1D8AAD0E00AA9B2B /* String+Words.swift */; };
 		CE65B3601D8AAD0E00AA9B2B /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65B35D1D8AAD0E00AA9B2B /* String+Words.swift */; };
@@ -232,6 +236,8 @@
 		74EA23151D2EA430007070C8 /* UIImageView+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rotation.swift"; sourceTree = "<group>"; };
 		CE18E1771D912A6F003C8267 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
 		CE18E17B1D912A82003C8267 /* CGPoint+OperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+OperatorsTest.swift"; sourceTree = "<group>"; };
+		CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
+		CE2433261D913EB0001D6CC1 /* CGVector+OperatorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+OperatorsTest.swift"; sourceTree = "<group>"; };
 		CE65B35D1D8AAD0E00AA9B2B /* String+Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Words.swift"; sourceTree = "<group>"; };
 		CE65B3611D8AAD9700AA9B2B /* String+WordsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+WordsTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -304,6 +310,7 @@
 		74DC1C321D1D87E5007F1853 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */,
 				CE18E1771D912A6F003C8267 /* CGPoint+Operators.swift */,
 				74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */,
 				74DC1C341D1D87E5007F1853 /* Info-iOS.plist */,
@@ -344,6 +351,7 @@
 		74DC1C621D1D8CF5007F1853 /* iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE2433261D913EB0001D6CC1 /* CGVector+OperatorsTest.swift */,
 				CE18E17B1D912A82003C8267 /* CGPoint+OperatorsTest.swift */,
 				74DC1CCD1D212967007F1853 /* Info.plist */,
 				74DC1CCE1D212967007F1853 /* CGRectTests.swift */,
@@ -788,6 +796,7 @@
 				740682771D3696A500FEA974 /* Date_ComponentAccessorsTest.swift in Sources */,
 				740682741D36969D00FEA974 /* SequenceTypeHelperTests.swift in Sources */,
 				74DC1CD01D212967007F1853 /* CGRectTests.swift in Sources */,
+				CE2433281D913EB4001D6CC1 /* CGVector+OperatorsTest.swift in Sources */,
 				CE18E17D1D912A87003C8267 /* CGPoint+OperatorsTest.swift in Sources */,
 				7406827B1D3696B100FEA974 /* UIButton+StateTests.swift in Sources */,
 				740682791D3696AA00FEA974 /* Date_ComparableTest.swift in Sources */,
@@ -838,6 +847,7 @@
 				74DC1D281D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74229A6F1D2A9E7E0057AA3C /* Observable.swift in Sources */,
 				CE65B35E1D8AAD0E00AA9B2B /* String+Words.swift in Sources */,
+				CE2433231D913E9E001D6CC1 /* CGVector+Operators.swift in Sources */,
 				74EA23161D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */,
 				741151581D787CA600BDF488 /* SignedInteger+Random.swift in Sources */,
 				741151561D787B8100BDF488 /* CountableRange+Random.swift in Sources */,
@@ -864,6 +874,7 @@
 				74229A701D2A9E7E0057AA3C /* Observable.swift in Sources */,
 				74229A741D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				74EA22FB1D2E9EEC007070C8 /* NSTimeInterval+intervals.swift in Sources */,
+				CE2433241D913EA1001D6CC1 /* CGVector+Operators.swift in Sources */,
 				71070E801D79AB2100BAB340 /* CountableRange+Random.swift in Sources */,
 				71070E7E1D79AB1D00BAB340 /* SignedInteger+Random.swift in Sources */,
 				74DC1C3A1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
@@ -884,6 +895,7 @@
 				74DC1D2A1D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74229A711D2A9E7E0057AA3C /* Observable.swift in Sources */,
 				74EA23181D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */,
+				CE2433251D913EA2001D6CC1 /* CGVector+Operators.swift in Sources */,
 				74229A751D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				CE18E17A1D912A74003C8267 /* CGPoint+Operators.swift in Sources */,
 				CE65B3601D8AAD0E00AA9B2B /* String+Words.swift in Sources */,

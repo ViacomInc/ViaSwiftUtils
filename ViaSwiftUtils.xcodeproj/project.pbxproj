@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C8DB1131DABA70700E8B4DB /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DB1121DABA70700E8B4DB /* UIImage+Color.swift */; };
-		3C8DB1141DABA70700E8B4DB /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DB1121DABA70700E8B4DB /* UIImage+Color.swift */; };
-		3C8DB1151DABA70700E8B4DB /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DB1121DABA70700E8B4DB /* UIImage+Color.swift */; };
-		3C8DB1171DABA84A00E8B4DB /* TimeInterval+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DB1161DABA84A00E8B4DB /* TimeInterval+Converter.swift */; };
-		3C8DB1181DABA84A00E8B4DB /* TimeInterval+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DB1161DABA84A00E8B4DB /* TimeInterval+Converter.swift */; };
-		3C8DB1191DABA84A00E8B4DB /* TimeInterval+Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DB1161DABA84A00E8B4DB /* TimeInterval+Converter.swift */; };
-		3CB3F1591DABA25A00465F03 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3F1581DABA25A00465F03 /* NibView.swift */; };
-		3CB3F15B1DABA26000465F03 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3F1581DABA25A00465F03 /* NibView.swift */; };
-		3CB3F15D1DABA33200465F03 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3F15C1DABA33200465F03 /* UIView+Xib.swift */; };
-		3CB3F15F1DABA33200465F03 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3F15C1DABA33200465F03 /* UIView+Xib.swift */; };
 		71070E7E1D79AB1D00BAB340 /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151571D787CA600BDF488 /* SignedInteger+Random.swift */; };
 		71070E7F1D79AB1E00BAB340 /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151571D787CA600BDF488 /* SignedInteger+Random.swift */; };
 		71070E801D79AB2100BAB340 /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151551D787B8100BDF488 /* CountableRange+Random.swift */; };
@@ -183,10 +173,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C8DB1121DABA70700E8B4DB /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
-		3C8DB1161DABA84A00E8B4DB /* TimeInterval+Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Converter.swift"; sourceTree = "<group>"; };
-		3CB3F1581DABA25A00465F03 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
-		3CB3F15C1DABA33200465F03 /* UIView+Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
 		740682701D3630AA00FEA974 /* CollectionShuffledTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionShuffledTest.swift; path = iOSTests/CollectionShuffledTest.swift; sourceTree = SOURCE_ROOT; };
 		740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequenceTypeHelperTests.swift; path = iOSTests/SequenceTypeHelperTests.swift; sourceTree = SOURCE_ROOT; };
 		740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+MapValuesTests.swift"; path = "iOSTests/Dictionary+MapValuesTests.swift"; sourceTree = SOURCE_ROOT; };
@@ -324,8 +310,6 @@
 		74DC1C321D1D87E5007F1853 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3CB3F15C1DABA33200465F03 /* UIView+Xib.swift */,
-				3CB3F1581DABA25A00465F03 /* NibView.swift */,
 				CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */,
 				CE18E1771D912A6F003C8267 /* CGPoint+Operators.swift */,
 				74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */,
@@ -341,7 +325,6 @@
 				74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */,
 				74EA22F11D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift */,
 				74EA22F91D2E9EEC007070C8 /* NSTimeInterval+intervals.swift */,
-				3C8DB1161DABA84A00E8B4DB /* TimeInterval+Converter.swift */,
 				74B818521D2EB0630051F2CA /* NSDate+TimesBetweenDates.swift */,
 				742194971D785DAC00A73CF0 /* Date+ComponentAccessors.swift */,
 				74EA23091D2EA05D007070C8 /* String+Localized.swift */,
@@ -349,7 +332,6 @@
 				74EA23051D2EA01E007070C8 /* UIControlState+States.swift */,
 				74EA23111D2EA400007070C8 /* UIButton+States.swift */,
 				74DC1D271D228453007F1853 /* UIImage+Rounding.swift */,
-				3C8DB1121DABA70700E8B4DB /* UIImage+Color.swift */,
 				74EA23151D2EA430007070C8 /* UIImageView+Rotation.swift */,
 				74229A761D2A9F830057AA3C /* Type-safe generalized Observer Pattern */,
 			);
@@ -861,15 +843,12 @@
 				74DC1D161D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
 				CE18E1781D912A6F003C8267 /* CGPoint+Operators.swift in Sources */,
 				74DC1CE91D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
-				3C8DB1171DABA84A00E8B4DB /* TimeInterval+Converter.swift in Sources */,
 				74EA230A1D2EA05D007070C8 /* String+Localized.swift in Sources */,
 				74DC1D281D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74229A6F1D2A9E7E0057AA3C /* Observable.swift in Sources */,
 				CE65B35E1D8AAD0E00AA9B2B /* String+Words.swift in Sources */,
-				3C8DB1131DABA70700E8B4DB /* UIImage+Color.swift in Sources */,
 				CE2433231D913E9E001D6CC1 /* CGVector+Operators.swift in Sources */,
 				74EA23161D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */,
-				3CB3F15D1DABA33200465F03 /* UIView+Xib.swift in Sources */,
 				741151581D787CA600BDF488 /* SignedInteger+Random.swift in Sources */,
 				741151561D787B8100BDF488 /* CountableRange+Random.swift in Sources */,
 				74229A731D2A9E900057AA3C /* ObserverType.swift in Sources */,
@@ -878,7 +857,6 @@
 				74DC1C391D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
 				742194981D785DAC00A73CF0 /* Date+ComponentAccessors.swift in Sources */,
 				74EA22F21D2E5ECA007070C8 /* NSBundle+ApplicationInfo.swift in Sources */,
-				3CB3F1591DABA25A00465F03 /* NibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,11 +872,9 @@
 				74DC1CEA1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
 				74EA230B1D2EA05D007070C8 /* String+Localized.swift in Sources */,
 				74229A701D2A9E7E0057AA3C /* Observable.swift in Sources */,
-				3C8DB1181DABA84A00E8B4DB /* TimeInterval+Converter.swift in Sources */,
 				74229A741D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				74EA22FB1D2E9EEC007070C8 /* NSTimeInterval+intervals.swift in Sources */,
 				CE2433241D913EA1001D6CC1 /* CGVector+Operators.swift in Sources */,
-				3C8DB1141DABA70700E8B4DB /* UIImage+Color.swift in Sources */,
 				71070E801D79AB2100BAB340 /* CountableRange+Random.swift in Sources */,
 				71070E7E1D79AB1D00BAB340 /* SignedInteger+Random.swift in Sources */,
 				74DC1C3A1D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
@@ -914,15 +890,11 @@
 				74DC1D1C1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
 				74EA23081D2EA01E007070C8 /* UIControlState+States.swift in Sources */,
 				74DC1D181D218473007F1853 /* SequenceType+Helpers.swift in Sources */,
-				3CB3F15B1DABA26000465F03 /* NibView.swift in Sources */,
-				3CB3F15F1DABA33200465F03 /* UIView+Xib.swift in Sources */,
 				74DC1CEB1D2149E6007F1853 /* MutableCollection+Shuffle.swift in Sources */,
-				3C8DB1151DABA70700E8B4DB /* UIImage+Color.swift in Sources */,
 				74EA230C1D2EA05D007070C8 /* String+Localized.swift in Sources */,
 				74DC1D2A1D228453007F1853 /* UIImage+Rounding.swift in Sources */,
 				74229A711D2A9E7E0057AA3C /* Observable.swift in Sources */,
 				74EA23181D2EA430007070C8 /* UIImageView+Rotation.swift in Sources */,
-				3C8DB1191DABA84A00E8B4DB /* TimeInterval+Converter.swift in Sources */,
 				CE2433251D913EA2001D6CC1 /* CGVector+Operators.swift in Sources */,
 				74229A751D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				CE18E17A1D912A74003C8267 /* CGPoint+Operators.swift in Sources */,

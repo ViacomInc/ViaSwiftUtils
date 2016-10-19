@@ -41,18 +41,5 @@ extension UIButton {
             setTitleColor(color, for: controlstate)
         }
     }
-
-    /// convenience method to set images for all possible states of the receiver
-    ///
-    /// - parameter normal:      image for state .normal
-    /// - parameter highlighted: image for state .highlighted
-    /// - parameter selected:    image for state .selected
-    /// - parameter climax:      image for state [.selected, .highlighted]
-    final public func imageForState(normal: UIImage? = nil, highlighted: UIImage? = nil, selected: UIImage? = nil, climax: UIImage? = nil) {
-        self.setImage(normal, for: .normal)
-        self.setImage(highlighted, for: .highlighted)
-        self.setImage(selected, for: .selected)
-        self.setImage(climax, for: [.selected, .highlighted])
-    }
     
 }

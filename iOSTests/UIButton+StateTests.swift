@@ -44,5 +44,27 @@ class UIButton_StateTests: XCTestCase {
         }
 
     }
-    
+
+    func testImageForState() {
+        // Given
+        let button = UIButton(type: UIButtonType.custom)
+        let frontImageNormal = UIImage()
+        let frontImageHighlighted = UIImage()
+        let frontImageSelected = UIImage()
+        let frontImageClimax = UIImage()
+
+        // When
+        button.setImagesForStates(normal: frontImageNormal, highlighted: frontImageHighlighted, selected: frontImageSelected, climax: frontImageClimax )
+
+        // Then
+        XCTAssertEqual(button.image(for: .normal), frontImageNormal,
+                       "Expected image for state \(UIControlState.normal) to be frontImageNormal")
+        XCTAssertEqual(button.image(for: .highlighted), frontImageHighlighted,
+                       "Expected image for state \(UIControlState.highlighted) to be frontImageHighlighted")
+        XCTAssertEqual(button.image(for: .selected), frontImageSelected,
+                       "Expected image for state \(UIControlState.selected) to be frontImageSelected")
+        XCTAssertEqual(button.image(for: [.selected, .highlighted]), frontImageClimax,
+                       "Expected image for state \([UIControlState.selected, UIControlState.highlighted]) to be frontImageClimax")
+    }
+
 }

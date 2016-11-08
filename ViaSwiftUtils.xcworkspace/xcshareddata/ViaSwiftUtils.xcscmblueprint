@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "87558D39-4567-4480-AA1A-2FCCCF0C21CC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "74667E66266B70EF860E327D2D4A8B3182F679FB" : "ViaSwiftUtils\/",
+    "74667E66266B70EF860E327D2D4A8B3182F679FB" : "ViaSwift\/",
     "D676CDCA5771490D15D8EB193B74E257D80F2D2E" : "..\/PlayPlex-iOS"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "ViaSwiftUtils",

@@ -12,50 +12,50 @@ import XCTest
 class CGPoint_OperatorsTest: XCTestCase {
 
     func test_plusOperatorWithSuccessScenario() {
-        //Given:
+        // Given:
         let point1 = CGPoint(x: 1.0, y: 1.0)
         let point2 = CGPoint(x: 1.0, y: 1.0)
 
-        //When:
+        // When:
         let point3 = point1 + point2
 
-        //Then:
+        // Then:
         XCTAssertEqual(point3, CGPoint(x: 2.0, y: 2.0))
     }
 
     func test_plusOperatorWithFailureScenario() {
-        //Given:
+        // Given:
         let point1 = CGPoint(x: 1.0, y: 1.0)
         let point2 = CGPoint(x: 1.0, y: 1.0)
 
-        //When:
+        // When:
         let point3 = point1 + point2
 
-        //Then:
+        // Then:
         XCTAssertNotEqual(point3, point1)
     }
 
     func test_minusOperatorWithSuccessScenario() {
-        //Given:
+        // Given:
         let point1 = CGPoint(x: 2.0, y: 2.0)
         let point2 = CGPoint(x: 1.0, y: 1.0)
 
-        //When:
+        // When:
         let point3 = point1 - point2
 
-        //Then:
+        // Then:
         XCTAssertEqual(point3, CGPoint(x: 1.0, y: 1.0))
     }
 
     func test_minusOperatorWithFailureScenario() {
-        //Given:
+        // Given:
         let point1 = CGPoint(x: 2.0, y: 2.0)
         let point2 = CGPoint(x: 1.0, y: 1.0)
 
-        //When:
+        // When:
         let point3 = point1 - point2
 
-        //Then:
+        // Then:
         XCTAssertNotEqual(point3, point1)
     }
 }

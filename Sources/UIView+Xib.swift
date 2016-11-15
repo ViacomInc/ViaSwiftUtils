@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension UIView {
 
     class func loadFromNib(named nibName: String, bundle: Bundle? = nil, owner: AnyObject? = nil) -> UIView? {

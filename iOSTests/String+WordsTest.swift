@@ -15,50 +15,50 @@ class String_WordsTest: XCTestCase {
         longestWord()
      */
     func test_longestWordWithSuccessScenario() {
-        //Given:
+        // Given:
         let source = "This is a test string"
         let longestWordToCompare = "string"
 
-        //When:
+        // When:
         let longestWordCalculated = source.longestWord()
 
-        //Then:
+        // Then:
         XCTAssertEqual(longestWordToCompare, longestWordCalculated)
     }
 
     func test_longestWordWithFailureScenario() {
-        //Given:
+        // Given:
         let source = "This is a test string"
         let notTheLongestWord = "test"
 
-        //When:
+        // When:
         let longestWordCalculated = source.longestWord()
 
-        //Then:
+        // Then:
         XCTAssertNotEqual(notTheLongestWord, longestWordCalculated)
     }
 
     func test_longestWordWithCommaSuccessScenario() {
-        //Given:
+        // Given:
         let source = "This is just, a test"
         let longestWordToCompare = "This"
 
-        //When:
+        // When:
         let longestWordCalculated = source.longestWord()
 
-        //Then:
+        // Then:
         XCTAssertEqual(longestWordToCompare, longestWordCalculated)
     }
 
     func test_longestWordWithCommaFailureScenario() {
-        //Given:
+        // Given:
         let source = "This is just, a test"
         let notTheLongestWord = "just"
 
-        //When:
+        // When:
         let longestWordCalculated = source.longestWord()
 
-        //Then:
+        // Then:
         XCTAssertNotEqual(notTheLongestWord, longestWordCalculated)
     }
 
@@ -67,46 +67,46 @@ class String_WordsTest: XCTestCase {
      */
 
     func test_wordCountWithSuccessScenario() {
-        //Given:
+        // Given:
         let source = "This is a test string"
 
-        //When:
+        // When:
         let wordCount = source.wordCount()
 
-        //Then:
+        // Then:
         XCTAssertEqual(wordCount, 5)
     }
 
     func test_wordCountWithFailureScenario() {
-        //Given:
+        // Given:
         let source = "This is a test string"
 
-        //When:
+        // When:
         let wordCount = source.wordCount()
 
-        //Then:
+        // Then:
         XCTAssertNotEqual(wordCount, 2)
     }
 
     func test_wordCountWithCommaSuccessScenario() {
-        //Given:
+        // Given:
         let source = "This is a test,string"
 
-        //When:
+        // When:
         let wordCount = source.wordCount()
 
-        //Then:
+        // Then:
         XCTAssertEqual(wordCount, 5)
     }
 
     func test_wordCountWithCommaFailureScenario() {
-        //Given:
+        // Given:
         let source = "This is a test,string"
 
-        //When:
+        // When:
         let wordCount = source.wordCount()
 
-        //Then:
+        // Then:
         XCTAssertNotEqual(wordCount, 4)
     }
 
@@ -115,46 +115,46 @@ class String_WordsTest: XCTestCase {
      */
 
     func test_isOneWordWithSuccessScenario() {
-        //Given:
+        // Given:
         let source = "Thisisateststring"
 
-        //When:
+        // When:
         let isOneWord = source.isOneWord()
 
-        //Then:
+        // Then:
         XCTAssertTrue(isOneWord)
     }
 
     func test_isOneWordWithFailureScenario() {
-        //Given:
+        // Given:
         let source = "This is a test string"
 
-        //When:
+        // When:
         let isOneWord = source.isOneWord()
 
-        //Then:
+        // Then:
         XCTAssertFalse(isOneWord)
     }
 
     func test_isOneWordWithCommaFailureScenario() {
-        //Given:
+        // Given:
         let source = "This,is,a,test,string"
 
-        //When:
+        // When:
         let isOneWord = source.isOneWord()
 
-        //Then:
+        // Then:
         XCTAssertFalse(isOneWord)
     }
 
     func test_isOneWordWithFailureScenario_Japanese() {
-        //Given:
+        // Given:
         let source = "あなたはそれを行うべきではありません"
 
-        //When:
+        // When:
         let isOneWord = source.isOneWord()
 
-        //Then:
+        // Then:
         XCTAssertFalse(isOneWord)
     }
 }

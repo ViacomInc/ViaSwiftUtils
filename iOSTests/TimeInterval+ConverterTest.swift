@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-
 import XCTest
 @testable import ViaSwiftUtils
 
@@ -58,7 +56,5 @@ class TimeInterval_ConverterTest: XCTestCase {
         XCTAssertEqual(formattedString, expected,
                        "Expected string \(expected)")
     }
-
-
 
 }

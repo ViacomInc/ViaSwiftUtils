@@ -7,15 +7,11 @@
 //
 
 import Foundation
-
-
 import XCTest
 @testable import ViaSwiftUtils
 
-
 class XibView: UIView { }
 class TestViewWithoutOwner: UIView { }
-
 
 class UIView_XibTest: XCTestCase {
 

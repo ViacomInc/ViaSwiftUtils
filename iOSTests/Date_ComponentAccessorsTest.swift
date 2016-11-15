@@ -21,7 +21,6 @@ class Date_ComponentAccessorsTest: XCTestCase {
         XCTAssertEqual(eightAM1970.year, 1970, "Expected 8:00AM 1/1/1970 to be year 1970")
     }
 
-    
     func testCurrentYear() {
         // Given the current date
         let currentYear = Date().localizedYear

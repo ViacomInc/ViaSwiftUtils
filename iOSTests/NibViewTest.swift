@@ -7,11 +7,8 @@
 //
 
 import Foundation
-
-
 import XCTest
 @testable import ViaSwiftUtils
-
 
 class TestViewController: UIViewController {
 
@@ -20,14 +17,12 @@ class TestViewController: UIViewController {
     
 }
 
-
 class TestViewWithOwner: NibView {
 
     @IBOutlet var horizontalLabelConstraint: NSLayoutConstraint?
     @IBOutlet var testLabel: UILabel?
 
 }
-
 
 class NibView_Test: XCTestCase {
 
@@ -40,7 +35,6 @@ class NibView_Test: XCTestCase {
         let _ = testViewController?.view
         let testView = testViewController?.testView
 
-
         // Then
         XCTAssertNotNil(testViewController)
         XCTAssertNotNil(testViewController?.testView)
@@ -49,7 +43,6 @@ class NibView_Test: XCTestCase {
         XCTAssertNotNil(testView?.testLabel)
         XCTAssertNotNil(testView?.horizontalLabelConstraint)
     }
-
 
     func testInitializationWithFrame() {
         // Given

@@ -32,13 +32,11 @@ public extension UIImageView {
         }
     }
     
-    
     final var isRotating: Bool {
         get {
             return self.layer.animation(forKey: rotationAnimationKey) != nil
         }
     }
-    
     
     ///  Starts animating the image like an activityIndicator.
     /// - parameter duration: an NSTimeInterval duration the animation should take
@@ -52,7 +50,6 @@ public extension UIImageView {
         animation.repeatCount = HUGE
         self.layer.add(animation, forKey: rotationAnimationKey)
     }
-    
     
     /// Stops rotating the image
     final func stopRotating() {

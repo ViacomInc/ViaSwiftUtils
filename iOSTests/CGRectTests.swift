@@ -74,5 +74,4 @@ class CGRectTests: XCTestCase {
                                    accuracy: DBL_EPSILON, "Expected y to be equal to rect2.y")
     }
 
-    
 }

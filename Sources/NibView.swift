@@ -8,8 +8,7 @@
 
 import Foundation
 
-
-//MARK: - NibView Class
+// MARK: - NibView Class
 
 /// This class is intended to be subclassed. If you provide an Xib-file inside the same Bundle the subclass
 /// lives in, this class will automatically find the layout file, load subviews from the xib and connect to
@@ -18,7 +17,6 @@ open class NibView: UIView {
 
     private var didEncode: Bool = false
     private let didEncodeKey = "didEncodeKey"
-
 
     /// Designated initializer for UIView instance that use the nib file
     ///

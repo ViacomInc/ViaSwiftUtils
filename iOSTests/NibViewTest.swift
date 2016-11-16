@@ -31,7 +31,7 @@ class NibView_Test: XCTestCase {
         let storyboard = UIStoryboard(name: "TestStoryboard", bundle: Bundle(for: type(of: self)))
 
         // When
-        let testViewController = storyboard.instantiateInitialViewController() as?TestViewController
+        let testViewController = storyboard.instantiateInitialViewController() as? TestViewController
         let _ = testViewController?.view
         let testView = testViewController?.testView
 

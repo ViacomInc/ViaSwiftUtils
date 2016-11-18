@@ -76,3 +76,6 @@ let dict2 = ["Four": 10, "Five": 2, "Six": 3]
 dict1.merge(dict2)
 
 print(dict1)
+
+let someString = "10"
+let someInt = Int(someString) !? "Couldn't convert \(someString) to int"

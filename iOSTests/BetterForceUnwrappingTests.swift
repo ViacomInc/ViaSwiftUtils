@@ -11,19 +11,48 @@ import XCTest
 
 class BetterForceUnwrappingTests: XCTestCase {
     
+    func testForceUnwrapping() {
+        // Given
+        let someURLString = "www.test.com/something"
+        
+        // When
+        let url = NSURL(string: someURLString) !! "ERROR: \(someURLString) isn't url convertible"
+        
+        // Then
+        XCTAssertEqual(url.path, someURLString)
+    }
+    
     func testIntegerConvertible() {
         // Given
-        let aGoodString = "10"
-        let aBadString = "ten"
-
+        let aSampleString = "10"
+        
         // When
-        let aGoodInt = Int(aGoodString) !? "Couldn't convert \(aGoodString) to int"
-        let aBadInt = Int(aBadString) !? "Couldn't convert \(aBadString) to int"
+        let anInt = Int(aSampleString) !? "WARNING: Couldn't convert \(aSampleString) to int"
         
-        // Then the good int should be 10
-        XCTAssertEqual(aGoodInt, 10)
-        // instead of being nil, the bad int should be 0
-        XCTAssertEqual(aBadInt, 0)
+        // Then
+        XCTAssertEqual(anInt, 10)
     }
+    
+    func testStringConvertible() {
+        // Given
+        let anUTF16View = "abc".utf16
         
+        // When
+        let aString = String(anUTF16View) !? "WARNING: Couldn't convert \(anUTF16View) to String"
+        
+        // Then
+        XCTAssertEqual(aString, "abc")
+    }
+    
+    func testGeneralConvertible() {
+        // Given
+        let someURLString = "www.test.com/something"
+        
+        // When
+        let url = NSURL(string: someURLString) !? (NSURL(), "WARNING: \(someURLString) isn't url convertible")
+        
+        // Then
+        XCTAssertEqual(url.path, someURLString)
+    }
+    
 }

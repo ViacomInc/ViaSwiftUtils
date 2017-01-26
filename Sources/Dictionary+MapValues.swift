@@ -29,6 +29,7 @@ public extension Dictionary {
     /// - parameter transform: The transformation the values will be going through
     /// - returns: new dictionary with the mapped values but the same keys
     func mapValues<NewValue>(_ transform: (Value) -> NewValue) -> [Key: NewValue] {
+        // swiftlint:disable:next syntactic_sugar
         return Dictionary<Key, NewValue>(map {(key, value) in
             return (key, transform(value))
             })

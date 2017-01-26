@@ -37,7 +37,7 @@ struct Player: Observable {
     typealias Event = VideoEvent
     
     //    var observes: [ObserverType] = [] would not work, because ObserverType has an associated type
-    var observers: [(Event) -> ()] = []
+    var observers: [(Event) -> Void] = []
     
     mutating func register<O: ObserverType>(_ observer: O) where O.Event == Event {
         observers.append({ observer.receive($0) })

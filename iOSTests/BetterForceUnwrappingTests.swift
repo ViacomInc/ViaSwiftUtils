@@ -16,6 +16,7 @@ class BetterForceUnwrappingTests: XCTestCase {
         let someURLString = "www.test.com/something"
         
         // When
+        // swiftlint:disable:next force_unwrapping
         let url = NSURL(string: someURLString) !! "ERROR: \(someURLString) isn't url convertible"
         
         // Then

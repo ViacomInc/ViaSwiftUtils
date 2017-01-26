@@ -33,9 +33,7 @@ public extension UIImageView {
     }
     
     final var isRotating: Bool {
-        get {
-            return self.layer.animation(forKey: rotationAnimationKey) != nil
-        }
+        return self.layer.animation(forKey: rotationAnimationKey) != nil
     }
     
     ///  Starts animating the image like an activityIndicator.

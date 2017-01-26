@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension String {
+public extension String {
 
     /// localized version of this string using it as a key in Localizable.strings in the main Bundle
     var localized: String {

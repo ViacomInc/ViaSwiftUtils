@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension CGPoint {
+public extension CGPoint {
     /// Overloads + operator for two CGPoints addition
     ///
     /// - parameter lhs: as lef hand side parameter - CGPoint type

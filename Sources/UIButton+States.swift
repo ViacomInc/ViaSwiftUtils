@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension UIButton {
+public extension UIButton {
     
     /// Convenience method to set a title for all possible states of the receiver
     /// - parameter title: The title being set
-    final func setTitleForAllStates(_ title: String?) {
+    func setTitleForAllStates(_ title: String?) {
         for controlstate in UIControlState.allValues {
             setTitle(title, for: controlstate)
         }
@@ -20,7 +20,7 @@ extension UIButton {
 
     /// Convenience method to set a background image for all possible states of the receiver
     /// - parameter image: The image being set for all states
-    final func setBackgroundImageForAllStates(_ image: UIImage?) {
+    func setBackgroundImageForAllStates(_ image: UIImage?) {
         for controlstate in UIControlState.allValues {
             setBackgroundImage(image, for: controlstate)
         }
@@ -28,7 +28,7 @@ extension UIButton {
 
     /// Convenience method to set an image for all possible states of the receiver
     /// - parameter image: The image being set for all states
-    final func setImageForAllStates(_ image: UIImage?) {
+    func setImageForAllStates(_ image: UIImage?) {
         for controlstate in UIControlState.allValues {
             setImage(image, for: controlstate)
         }
@@ -36,7 +36,7 @@ extension UIButton {
     
     /// Convenience method to set a title color for all possible states of the receiver
     /// - parameter color: The color being set for all states
-    final func setTitleColorForAllStates(_ color: UIColor?) {
+    func setTitleColorForAllStates(_ color: UIColor?) {
         for controlstate in UIControlState.allValues {
             setTitleColor(color, for: controlstate)
         }
@@ -48,7 +48,7 @@ extension UIButton {
     /// - parameter highlighted: The image for state .highlighted
     /// - parameter selected:    The image for state .selected
     /// - parameter climax:      The image for state [.selected, .highlighted]
-    final public func setImagesForStates(normal: UIImage? = nil, highlighted: UIImage? = nil, selected: UIImage? = nil, climax: UIImage? = nil) {
+    func setImagesForStates(normal: UIImage? = nil, highlighted: UIImage? = nil, selected: UIImage? = nil, climax: UIImage? = nil) {
         self.setImage(normal, for: .normal)
         self.setImage(highlighted, for: .highlighted)
         self.setImage(selected, for: .selected)

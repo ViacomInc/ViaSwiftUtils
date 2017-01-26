@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
 
     /// calculates the longest word in the sentence
     ///

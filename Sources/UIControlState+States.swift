@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIControlState {
+public extension UIControlState {
     
     /// array of all values of UIControlState
     static var allValues: [UIControlState] {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension CGVector {
+public extension CGVector {
     /// Overloads + operator for two CGVectors addition
     ///
     /// - parameter lhs: as lef hand side parameter - CGVector type

@@ -10,5 +10,5 @@ import Foundation
 
 public protocol Observable {
     associatedtype Event
-    mutating func register<O: ObserverType where O.Event == Event>(observer: O)
+    mutating func register<O: ObserverType>(_ observer: O) where O.Event == Event
 }

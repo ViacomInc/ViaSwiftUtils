@@ -13,29 +13,29 @@ class Date_TimesBetween: XCTestCase {
     
     func testTomorrow() {
         // Given the current date
-        let now = NSDate()
+        let now = Date()
         
         // When comparing to tomorrow
-        let tomorrow = NSDate(timeIntervalSinceNow: NSTimeInterval.day)
+        let tomorrow = Date(timeIntervalSinceNow: TimeInterval.day)
         // Then
-        XCTAssertEqual(now.daysTo(tomorrow), 1, "Expected today to be 1 day from tomorrow")
+        XCTAssertEqual(now.days(to: tomorrow), 1, "Expected today to be 1 day from tomorrow")
     }
     
     func testNextMinute() {
         // Given the current date
-        let now = NSDate()
+        let now = Date()
         // When comparing to next minute
-        let nextMinute = NSDate(timeIntervalSinceNow: NSTimeInterval.minute)
+        let nextMinute = Date(timeIntervalSinceNow: TimeInterval.minute)
         // Then
-        XCTAssertEqual(now.minutesTo(nextMinute), 1, "Expected nextMinute to be 1 minute from now")
+        XCTAssertEqual(now.minutes(to: nextMinute), 1, "Expected nextMinute to be 1 minute from now")
     }
     
     func testNextSecond() {
         // Given the current date
-        let now = NSDate()
+        let now = Date()
         // When comparing to next second
-        let nextSecond = NSDate(timeIntervalSinceNow: NSTimeInterval.second)
+        let nextSecond = Date(timeIntervalSinceNow: TimeInterval.second)
         // Then
-        XCTAssertEqual(now.secondsTo(nextSecond), 1, "Expected nextSecond to be 1 second from now")
+        XCTAssertEqual(now.seconds(to: nextSecond), 1, "Expected nextSecond to be 1 second from now")
     }
 }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="15z-g5-TeI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="Khe-SU-apH">
+            <objects>
+                <viewController id="15z-g5-TeI" customClass="TestViewController" customModule="ViaSwiftUtils_iOSTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oGi-Kw-EAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="zth-Dg-FSn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UNH-4O-7Gb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psA-Zu-1Nr" customClass="TestViewWithOwner" customModule="ViaSwiftUtils_iOSTests" customModuleProvider="target">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="chb-zW-uw8"/>
+                                    <constraint firstAttribute="height" constant="128" id="pTM-oN-nQl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="psA-Zu-1Nr" firstAttribute="centerX" secondItem="UNH-4O-7Gb" secondAttribute="centerX" id="Tt2-MF-yrs"/>
+                            <constraint firstItem="psA-Zu-1Nr" firstAttribute="centerY" secondItem="UNH-4O-7Gb" secondAttribute="centerY" id="aHk-O8-9F4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="horizontalTestViewConstraint" destination="Tt2-MF-yrs" id="WCu-ZZ-ZAD"/>
+                        <outlet property="testView" destination="psA-Zu-1Nr" id="GAy-le-ukB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifP-l7-uHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-514" y="-386"/>
+        </scene>
+    </scenes>
+</document>

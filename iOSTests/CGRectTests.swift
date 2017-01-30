@@ -41,7 +41,7 @@ class CGRectTests: XCTestCase {
         let rect2 = CGRect(x: 0.0, y: 0.0, width: 10.0, height: 20.0)
         
         // When combined 50:50
-        let combinedRect = rect1.linearCombinedWith(rect2, by: 0.5)
+        let combinedRect = rect1.linearCombined(with: rect2, by: 0.5)
         
         // Then
         XCTAssertEqualWithAccuracy(Double(combinedRect.origin.x), 2.0,
@@ -60,19 +60,18 @@ class CGRectTests: XCTestCase {
         let rect2 = CGRect(x: 0.0, y: 0.0, width: 10.0, height: 20.0)
         
         // When combined with a value < 0
-        let combinedRect = rect1.linearCombinedWith(rect2, by: -1.5)
+        let combinedRect = rect1.linearCombined(with: rect2, by: -1.5)
         
         // Then
         XCTAssertEqualWithAccuracy(Double(combinedRect.origin.x), Double(rect1.origin.x),
                                    accuracy: DBL_EPSILON, "Expected x to be equal to rect1.x")
 
         // When combined with a value > 1
-        let combinedRect2 = rect1.linearCombinedWith(rect2, by: 1.5)
+        let combinedRect2 = rect1.linearCombined(with: rect2, by: 1.5)
         
         // Then
         XCTAssertEqualWithAccuracy(Double(combinedRect2.origin.y), Double(rect2.origin.y),
                                    accuracy: DBL_EPSILON, "Expected y to be equal to rect2.y")
     }
 
-    
 }

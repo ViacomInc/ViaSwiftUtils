@@ -8,27 +8,27 @@
 
 import Foundation
 
-public extension NSDate {
+public extension Date {
 
     /// returns the hour of the receiver 'NSDate'
-    final var hourOfDay: Int {
-        return NSCalendar.currentCalendar().component(.Hour, fromDate: self)
+    var hourOfDay: Int {
+        return NSCalendar.current.component(.hour, from: self)
     }
     
     /// returns the day of the week of the receiver 'NSDate'
-    final var dayOfWeek: Int? {
-        return NSCalendar.currentCalendar().component(.Weekday, fromDate: self)
+    var dayOfWeek: Int {
+        return NSCalendar.current.component(.weekday, from: self)
     }
     
     /// returns the year of the receiver 'NSDate' as Int anno domini
-    final var year: Int? {
-        return NSCalendar.currentCalendar().component(.Year, fromDate: self)
+    var year: Int {
+        return NSCalendar.current.component(.year, from: self)
     }
     
     /// returns the year of the receiver NSDate as localized String anno domini and a fixed dateFormat
-    final var localizedYear: String {
-        let formatter = NSDateFormatter()
+    var localizedYear: String {
+        let formatter = DateFormatter()
         formatter.dateFormat = "y"
-        return formatter.stringFromDate(self)
+        return formatter.string(from: self)
     }
 }

@@ -13,9 +13,9 @@ class Date_ComparableTest: XCTestCase {
     
     func testComparable() {
         // Given, When
-        let earlyDate = NSDate(timeIntervalSince1970: 0)
-        let laterDate = NSDate(timeIntervalSince1970: 1000)
-        let otherDate = NSDate(timeIntervalSince1970: 1000)
+        let earlyDate = Date(timeIntervalSince1970: 0)
+        let laterDate = Date(timeIntervalSince1970: 1000)
+        let otherDate = Date(timeIntervalSince1970: 1000)
         
         // Then
         XCTAssertTrue(earlyDate < laterDate, "Expected earlyDate to be before laterDate")

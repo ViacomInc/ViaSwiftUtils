@@ -11,5 +11,5 @@ import Foundation
 public protocol ObserverType {
     associatedtype Event
     
-    func receive(event: Event)
+    func receive(_ event: Event)
 }

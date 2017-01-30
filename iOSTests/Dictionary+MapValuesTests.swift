@@ -41,8 +41,8 @@ class Dictionary_MapValuesTests: XCTestCase {
         
         // When
         let mappedDict = dict.mapValues { number -> String in
-            let numberFormatter = NSNumberFormatter()
-            return numberFormatter.stringFromNumber(number) ?? "N.A."
+            let numberFormatter = NumberFormatter()
+            return numberFormatter.string(from: NSNumber(value: number)) ?? "N.A."
         }
         
         // Then

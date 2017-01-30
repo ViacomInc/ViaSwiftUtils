@@ -16,12 +16,12 @@ public extension Date {
     }
     
     /// returns the day of the week of the receiver 'NSDate'
-    var dayOfWeek: Int? {
+    var dayOfWeek: Int {
         return NSCalendar.current.component(.weekday, from: self)
     }
     
     /// returns the year of the receiver 'NSDate' as Int anno domini
-    var year: Int? {
+    var year: Int {
         return NSCalendar.current.component(.year, from: self)
     }
     

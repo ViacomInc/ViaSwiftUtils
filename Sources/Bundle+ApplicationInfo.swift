@@ -10,13 +10,13 @@ public extension Bundle {
     
     /// fetches the CFBundleShortVersionString from the NSBundle.mainBundle
     /// - returns: the version as a String
-    static func applicationVersion() -> String? {
+    static var applicationVersion: String? {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
     }
     
     /// fetches the CFBundleDisplayName from the NSBundle.mainBundle
     /// - returns: the version as a String
-    static func applicationName() -> String? {
+    static var applicationName: String? {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
     }
 }

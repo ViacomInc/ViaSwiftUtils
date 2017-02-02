@@ -38,13 +38,13 @@ public extension UIImageView {
     
     ///  Starts animating the image like an activityIndicator.
     /// - parameter duration: an NSTimeInterval duration the animation should take
-    final func startRotating(_ duration: TimeInterval = AnimationDuration.normal.duration) {
+    final func startRotating(_ animationDuration: AnimationDuration = .normal) {
         self.layer.removeAllAnimations()
         self.isHidden = false
         let animation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = CGFloat(0.0)
         animation.toValue = CGFloat(2*M_PI)
-        animation.duration = duration
+        animation.duration = animationDuration.duration
         animation.repeatCount = HUGE
         self.layer.add(animation, forKey: rotationAnimationKey)
     }

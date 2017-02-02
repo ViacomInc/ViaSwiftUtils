@@ -12,20 +12,20 @@ private let rotationAnimationKey = "SpinAnimation"
 
 public extension UIImageView {
     
-    enum AnimationDuration {
+    public enum AnimationDuration {
         case slow
         case normal
         case fast
         case custom(time: TimeInterval)
         
-        fileprivate var duration: TimeInterval {
+        internal var duration: TimeInterval {
             switch self {
             case .slow:
                 return 2.0
             case .normal:
-                return 2.0
+                return 1.0
             case .fast:
-                return 2.0
+                return 0.5
             case .custom(let time):
                 return time
             }

@@ -68,4 +68,15 @@ class UIImageView_RotationTests: XCTestCase {
         XCTAssertEqual(custom.duration, 0.2, "Expected custom duration to be exactly what you give it")
     }
     
+    func testIsRemovedOnCompletion() {
+        // Given
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+        // When
+        imageView.startRotating(isRemovedOnCompletion: false)
+        
+        // Then
+        XCTAssertFalse(imageView.layer.animation(forKey: imageViewRotationAnimationKey)!.isRemovedOnCompletion)
+    }
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let rotationAnimationKey = "SpinAnimation"
+internal let imageViewRotationAnimationKey = "SpinAnimation"
 
 public extension UIImageView {
     
@@ -33,34 +33,35 @@ public extension UIImageView {
     }
     
     final var isRotating: Bool {
-        return self.layer.animation(forKey: rotationAnimationKey) != nil
+        return layer.animation(forKey: imageViewRotationAnimationKey) != nil
     }
     
     ///  Starts animating the image like an activityIndicator.
     /// - parameter duration: an NSTimeInterval duration the animation should take
-    final func startRotating(_ animationDuration: AnimationDuration = .normal) {
-        self.layer.removeAllAnimations()
-        self.isHidden = false
-        let animation: CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+    final func startRotating(_ animationDuration: AnimationDuration = .normal, isRemovedOnCompletion: Bool = true) {
+        layer.removeAnimation(forKey: imageViewRotationAnimationKey)
+        isHidden = false
+        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = CGFloat(0.0)
         animation.toValue = CGFloat(2*M_PI)
         animation.duration = animationDuration.duration
         animation.repeatCount = HUGE
-        self.layer.add(animation, forKey: rotationAnimationKey)
+        animation.isRemovedOnCompletion = isRemovedOnCompletion
+        layer.add(animation, forKey: imageViewRotationAnimationKey)
     }
     
     /// Stops rotating the image
     final func stopRotating() {
-        self.layer.removeAllAnimations()
-        self.isHidden = true
+        layer.removeAnimation(forKey: imageViewRotationAnimationKey)
+        isHidden = true
     }
     
     /// makes the image of UIImageView AlwaysTemplate and sets the tintColor provided
     /// - parameter color: color that is set as a tintColor of the templated image
     final func colorize(_ color: UIColor) {
         if let image = self.image {
-            self.image = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-            self.tintColor = color
+            self.image = image.withRenderingMode(.alwaysTemplate)
+            tintColor = color
         }
     }
 }

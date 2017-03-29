@@ -32,6 +32,8 @@ infix operator !!
 /// - Returns: The Non-Optional value of Type T
 /// - Note:
 /// [chapter 'When to Force Unwrap' from Advanced Swift](https://www.objc.io/books/advanced-swift/)
+
+// swiftlint:disable:next force_unwrapping
 public func !! <T>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
     if let x = wrapped { return x }
     fatalError(failureText ())

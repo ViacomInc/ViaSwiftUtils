@@ -52,7 +52,7 @@ public extension UIImageView {
         isHidden = false
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = CGFloat(0.0)
-        animation.toValue = CGFloat(2*M_PI)
+        animation.toValue = 2*CGFloat.pi
         animation.duration = animationDuration.duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = isRemovedOnCompletion

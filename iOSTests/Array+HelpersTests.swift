@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ViaSwiftUtils
+import ViaSwiftUtils
 
 class Array_HelpersTests: XCTestCase {
     
@@ -15,12 +15,12 @@ class Array_HelpersTests: XCTestCase {
     
     func testIndexOverflow() {
         // Input an overflow index to check a nil is returned
-        XCTAssertNil(testArray[safe: 5])
+        XCTAssertNil(testArray[safe: testArray.count])
     }
     
     func testValidIndex() {
         // Input a valid index to check proper value is returned
-        XCTAssertEqual(testArray[safe: 2], "two")
+        XCTAssertEqual(testArray[safe: testArray.count - 1], "four")
     }
     
     func testNegativeIndex() {

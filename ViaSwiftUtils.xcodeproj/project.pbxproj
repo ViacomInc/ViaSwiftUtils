@@ -227,7 +227,7 @@
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		74DC1C371D1D87E5007F1853 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViaSwiftUtils.h; sourceTree = "<group>"; };
-		74DC1C521D1D8B61007F1853 /* ViaSwiftUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViaSwiftUtils.podspec; sourceTree = "<group>"; };
+		74DC1C521D1D8B61007F1853 /* ViaSwiftUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ViaSwiftUtils.podspec; path = ../ViaSwiftUtils.podspec; sourceTree = "<group>"; };
 		74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViaSwiftUtils iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC1C701D1D8D17007F1853 /* ViaSwiftUtils Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC1C941D1D8D6E007F1853 /* ViaSwiftUtils Example Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };

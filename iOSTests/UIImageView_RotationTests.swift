@@ -86,7 +86,11 @@ class UIImageView_RotationTests: XCTestCase {
         imageView.startRotating(isRemovedOnCompletion: false)
         
         // Then
-        XCTAssertFalse(imageView.layer.animation(forKey: imageViewRotationAnimationKey)!.isRemovedOnCompletion)
+        if let animation = imageView.layer.animation(forKey: imageViewRotationAnimationKey) {
+            XCTAssertFalse(animation.isRemovedOnCompletion)
+        } else {
+            XCTFail("imageView is missing animation for \(imageViewRotationAnimationKey)")
+        }
     }
     
 }

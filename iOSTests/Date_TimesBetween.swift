@@ -16,10 +16,10 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
-class Date_TimesBetween: XCTestCase {
+class DateTimesBetweenTests: XCTestCase {
     
     func testTomorrow() {
         // Given the current date

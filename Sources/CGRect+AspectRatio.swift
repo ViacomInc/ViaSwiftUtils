@@ -1,6 +1,6 @@
 //
 //  CGRect+AspectRatio.swift
-//  PlayPlex
+//  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
 //
@@ -23,7 +23,7 @@ public extension CGRect {
     ///aspect ratio of the rect, i.e. width/height. For a height of 0 the aspect ratio is 0
     var aspectRatio: CGFloat {
         guard self.height > 0 else { return 0 }
-        return self.width/self.height
+        return self.width / self.height
     }
     
     /// linear combination of the receiver with otherRect
@@ -33,9 +33,9 @@ public extension CGRect {
     func linearCombined(with otherRect: CGRect, by value: CGFloat) -> CGRect {
         let minMaxValue = min(1.0, max(0.0, value))
         
-        return CGRect(x: (1-minMaxValue) * self.origin.x + minMaxValue * otherRect.origin.x,
-                      y: (1-minMaxValue) * self.origin.y + minMaxValue * otherRect.origin.y,
-                      width: (1-minMaxValue) * self.size.width + minMaxValue * otherRect.size.width,
-                      height: (1-minMaxValue) * self.size.height + minMaxValue * otherRect.size.height)
+        return CGRect(x: (1 - minMaxValue) * self.origin.x + minMaxValue * otherRect.origin.x,
+                      y: (1 - minMaxValue) * self.origin.y + minMaxValue * otherRect.origin.y,
+                      width: (1 - minMaxValue) * self.size.width + minMaxValue * otherRect.size.width,
+                      height: (1 - minMaxValue) * self.size.height + minMaxValue * otherRect.size.height)
     }
 }

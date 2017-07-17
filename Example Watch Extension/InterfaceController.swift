@@ -16,14 +16,14 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import WatchKit
 import Foundation
+import WatchKit
 
 class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+
         // Configure interface objects here.
     }
 

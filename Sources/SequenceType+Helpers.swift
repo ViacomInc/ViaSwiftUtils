@@ -72,7 +72,7 @@ public extension Sequence {
     /// Logical method that returns true if none of the elements fit the predicate
     /// - returns: a boolean indication whether none of the elements fit the predicate
     final func none(_ predicate: (Iterator.Element) throws -> Bool) rethrows -> Bool {
-        return try all { try !predicate($0)}
+        return try all { try !predicate($0) }
     }
 
 }

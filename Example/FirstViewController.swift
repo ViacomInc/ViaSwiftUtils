@@ -1,6 +1,6 @@
 //
 //  FirstViewController.swift
-//  ViaSwiftUtils Example
+//  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
 //
@@ -21,7 +21,7 @@ import ViaSwiftUtils
 
 class FirstViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class FirstViewController: UIViewController {
         mutableNumberList.shuffleInPlace()
         print("shuffled numbers: \( mutableNumberList )")
         
-        imageView.image = UIImage(named: "puppy")?.cornersRounded(usingRadius: 30)
+        imageView.image = #imageLiteral(resourceName: "puppy").cornersRounded(usingRadius: 30)
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,7 +1,7 @@
 //
 //  AppDelegate.swift
-//  ViaSwiftUtils Example
-
+//  ViaSwiftUtils
+//
 //  Copyright 2017 Viacom, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         // Override point for customization after application launch.
         return true
     }

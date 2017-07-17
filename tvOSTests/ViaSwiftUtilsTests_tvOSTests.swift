@@ -18,7 +18,7 @@
 
 import XCTest
 
-class ViaSwiftUtilsTests_tvOSTests: XCTestCase {
+class ViaSwiftUtilsTestsTVOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

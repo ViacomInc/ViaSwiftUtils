@@ -44,9 +44,7 @@ public extension String {
         var count = 0
 
         self.enumerateSubstrings(in: range, options: .byWords) { (word, _, _, _) in
-            if let _ = word {
-                count += 1
-            }
+            if word != nil { count += 1 }
         }
 
         return count

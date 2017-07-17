@@ -1,5 +1,5 @@
 //
-//  ObserverType.swift
+//  Array+SafeAccess.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -18,8 +18,15 @@
 
 import Foundation
 
-public protocol ObserverType {
-    associatedtype Event
+public extension RandomAccessCollection {
     
-    func receive(_ event: Event)
+    /// Accesses a `RandomAccessCollection`, while being safe from out of bounds errors
+    /// Important: Arbitrarily subscripting Arrays in Swift is discouraged,
+    ///     when practical, favor iteration like for-in, `map`, `first` etc
+    /// - parameter index: The Index at which the access happens
+    /// - returns: the element at `index`, if out of bounds returns nil
+    public subscript (safe index: Self.Index) -> Self.Iterator.Element? {
+        return index >= self.startIndex && index < self.endIndex ? self[index] : nil
+    }
+    
 }

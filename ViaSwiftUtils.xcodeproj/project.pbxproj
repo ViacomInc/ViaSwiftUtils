@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33AED1821ECE07DE002B70CD /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AED1811ECE07DE002B70CD /* Array+Helpers.swift */; };
-		33AED1841ECE0814002B70CD /* Array+HelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AED1831ECE0814002B70CD /* Array+HelpersTests.swift */; };
+		33AED1821ECE07DE002B70CD /* RandomAccessCollection+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AED1811ECE07DE002B70CD /* RandomAccessCollection+SafeAccess.swift */; };
+		33AED1841ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AED1831ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift */; };
 		3C0754B31DD0CFE6004DAB38 /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0754AF1DD0C15C004DAB38 /* TestStoryboard.storyboard */; };
 		3C0754B51DD0D5CA004DAB38 /* TestViewWithoutOwner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0754B41DD0D5CA004DAB38 /* TestViewWithoutOwner.xib */; };
 		3C48A8241DB8CD060014CBE9 /* UIImage+ColorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48A8231DB8CD060014CBE9 /* UIImage+ColorTest.swift */; };
@@ -196,8 +196,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		33AED1811ECE07DE002B70CD /* Array+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
-		33AED1831ECE0814002B70CD /* Array+HelpersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+HelpersTests.swift"; sourceTree = "<group>"; };
+		33AED1811ECE07DE002B70CD /* RandomAccessCollection+SafeAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+SafeAccess.swift"; sourceTree = "<group>"; };
+		33AED1831ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+SafeAccessTests.swift"; sourceTree = "<group>"; };
 		3C0754AF1DD0C15C004DAB38 /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		3C0754B41DD0D5CA004DAB38 /* TestViewWithoutOwner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewWithoutOwner.xib; sourceTree = "<group>"; };
 		3C48A8231DB8CD060014CBE9 /* UIImage+ColorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ColorTest.swift"; sourceTree = "<group>"; };
@@ -348,36 +348,36 @@
 		74DC1C321D1D87E5007F1853 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				745340061DDCBEF7008029C1 /* ForceUnwrappingOperators.swift */,
-				3C6DB00C1DCCB2F000320F5A /* UIView+Xib.swift */,
-				3C6DB0091DCCB2DF00320F5A /* NibView.swift */,
-				3C6DAFF51DCC9FB800320F5A /* UIImage+Color.swift */,
-				3C6DAFF21DCC9FAE00320F5A /* TimeInterval+Converter.swift */,
-				CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */,
+				33AED1811ECE07DE002B70CD /* RandomAccessCollection+SafeAccess.swift */,
+				74EA22F11D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift */,
 				CE18E1771D912A6F003C8267 /* CGPoint+Operators.swift */,
-				74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */,
+				74DC1C331D1D87E5007F1853 /* CGRect+AspectRatio.swift */,
+				CE2433221D913E9E001D6CC1 /* CGVector+Operators.swift */,
+				741151551D787B8100BDF488 /* CountableRange+Random.swift */,
+				742194971D785DAC00A73CF0 /* Date+ComponentAccessors.swift */,
+				74B818521D2EB0630051F2CA /* Date+TimesBetweenDates.swift */,
+				74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */,
+				745340061DDCBEF7008029C1 /* ForceUnwrappingOperators.swift */,
 				74DC1C341D1D87E5007F1853 /* Info-iOS.plist */,
 				74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */,
 				74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */,
 				74DC1C371D1D87E5007F1853 /* Info.plist */,
-				74DC1C331D1D87E5007F1853 /* CGRect+AspectRatio.swift */,
-				741151571D787CA600BDF488 /* SignedInteger+Random.swift */,
-				741151551D787B8100BDF488 /* CountableRange+Random.swift */,
-				33AED1811ECE07DE002B70CD /* Array+Helpers.swift */,
 				74DC1CE81D2149E6007F1853 /* MutableCollection+Shuffle.swift */,
-				74DC1D191D218502007F1853 /* Dictionary+MapValues.swift */,
+				3C6DB0091DCCB2DF00320F5A /* NibView.swift */,
 				74DC1D151D218473007F1853 /* SequenceType+Helpers.swift */,
-				74EA22F11D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift */,
-				74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */,
-				74B818521D2EB0630051F2CA /* Date+TimesBetweenDates.swift */,
-				742194971D785DAC00A73CF0 /* Date+ComponentAccessors.swift */,
+				741151571D787CA600BDF488 /* SignedInteger+Random.swift */,
 				74EA23091D2EA05D007070C8 /* String+Localized.swift */,
 				CE65B35D1D8AAD0E00AA9B2B /* String+Words.swift */,
-				74EA23051D2EA01E007070C8 /* UIControlState+States.swift */,
+				3C6DAFF21DCC9FAE00320F5A /* TimeInterval+Converter.swift */,
+				74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */,
+				74229A761D2A9F830057AA3C /* Type-safe generalized Observer Pattern */,
 				74EA23111D2EA400007070C8 /* UIButton+States.swift */,
+				74EA23051D2EA01E007070C8 /* UIControlState+States.swift */,
+				3C6DAFF51DCC9FB800320F5A /* UIImage+Color.swift */,
 				74DC1D271D228453007F1853 /* UIImage+Rounding.swift */,
 				74EA23151D2EA430007070C8 /* UIImageView+Rotation.swift */,
-				74229A761D2A9F830057AA3C /* Type-safe generalized Observer Pattern */,
+				3C6DB00C1DCCB2F000320F5A /* UIView+Xib.swift */,
+				74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -403,7 +403,7 @@
 				740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */,
 				740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */,
 				740682781D3696AA00FEA974 /* Date_ComparableTest.swift */,
-				33AED1831ECE0814002B70CD /* Array+HelpersTests.swift */,
+				33AED1831ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift */,
 				740682761D3696A500FEA974 /* Date_ComponentAccessorsTest.swift */,
 				742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */,
 				7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */,
@@ -857,7 +857,7 @@
 				CE2433281D913EB4001D6CC1 /* CGVector+OperatorsTest.swift in Sources */,
 				CE18E17D1D912A87003C8267 /* CGPoint+OperatorsTest.swift in Sources */,
 				7406827B1D3696B100FEA974 /* UIButton+StateTests.swift in Sources */,
-				33AED1841ECE0814002B70CD /* Array+HelpersTests.swift in Sources */,
+				33AED1841ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift in Sources */,
 				7453400B1DDCC061008029C1 /* BetterForceUnwrappingTests.swift in Sources */,
 				740682791D3696AA00FEA974 /* Date_ComparableTest.swift in Sources */,
 				742194991D785F1000A73CF0 /* Date_TimesBetween.swift in Sources */,
@@ -900,7 +900,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74B818531D2EB0630051F2CA /* Date+TimesBetweenDates.swift in Sources */,
-				33AED1821ECE07DE002B70CD /* Array+Helpers.swift in Sources */,
+				33AED1821ECE07DE002B70CD /* RandomAccessCollection+SafeAccess.swift in Sources */,
 				74DC1D1A1D218502007F1853 /* Dictionary+MapValues.swift in Sources */,
 				745340071DDCBEF7008029C1 /* ForceUnwrappingOperators.swift in Sources */,
 				3C6DB00D1DCCB2F000320F5A /* UIView+Xib.swift in Sources */,
@@ -1631,6 +1631,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1687,6 +1688,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

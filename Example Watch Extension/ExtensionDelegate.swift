@@ -1,6 +1,5 @@
 //
 //  ExtensionDelegate.swift
-//  ViaSwiftUtils Example Watch Extension
 //
 //  Copyright 2017 Viacom, Inc.
 //

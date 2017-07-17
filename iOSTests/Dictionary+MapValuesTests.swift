@@ -16,10 +16,10 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
-class Dictionary_MapValuesTests: XCTestCase {
+class DictionaryMapValuesTests: XCTestCase {
     
     func testMergeDictionariesOfEqualType() {
         // Given two dictionarys of the same types

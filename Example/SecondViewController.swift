@@ -1,6 +1,6 @@
 //
 //  SecondViewController.swift
-//  ViaSwiftUtils Example
+//  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
 //

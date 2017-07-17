@@ -1,6 +1,6 @@
 //
 //  NibView.swift
-//  Nickelodeon
+//  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
 //

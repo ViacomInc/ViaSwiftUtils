@@ -17,10 +17,10 @@
 //  limitations under the License.
 
 import Foundation
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
-class TimeInterval_ConverterTest: XCTestCase {
+class TimeIntervalConverterTest: XCTestCase {
 
     func testToStringMinutes() {
         // Given
@@ -40,7 +40,7 @@ class TimeInterval_ConverterTest: XCTestCase {
     func testSecondsToStringHours() {
         // Given
         let format = "mm:ss"
-        let interval = 3603
+        let interval = 3_603
         let expected = "00:03"
         let timeInterval = TimeInterval(interval)
 
@@ -55,7 +55,7 @@ class TimeInterval_ConverterTest: XCTestCase {
     func testSecondsToStringYears() {
         // Given
         let format = "yyyy, mm:ss"
-        let interval = 360045003
+        let interval = 360_045_003
         let expected = "1981, 30:03"
         let timeInterval = TimeInterval(interval)
 

@@ -16,10 +16,10 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
-class CGVector_OperatorsTest: XCTestCase {
+class CGVectorOperatorsTest: XCTestCase {
     
     func test_plusOperatorWithSuccessScenario() {
         // Given:

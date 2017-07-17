@@ -17,24 +17,24 @@
 //  limitations under the License.
 
 import Foundation
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
 class TestViewController: UIViewController {
 
-    @IBOutlet var horizontalTestViewConstraint: NSLayoutConstraint?
-    @IBOutlet var testView: TestViewWithOwner?
+    @IBOutlet fileprivate var horizontalTestViewConstraint: NSLayoutConstraint?
+    @IBOutlet fileprivate var testView: TestViewWithOwner?
     
 }
 
 class TestViewWithOwner: NibView {
 
-    @IBOutlet var horizontalLabelConstraint: NSLayoutConstraint?
-    @IBOutlet var testLabel: UILabel?
+    @IBOutlet fileprivate var horizontalLabelConstraint: NSLayoutConstraint?
+    @IBOutlet fileprivate var testLabel: UILabel?
 
 }
 
-class NibView_Test: XCTestCase {
+class NibViewTest: XCTestCase {
 
     func testInitializationWithinStoryboard() {
         // Given
@@ -42,7 +42,7 @@ class NibView_Test: XCTestCase {
 
         // When
         let testViewController = storyboard.instantiateInitialViewController() as? TestViewController
-        let _ = testViewController?.view
+        _ = testViewController?.view
         let testView = testViewController?.testView
 
         // Then

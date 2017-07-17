@@ -16,10 +16,10 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
-class UIButton_ColorTest: XCTestCase {
+class UIButtonColorTest: XCTestCase {
 
     func testConvenienceFailableInitializer() {
         // Given
@@ -30,10 +30,8 @@ class UIButton_ColorTest: XCTestCase {
         let image = UIImage(color: black)
 
         // Then
-        XCTAssertNotNil(image,
-                        "Expected image should not be nil")
-        XCTAssertEqual(image?.size, defaultSize,
-                       "Expected image size to be \(defaultSize)")
+        XCTAssertNotNil(image, "Expected image should not be nil")
+        XCTAssertEqual(image?.size, defaultSize, "Expected image size to be \(defaultSize)")
     }
 
 }

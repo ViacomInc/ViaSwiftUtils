@@ -1,5 +1,6 @@
 //
 //  UIImageView+ActivityIndicator.swift
+//  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
 //
@@ -52,7 +53,7 @@ public extension UIImageView {
         isHidden = false
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = CGFloat(0.0)
-        animation.toValue = 2*CGFloat.pi
+        animation.toValue = 2 * CGFloat.pi
         animation.duration = animationDuration.duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = isRemovedOnCompletion

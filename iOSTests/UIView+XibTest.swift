@@ -17,13 +17,13 @@
 //  limitations under the License.
 
 import Foundation
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
 class XibView: UIView { }
 class TestViewWithoutOwner: UIView { }
 
-class UIView_XibTest: XCTestCase {
+class UIViewXibTest: XCTestCase {
 
     let expectedSubviewType = String(describing: XibView.self)
 

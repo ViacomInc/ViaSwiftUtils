@@ -16,8 +16,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import XCTest
 @testable import ViaSwiftUtils
+import XCTest
 
 class SequenceTypeHelperTests: XCTestCase {
     
@@ -57,21 +57,21 @@ class SequenceTypeHelperTests: XCTestCase {
         XCTAssertEqual(elements.findFirst({ $0 > 6 }), nil, "Expected no element to be larger then 6")
     }
     
-    private struct testElement {
+    private struct TestElement {
         let number: Int
         let value: Int
     }
     
     func testFindFirstExistentOfMultiple() {
         // given a set of items with multiple values over 10
-        let elements = [testElement(number: 0, value: 10),
-                        testElement(number: 1, value: 10),
-                        testElement(number: 2, value: 20),
-                        testElement(number: 3, value: 10),
-                        testElement(number: 4, value: 20),
-                        testElement(number: 5, value: 10),
-                        testElement(number: 6, value: 20),
-                        testElement(number: 7, value: 10)]
+        let elements = [TestElement(number: 0, value: 10),
+                        TestElement(number: 1, value: 10),
+                        TestElement(number: 2, value: 20),
+                        TestElement(number: 3, value: 10),
+                        TestElement(number: 4, value: 20),
+                        TestElement(number: 5, value: 10),
+                        TestElement(number: 6, value: 20),
+                        TestElement(number: 7, value: 10)]
         
         // Then
         XCTAssertEqual(elements.findFirst({ $0.value > 10 })?.number, 2, "Expected first element to be larger then 10 to be 2")
@@ -96,12 +96,12 @@ class SequenceTypeHelperTests: XCTestCase {
         let elements = [1, 2, 3, 4, 5, 6]
         
         // Then
-        XCTAssertTrue(elements.any { $0 > 3}, "Expected 'any number larger 3' to be true")
-        XCTAssertTrue(elements.all { $0 > 0}, "Expected 'all to be bigger then 0' to be true")
-        XCTAssertTrue(elements.none { $0 < 0}, "Expected 'none to be negative' to be true")
-        XCTAssertFalse(elements.any { $0 > 6}, "Expected 'any larger then 6' to be false")
-        XCTAssertFalse(elements.all { $0 > 2}, "Expected all to be false")
-        XCTAssertFalse(elements.all { $0 > 6}, "Expected all to be false")
-        XCTAssertFalse(elements.none { $0 > 1}, "Expected 'none over 1' to be false")
+        XCTAssertTrue(elements.any { $0 > 3 }, "Expected 'any number larger 3' to be true")
+        XCTAssertTrue(elements.all { $0 > 0 }, "Expected 'all to be bigger then 0' to be true")
+        XCTAssertTrue(elements.none { $0 < 0 }, "Expected 'none to be negative' to be true")
+        XCTAssertFalse(elements.any { $0 > 6 }, "Expected 'any larger then 6' to be false")
+        XCTAssertFalse(elements.all { $0 > 2 }, "Expected all to be false")
+        XCTAssertFalse(elements.all { $0 > 6 }, "Expected all to be false")
+        XCTAssertFalse(elements.none { $0 > 1 }, "Expected 'none over 1' to be false")
     }
 }

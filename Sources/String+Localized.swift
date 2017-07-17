@@ -1,5 +1,6 @@
 //
 //  String+Localized.swift
+//  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
 //

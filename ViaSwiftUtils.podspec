@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
 # This description is used to generate tags and improve search results.
   s.description      = "Goodie box of small helper functions/extensions used in many Swift Apps at Viacom"
 
-  s.homepage         = "https://github.com/vimn-north/ViaSwiftUtils"
+  s.homepage         = "https://github.com/ViacomInc/ViaSwiftUtils"
   s.license          = { :type => 'Apache License, Version 2.0' }
   s.author           = { "Konrad Feiler" => "konrad.feiler@vimn.com" }
-  s.source           = { :git => "https://github.com/vimn-north/ViaSwiftUtils.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ViacomInc/ViaSwiftUtils.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.11'

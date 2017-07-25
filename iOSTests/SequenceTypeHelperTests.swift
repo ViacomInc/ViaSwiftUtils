@@ -21,42 +21,6 @@ import XCTest
 
 class SequenceTypeHelperTests: XCTestCase {
     
-    func testFindElement() {
-        // Given a valid set with elements
-        let elements = [1, 2, 3, 4, 5, 6]
-        
-        // When
-        let element = elements.findFirst({ $0 > 4 })
-        
-        // Then
-        XCTAssertEqual(element, 5, "Expected first element to be larger then 4 to be 5")
-        
-        // When applied to dictionaries
-        var dict = [String: Int]()
-        elements.enumerated().forEach { index, element in
-            dict[String(index)] = element
-        }
-        
-        // Then
-        XCTAssertEqual(dict.findFirst({ $0.1 > 4 })?.1, 5, "Expected first element to be larger then 4 to be 5")
-    }
-    
-    func testFindInEmptyArray() {
-        // Given an empty array
-        let elements = [Int]()
-        
-        // Then
-        XCTAssertEqual(elements.findFirst({ $0 > 0 }), nil, "Expected no element to be found")
-    }
-
-    func testFindInNonExistent() {
-        // Given a valid set with elements
-        let elements = [1, 2, 3, 4, 5, 6]
-
-        // Then
-        XCTAssertEqual(elements.findFirst({ $0 > 6 }), nil, "Expected no element to be larger then 6")
-    }
-    
     private struct TestElement {
         let number: Int
         let value: Int
@@ -74,7 +38,7 @@ class SequenceTypeHelperTests: XCTestCase {
                         TestElement(number: 7, value: 10)]
         
         // Then
-        XCTAssertEqual(elements.findFirst({ $0.value > 10 })?.number, 2, "Expected first element to be larger then 10 to be 2")
+        XCTAssertEqual(elements.first(where: { $0.value > 10 })?.number, 2, "Expected first element to be larger then 10 to be 2")
     }
     
     func testUniqueElements() {

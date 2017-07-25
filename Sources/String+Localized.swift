@@ -16,7 +16,7 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import UIKit
+import Foundation
 
 public extension String {
 
@@ -27,11 +27,6 @@ public extension String {
     
     /// localized uppercase version of this string, with newline characters escaped
     var customLocalizedUppercaseString: String {
-        if #available(iOS 9, *) {
-            return self.localizedUppercase.replacingOccurrences(of: "\\N", with: "\n")
-        } else {
-            return self.uppercased(with: NSLocale.current)
-                .replacingOccurrences(of: "\\N", with: "\n")
-        }
+        return self.localizedUppercase.replacingOccurrences(of: "\\N", with: "\n")
     }
 }

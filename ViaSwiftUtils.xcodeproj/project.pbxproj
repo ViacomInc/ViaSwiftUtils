@@ -37,6 +37,8 @@
 		740682791D3696AA00FEA974 /* Date_ComparableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740682781D3696AA00FEA974 /* Date_ComparableTest.swift */; };
 		7406827B1D3696B100FEA974 /* UIButton+StateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */; };
 		7406827E1D36976200FEA974 /* UIImageView_RotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */; };
+		740CDBD51F2613270071BF63 /* Locale+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */; };
+		740CDBD71F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */; };
 		741151561D787B8100BDF488 /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151551D787B8100BDF488 /* CountableRange+Random.swift */; };
 		741151581D787CA600BDF488 /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741151571D787CA600BDF488 /* SignedInteger+Random.swift */; };
 		742194981D785DAC00A73CF0 /* Date+ComponentAccessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742194971D785DAC00A73CF0 /* Date+ComponentAccessors.swift */; };
@@ -95,9 +97,9 @@
 		74EA22F21D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F11D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift */; };
 		74EA22F31D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F11D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift */; };
 		74EA22F41D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F11D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift */; };
-		74EA22FA1D2E9EEC007070C8 /* TimeInterval+intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */; };
-		74EA22FB1D2E9EEC007070C8 /* TimeInterval+intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */; };
-		74EA22FC1D2E9EEC007070C8 /* TimeInterval+intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */; };
+		74EA22FA1D2E9EEC007070C8 /* TimeInterval+Intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* TimeInterval+Intervals.swift */; };
+		74EA22FB1D2E9EEC007070C8 /* TimeInterval+Intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* TimeInterval+Intervals.swift */; };
+		74EA22FC1D2E9EEC007070C8 /* TimeInterval+Intervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA22F91D2E9EEC007070C8 /* TimeInterval+Intervals.swift */; };
 		74EA23061D2EA01E007070C8 /* UIControlState+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23051D2EA01E007070C8 /* UIControlState+States.swift */; };
 		74EA23081D2EA01E007070C8 /* UIControlState+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23051D2EA01E007070C8 /* UIControlState+States.swift */; };
 		74EA230A1D2EA05D007070C8 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA23091D2EA05D007070C8 /* String+Localized.swift */; };
@@ -216,6 +218,8 @@
 		740682781D3696AA00FEA974 /* Date_ComparableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_ComparableTest.swift; path = iOSTests/Date_ComparableTest.swift; sourceTree = SOURCE_ROOT; };
 		7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+StateTests.swift"; path = "iOSTests/UIButton+StateTests.swift"; sourceTree = SOURCE_ROOT; };
 		7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView_RotationTests.swift; path = iOSTests/UIImageView_RotationTests.swift; sourceTree = SOURCE_ROOT; };
+		740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Swizzling.swift"; sourceTree = "<group>"; };
+		740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+ConverterTestsArabic.swift"; sourceTree = "<group>"; };
 		741151551D787B8100BDF488 /* CountableRange+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableRange+Random.swift"; sourceTree = "<group>"; };
 		741151571D787CA600BDF488 /* SignedInteger+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignedInteger+Random.swift"; sourceTree = "<group>"; };
 		742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_TimesBetween.swift; path = iOSTests/Date_TimesBetween.swift; sourceTree = SOURCE_ROOT; };
@@ -267,7 +271,7 @@
 		74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViaSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74EA22F11D2E5ECA007070C8 /* Bundle+ApplicationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+ApplicationInfo.swift"; sourceTree = "<group>"; };
-		74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+intervals.swift"; sourceTree = "<group>"; };
+		74EA22F91D2E9EEC007070C8 /* TimeInterval+Intervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Intervals.swift"; sourceTree = "<group>"; };
 		74EA23051D2EA01E007070C8 /* UIControlState+States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControlState+States.swift"; sourceTree = "<group>"; };
 		74EA23091D2EA05D007070C8 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		74EA23111D2EA400007070C8 /* UIButton+States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+States.swift"; sourceTree = "<group>"; };
@@ -369,7 +373,7 @@
 				74EA23091D2EA05D007070C8 /* String+Localized.swift */,
 				CE65B35D1D8AAD0E00AA9B2B /* String+Words.swift */,
 				3C6DAFF21DCC9FAE00320F5A /* TimeInterval+Converter.swift */,
-				74EA22F91D2E9EEC007070C8 /* TimeInterval+intervals.swift */,
+				74EA22F91D2E9EEC007070C8 /* TimeInterval+Intervals.swift */,
 				74229A761D2A9F830057AA3C /* Type-safe generalized Observer Pattern */,
 				74EA23111D2EA400007070C8 /* UIButton+States.swift */,
 				74EA23051D2EA01E007070C8 /* UIControlState+States.swift */,
@@ -411,8 +415,10 @@
 				CE65B3611D8AAD9700AA9B2B /* String+WordsTest.swift */,
 				3C48A8231DB8CD060014CBE9 /* UIImage+ColorTest.swift */,
 				3C5C99571DB8E8EC00083A4E /* TimeInterval+ConverterTest.swift */,
+				740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */,
 				3C5C99591DB8EDE700083A4E /* UIView+XibTest.swift */,
 				3C5C99691DB8F9BE00083A4E /* NibViewTest.swift */,
+				740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */,
 				3C0754AF1DD0C15C004DAB38 /* TestStoryboard.storyboard */,
 				3C5C995D1DB8F7D300083A4E /* TestViewWithOwner.xib */,
 				3C0754B41DD0D5CA004DAB38 /* TestViewWithoutOwner.xib */,
@@ -847,6 +853,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C5C996A1DB8F9BE00083A4E /* NibViewTest.swift in Sources */,
+				740CDBD51F2613270071BF63 /* Locale+Swizzling.swift in Sources */,
 				7406827E1D36976200FEA974 /* UIImageView_RotationTests.swift in Sources */,
 				740682751D36969D00FEA974 /* Dictionary+MapValuesTests.swift in Sources */,
 				3C48A8241DB8CD060014CBE9 /* UIImage+ColorTest.swift in Sources */,
@@ -855,6 +862,7 @@
 				740682741D36969D00FEA974 /* SequenceTypeHelperTests.swift in Sources */,
 				74DC1CD01D212967007F1853 /* CGRectTests.swift in Sources */,
 				CE2433281D913EB4001D6CC1 /* CGVector+OperatorsTest.swift in Sources */,
+				740CDBD71F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift in Sources */,
 				CE18E17D1D912A87003C8267 /* CGPoint+OperatorsTest.swift in Sources */,
 				7406827B1D3696B100FEA974 /* UIButton+StateTests.swift in Sources */,
 				33AED1841ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift in Sources */,
@@ -919,7 +927,7 @@
 				741151581D787CA600BDF488 /* SignedInteger+Random.swift in Sources */,
 				741151561D787B8100BDF488 /* CountableRange+Random.swift in Sources */,
 				74229A731D2A9E900057AA3C /* ObserverType.swift in Sources */,
-				74EA22FA1D2E9EEC007070C8 /* TimeInterval+intervals.swift in Sources */,
+				74EA22FA1D2E9EEC007070C8 /* TimeInterval+Intervals.swift in Sources */,
 				74EA23121D2EA400007070C8 /* UIButton+States.swift in Sources */,
 				3C6DB00A1DCCB2DF00320F5A /* NibView.swift in Sources */,
 				74DC1C391D1D87E5007F1853 /* CGRect+AspectRatio.swift in Sources */,
@@ -941,7 +949,7 @@
 				74EA230B1D2EA05D007070C8 /* String+Localized.swift in Sources */,
 				74229A701D2A9E7E0057AA3C /* Observable.swift in Sources */,
 				74229A741D2A9E900057AA3C /* ObserverType.swift in Sources */,
-				74EA22FB1D2E9EEC007070C8 /* TimeInterval+intervals.swift in Sources */,
+				74EA22FB1D2E9EEC007070C8 /* TimeInterval+Intervals.swift in Sources */,
 				CE2433241D913EA1001D6CC1 /* CGVector+Operators.swift in Sources */,
 				71070E801D79AB2100BAB340 /* CountableRange+Random.swift in Sources */,
 				71070E7E1D79AB1D00BAB340 /* SignedInteger+Random.swift in Sources */,
@@ -972,7 +980,7 @@
 				74229A751D2A9E900057AA3C /* ObserverType.swift in Sources */,
 				CE18E17A1D912A74003C8267 /* CGPoint+Operators.swift in Sources */,
 				CE65B3601D8AAD0E00AA9B2B /* String+Words.swift in Sources */,
-				74EA22FC1D2E9EEC007070C8 /* TimeInterval+intervals.swift in Sources */,
+				74EA22FC1D2E9EEC007070C8 /* TimeInterval+Intervals.swift in Sources */,
 				74EA23141D2EA400007070C8 /* UIButton+States.swift in Sources */,
 				3C6DB00B1DCCB2DF00320F5A /* NibView.swift in Sources */,
 				71070E811D79AB2100BAB340 /* CountableRange+Random.swift in Sources */,
@@ -1621,7 +1629,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1680,7 +1688,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Sources/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vimn.ViaSwiftUtils-iOS";

@@ -1,5 +1,5 @@
 //
-//  TimeInterval.swift
+//  TimeInterval+Intervals.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.

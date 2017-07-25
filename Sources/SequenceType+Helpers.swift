@@ -18,19 +18,6 @@
 
 import Foundation
 
-public extension Sequence {
-    
-    /// Find the first matching element in the collection
-    /// - returns: the found element. Optional.
-    final func findFirst(_ match: (Iterator.Element) throws -> Bool) rethrows -> Iterator.Element? {
-        for element in self where try match(element) {
-            return element
-        }
-        return nil
-    }
-    
-}
-
 public extension Sequence where Iterator.Element: Hashable {
     
     /// Creates an array of unique elements from the elements of the collection

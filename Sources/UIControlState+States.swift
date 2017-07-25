@@ -25,6 +25,7 @@ public extension UIControlState {
                 UIControlState.highlighted,
                 UIControlState.selected,
                 UIControlState.disabled,
+                UIControlState.focused,
                 UIControlState.application,
                 UIControlState.reserved]
     }

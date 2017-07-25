@@ -9,14 +9,33 @@ Examples of helpful methods:
 ```swift
 import ViaSwiftUtils
 
-let elements = [1, 2, 3, 4, 5, 6]
-let firstLarger4 = elements.findFirst { $0 > 4 }
+// Shuffling of collections
 
 var mutableNumberList = [1, 2, 3, 4, 5, 6]
 mutableNumberList.shuffleInPlace() //e.g. [4, 1, 5, 2, 6, 3]
 
+// getting unique items from sequences 
+
 let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
 let uniqueEmojis = emojis.unique() // ["😀", "👀", "😱", "😡"]
+
+// convenience optional unwrapping, asserts, i.e. crashes on debug but replaces with default value for production
+// from [chapter 'When to Force Unwrap' from Advanced Swift](https://www.objc.io/books/advanced-swift/)
+
+Int(s) !? (5, "Expected Integer")
+
+// UIKit Helpers, like rounding the corners of an image
+
+let image: UIImage = //...
+let roundedImage = image.cornersRounded(usingRadius: 5.0)
+
+// or continuously rotating a view
+
+let spinner: UIView = //...
+
+spinner.startRotating()
+// ...
+spinner.stopRotating()
 
 ```
 

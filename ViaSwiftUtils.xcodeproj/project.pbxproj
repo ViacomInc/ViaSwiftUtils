@@ -253,6 +253,9 @@
 		742C87871F2748F500DC39AE /* UIImageView+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Rotation.swift"; sourceTree = "<group>"; };
 		742C87881F2748F500DC39AE /* UIView+Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
 		742C87D71F2749BB00DC39AE /* ViaSwiftUtils.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViaSwiftUtils.podspec; sourceTree = SOURCE_ROOT; };
+		742C87F81F275B1100DC39AE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
+		742C87F91F27673400DC39AE /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LinuxMain.swift; path = ../LinuxMain.swift; sourceTree = "<group>"; };
+		742C87FB1F27674600DC39AE /* ViaSwiftUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaSwiftUtilsTests.swift; sourceTree = "<group>"; };
 		7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterForceUnwrappingTests.swift; sourceTree = "<group>"; };
 		74DC1C341D1D87E5007F1853 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
@@ -392,6 +395,16 @@
 			path = ViaSwiftUtils/UIKit;
 			sourceTree = "<group>";
 		};
+		742C87FA1F27674600DC39AE /* ViaSwiftUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				742C87F91F27673400DC39AE /* LinuxMain.swift */,
+				742C87FB1F27674600DC39AE /* ViaSwiftUtilsTests.swift */,
+			);
+			name = ViaSwiftUtilsTests;
+			path = Tests/ViaSwiftUtilsTests;
+			sourceTree = SOURCE_ROOT;
+		};
 		74DC1C321D1D87E5007F1853 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +422,7 @@
 		74DC1C4F1D1D8B61007F1853 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				742C87F81F275B1100DC39AE /* Package.swift */,
 				742C87D71F2749BB00DC39AE /* ViaSwiftUtils.podspec */,
 				74DC1D211D227075007F1853 /* README.md */,
 				74DC1D221D2276AB007F1853 /* LICENSE */,
@@ -506,6 +520,7 @@
 			children = (
 				74DC1C4F1D1D8B61007F1853 /* Metadata */,
 				74DC1C321D1D87E5007F1853 /* Sources */,
+				742C87FA1F27674600DC39AE /* ViaSwiftUtilsTests */,
 				74DC1C711D1D8D17007F1853 /* Example */,
 				74DC1C621D1D8CF5007F1853 /* iOSTests */,
 				74DC1C951D1D8D6E007F1853 /* Example Watch */,

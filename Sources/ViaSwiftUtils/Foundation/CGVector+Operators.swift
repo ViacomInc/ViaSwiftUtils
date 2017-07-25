@@ -16,8 +16,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import Foundation
 import CoreGraphics
+import Foundation
 
 public extension CGVector {
     /// Overloads + operator for two CGVectors addition

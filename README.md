@@ -45,7 +45,7 @@ spinner.stopRotating()
 ### Via Cocoapods
 
 ```
-pod 'ViaSwiftUtils', '1.0.0'
+pod 'ViaSwiftUtils', '1.0.1'
 ```
 
 
@@ -54,7 +54,7 @@ pod 'ViaSwiftUtils', '1.0.0'
 Add the following to your `Cartfile`
 
 ```
-github "ViacomInc/ViaSwiftUtils" ~> 1.0.0
+github "ViacomInc/ViaSwiftUtils" ~> 1.0.1
 ```
 
 ### Via Swift package manager
@@ -62,7 +62,7 @@ github "ViacomInc/ViaSwiftUtils" ~> 1.0.0
 Add the following to your `Package.swift` dependencies
 
 ```
-.Package(url: "https://github.com/ViacomInc/ViaSwiftUtils", majorVersion: 1, minor: 1),
+.Package(url: "https://github.com/ViacomInc/ViaSwiftUtils", majorVersion: 1, minor: 0),
 ```
 
 ### Importing

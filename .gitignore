@@ -28,6 +28,10 @@ DerivedData
 Pods/
 #*.lock
 
+# SPM
+
+.build
+/.previous-build
 
 # Carthage
 

@@ -20,7 +20,7 @@ import UIKit
 
 // MARK: - NibView Class
 
-/// This class is intended to be subclassed. If you provide an Xib-file inside the same Bundle the subclass
+/// This class is intended to be subclassed. If you provide a Xib-file inside the same Bundle the subclass
 /// lives in, this class will automatically find the layout file, load subviews from the xib and connect to
 /// the respective IBOutlets. The class is not intended to be used as is.
 open class NibView: UIView {
@@ -40,7 +40,7 @@ open class NibView: UIView {
         }
     }
 
-    /// Designated initializer for UIView instance that use the nib file
+    /// Designated initializer for UIView instance that uses the nib file
     ///
     /// - parameter frame: The frame of initialized instance
     ///

@@ -16,8 +16,7 @@ mutableNumberList.shuffleInPlace()
 let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
 let uniqueEmojis = emojis.unique()
 
-let image = UIImage(named: "puppy")
-let roundedCornerImage = image?.cornersRounded(usingRadius: 100)
+let image = #imageLiteral(resourceName: "puppy").cornersRounded(usingRadius: 100)
 
 //Example type-safe Observer Pattern
 enum VideoEvent {
@@ -60,14 +59,22 @@ Date().dayOfWeek
 
 let formatter = DateFormatter()
 formatter.dateFormat = "y"
-let fallOfRome = Date(timeIntervalSince1970: -TimeInterval.year * (1970 - 476))
+let twelveDays = 12 * TimeInterval.day
+let minutes = twelveDays / TimeInterval.minute
 
-formatter.string(from: fallOfRome)
+let gregorian = Calendar(identifier: .gregorian)
+let components = DateComponents(calendar: gregorian,
+                                era: 0, year: 44, month: 3, day: 15, hour: 13)
+let idesOfMarch = gregorian.date(from: components)!
+let weekDay = idesOfMarch.dayOfWeek
+let daysSince = idesOfMarch.days(to: Date())
+
+formatter.string(from: idesOfMarch)
 formatter.string(from: Date())
 
 formatter.locale = NSLocale(localeIdentifier: "hi_IN") as Locale!
 
-formatter.string(from: fallOfRome)
+formatter.string(from: idesOfMarch)
 formatter.string(from: Date())
 
 var dict1 = ["One": 1, "Two": 2, "Three": 3]

@@ -20,23 +20,27 @@
 
 Pod::Spec.new do |s|
   s.name             = "ViaSwiftUtils"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "Swift Utilities written with and for Viacom Inc."
 
 # This description is used to generate tags and improve search results.
-  s.description      = ""
+  s.description      = "Goodie box of small helper functions/extensions used in many Swift Apps at Viacom"
 
-  s.homepage         = "https://github.com/vimn-north/ViaSwiftUtils"
+  s.homepage         = "https://github.com/ViacomInc/ViaSwiftUtils"
   s.license          = { :type => 'Apache License, Version 2.0' }
   s.author           = { "Konrad Feiler" => "konrad.feiler@vimn.com" }
-  s.source           = { :git => "https://github.com/vimn-north/ViaSwiftUtils.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ViacomInc/ViaSwiftUtils.git", :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.4'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.11'
   s.watchos.deployment_target = '2.0'
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.ios.source_files = 'Sources/ViaSwiftUtils/**/*'
+  s.osx.source_files = 'Sources/ViaSwiftUtils/Foundation/*'
+  s.watchos.source_files = 'Sources/ViaSwiftUtils/Foundation/*'
+  s.tvos.source_files = 'Sources/ViaSwiftUtils/Foundation/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
 end

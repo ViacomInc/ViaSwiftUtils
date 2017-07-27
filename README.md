@@ -1,6 +1,7 @@
 # ViaSwiftUtils
 
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org/)
+[![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://swift.org/)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Swift Utilities written with and for Viacom Inc.
 
@@ -44,7 +45,7 @@ spinner.stopRotating()
 ### Via Cocoapods
 
 ```
-pod 'ViaSwiftUtils', '1.0.0'
+pod 'ViaSwiftUtils', '1.0.1'
 ```
 
 
@@ -53,7 +54,15 @@ pod 'ViaSwiftUtils', '1.0.0'
 Add the following to your `Cartfile`
 
 ```
-github "vimn-north/ViaSwiftUtils" ~> 1.0.0
+github "ViacomInc/ViaSwiftUtils" ~> 1.0.1
+```
+
+### Via Swift package manager
+
+Add the following to your `Package.swift` dependencies
+
+```
+.Package(url: "https://github.com/ViacomInc/ViaSwiftUtils", majorVersion: 1, minor: 0),
 ```
 
 ### Importing

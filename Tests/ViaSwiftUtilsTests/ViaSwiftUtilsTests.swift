@@ -2,7 +2,8 @@ import XCTest
 @testable import ViaSwiftUtils
 
 class ViaSwiftUtilsTests: XCTestCase {
-    func test_plusOperatorWithSuccessScenario() {
+    
+    func testPlusOperator() {
         // Given:
         let vector1 = CGVector(dx: 1.0, dy: 1.0)
         let vector2 = CGVector(dx: 1.0, dy: 1.0)
@@ -14,16 +15,16 @@ class ViaSwiftUtilsTests: XCTestCase {
         XCTAssertEqual(vector3, CGVector(dx: 2.0, dy: 2.0))
     }
     
-    func test_plusOperatorWithFailureScenario() {
+    func testMinusOperator() {
         // Given:
-        let vector1 = CGVector(dx: 1.0, dy: 1.0)
+        let vector1 = CGVector(dx: 2.0, dy: 2.0)
         let vector2 = CGVector(dx: 1.0, dy: 1.0)
         
         // When:
-        let vector3 = vector1 + vector2
+        let vector3 = vector1 - vector2
         
         // Then:
-        XCTAssertNotEqual(vector3, vector1)
+        XCTAssertEqual(vector3, CGVector(dx: 1.0, dy: 1.0))
     }
     
     func testShuffleDoesNotChangeCount() {
@@ -97,8 +98,8 @@ class ViaSwiftUtilsTests: XCTestCase {
 
 
     static var allTests = [
-        ("test_plusOperatorWithSuccessScenario", test_plusOperatorWithSuccessScenario),
-        ("test_plusOperatorWithFailureScenario", test_plusOperatorWithFailureScenario),
+        ("testPlusOperator", testPlusOperator),
+        ("testMinusOperator", testMinusOperator),
         ("testShuffleDoesNotChangeCount", testShuffleDoesNotChangeCount),
         ("testShuffledArraysKeepElements", testShuffledArraysKeepElements),
         ("testTomorrow", testTomorrow),

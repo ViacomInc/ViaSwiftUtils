@@ -21,7 +21,7 @@ import XCTest
 
 class CGVectorOperatorsTest: XCTestCase {
     
-    func test_plusOperatorWithSuccessScenario() {
+    func testPlusOperator() {
         // Given:
         let vector1 = CGVector(dx: 1.0, dy: 1.0)
         let vector2 = CGVector(dx: 1.0, dy: 1.0)
@@ -33,19 +33,7 @@ class CGVectorOperatorsTest: XCTestCase {
         XCTAssertEqual(vector3, CGVector(dx: 2.0, dy: 2.0))
     }
 
-    func test_plusOperatorWithFailureScenario() {
-        // Given:
-        let vector1 = CGVector(dx: 1.0, dy: 1.0)
-        let vector2 = CGVector(dx: 1.0, dy: 1.0)
-
-        // When:
-        let vector3 = vector1 + vector2
-
-        // Then:
-        XCTAssertNotEqual(vector3, vector1)
-    }
-
-    func test_minusOperatorWithSuccessScenario() {
+    func testMinusOperator() {
         // Given:
         let vector1 = CGVector(dx: 2.0, dy: 2.0)
         let vector2 = CGVector(dx: 1.0, dy: 1.0)
@@ -57,15 +45,4 @@ class CGVectorOperatorsTest: XCTestCase {
         XCTAssertEqual(vector3, CGVector(dx: 1.0, dy: 1.0))
     }
 
-    func test_minusOperatorWithFailureScenario() {
-        // Given:
-        let vector1 = CGVector(dx: 2.0, dy: 2.0)
-        let vector2 = CGVector(dx: 1.0, dy: 1.0)
-
-        // When:
-        let vector3 = vector1 - vector2
-        
-        // Then:
-        XCTAssertNotEqual(vector3, vector1)
-    }
 }

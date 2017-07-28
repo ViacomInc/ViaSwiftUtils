@@ -10,4 +10,5 @@ install:
   - ./install_swiftlint.sh
 
 script:
+  - xctool -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS build test
   - swiftlint

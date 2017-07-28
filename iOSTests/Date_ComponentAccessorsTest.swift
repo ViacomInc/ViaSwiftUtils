@@ -22,11 +22,14 @@ import XCTest
 class DateComponentAccessorsTest: XCTestCase {
     
     func testDateComponentAsInts() {
-        // Given, When
+        // Given
         let eightAM1970 = Date(timeIntervalSince1970: 8 * TimeInterval.hour + 0.5 * TimeInterval.minute)
 
+        // When in UTC time zone then
+        if let utcZone = TimeZone(abbreviation: "UTC") { NSTimeZone.default = utcZone }
+        
         // Then
-        XCTAssertEqual(eightAM1970.hourOfDay, 9, "Expected 8:00AM 1/1/1970 to be in the 9th hour of the day")
+        XCTAssertEqual(eightAM1970.hourOfDay, 8, "Expected 8:00AM 1/1/1970 to be in the 8th hour of the day")
         XCTAssertEqual(eightAM1970.dayOfWeek, 5, "Expected 8:00AM 1/1/1970 to be a thursday")
         XCTAssertEqual(eightAM1970.year, 1970, "Expected 8:00AM 1/1/1970 to be year 1970")
     }

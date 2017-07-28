@@ -2,74 +2,119 @@
 
 [![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://swift.org/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/cocoapods/v/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
+[![Platform](https://img.shields.io/cocoapods/p/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
+[![Build Status](https://travis-ci.org/ViacomInc/ViaSwiftUtils.svg?branch=master)](https://travis-ci.org/ViacomInc/ViaSwiftUtils)
+[![License](https://img.shields.io/cocoapods/l/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
 
-Swift Utilities written with and for Viacom Inc.
+What can `ViaSwiftUtils` do for you? Here are some examples we compiled:
 
-Examples of helpful methods:
 
+Tired of spelling out `NSLocalizedString` every time you localize a string?
 ```swift
-import ViaSwiftUtils
-
-// Shuffling of collections
-
-var mutableNumberList = [1, 2, 3, 4, 5, 6]
-mutableNumberList.shuffleInPlace() //e.g. [4, 1, 5, 2, 6, 3]
-
-// getting unique items from sequences 
-
-let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
-let uniqueEmojis = emojis.unique() // ["😀", "👀", "😱", "😡"]
-
-// convenience optional unwrapping, asserts, i.e. crashes on debug but replaces with default value for production
-// from [chapter 'When to Force Unwrap' from Advanced Swift](https://www.objc.io/books/advanced-swift/)
-
-Int(s) !? (5, "Expected Integer")
-
-// UIKit Helpers, like rounding the corners of an image
-
-let image: UIImage = //...
-let roundedImage = image.cornersRounded(usingRadius: 5.0)
-
-// or continuously rotating a view
-
-let spinner: UIView = //...
-
-spinner.startRotating()
-// ...
-spinner.stopRotating()
-
+title = "HomePage.title".localized
+print(title) // 'Main', '頭版', 'صفحه نخست', 'Startseite'
 ```
 
-## Installation
+--------
 
-### Via Cocoapods
+Want to find the longest word in a string?
+```swift
+print(germanText.longestWord())
+// 'Verkehrsinfrastrukturfinanzierungsgesellschaft'
+```
 
+--------
+
+Need an array (or any other `MutableCollection`) shuffled? [^3]
+```swift
+var numbers = [1, 2, 3, 4, 5, 6]
+numbers.shuffleInPlace() //e.g. [4, 1, 5, 2, 6, 3]
+```
+
+--------
+
+Want all the unique entries in a `Sequence` with `Hashable` elements?
+```swift
+let emojis = ["😀", "👀", "😱", "😡", "👀", "😀", "👀", "😱"]
+let uniqueEmojis = emojis.unique() // ["😀", "👀", "😱", "😡"]
+```
+
+--------
+
+Is dealing with `TimeInterval` inconvenient?
+```swift
+let twelveDays = 12 * TimeInterval.day
+let minutes = twelveDays / TimeInterval.minute // 17280
+```
+
+--------
+
+Need to create an image with rounded corners from an existing image?
+
+![Rounded image](/Images/puppy.png)
+
+--------
+
+Does one of the views in your app need to rotate? 
+```swift
+someView.startRotating()
+// ...
+someView.stopRotating()
+```
+
+--------
+
+And more date helper methods & variables:
+```swift
+let components = DateComponents(calendar: gregorian, era: 0,
+                                year: 44, month: 3, day: 15, hour: 13)
+let idesOfMarch = gregorian.date(from: components)!
+let weekDay = idesOfMarch.dayOfWeek // 6
+let daysSince = idesOfMarch.days(to: Date()) // 752533
+```
+
+&nbsp;
+
+These are just a few examples. We are expanding the library continuously and we accept Pull-Requests ☺️  
+
+&nbsp;
+
+
+## How to install [ViaSwiftUtils](https://github.com/ViacomInc/ViaSwiftUtils)
+
+&nbsp;
+
+#### Via Cocoapods
+Add the following line to your `Podfile`.
+Remember you'll need to enable `use_frameworks!`.
 ```
 pod 'ViaSwiftUtils', '1.0.1'
 ```
 
 
-### Via Carthage
-
-Add the following to your `Cartfile`
-
+#### Via Carthage
+Add the following line to your `Cartfile`
 ```
 github "ViacomInc/ViaSwiftUtils" ~> 1.0.1
 ```
 
-### Via Swift package manager
+#### Via Swift package manager
 
 Add the following to your `Package.swift` dependencies
-
-```
+```swift
 .Package(url: "https://github.com/ViacomInc/ViaSwiftUtils", majorVersion: 1, minor: 0),
 ```
+I should mention that only the `Foundation` functions that are part of `ViaSwiftUtils` work via SPM, as `UIKit` is not available on Linux or MacOS.
 
-### Importing
 
+#### Importing
+After you installed the framework via one of the 3 above methods, import it in your `.swift` file.
 ```swift
 import ViaSwiftUtils
 ```
+
+&nbsp;
 
 
 ## License

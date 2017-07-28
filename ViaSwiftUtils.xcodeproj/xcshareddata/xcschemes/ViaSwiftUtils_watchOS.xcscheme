@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74DC1C6F1D1D8D17007F1853"
-               BuildableName = "ViaSwiftUtils Example.app"
-               BlueprintName = "ViaSwiftUtils Example"
+               BlueprintIdentifier = "74E063F61D1D7F4700C0B56B"
+               BuildableName = "ViaSwiftUtils.framework"
+               BlueprintName = "ViaSwiftUtils_watchOS"
                ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "74DC1C841D1D8D17007F1853"
-               BuildableName = "ViaSwiftUtils ExampleTests.xctest"
-               BlueprintName = "ViaSwiftUtils ExampleTests"
-               ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74DC1C6F1D1D8D17007F1853"
-            BuildableName = "ViaSwiftUtils Example.app"
-            BlueprintName = "ViaSwiftUtils Example"
-            ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74DC1C6F1D1D8D17007F1853"
-            BuildableName = "ViaSwiftUtils Example.app"
-            BlueprintName = "ViaSwiftUtils Example"
+            BlueprintIdentifier = "74E063F61D1D7F4700C0B56B"
+            BuildableName = "ViaSwiftUtils.framework"
+            BlueprintName = "ViaSwiftUtils_watchOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "74DC1C6F1D1D8D17007F1853"
-            BuildableName = "ViaSwiftUtils Example.app"
-            BlueprintName = "ViaSwiftUtils Example"
+            BlueprintIdentifier = "74E063F61D1D7F4700C0B56B"
+            BuildableName = "ViaSwiftUtils.framework"
+            BlueprintName = "ViaSwiftUtils_watchOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

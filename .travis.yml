@@ -2,12 +2,16 @@
 # * http://www.objc.io/issue-6/travis-ci.html
 
 language: objective-c
+cache: bundler
 osx_image: xcode8.3
 xcode_workspace: ViaSwiftUtils.xcworkspace
 xcode_scheme: ViaSwiftUtils_iOS
 
 install:
   - ./install_swiftlint.sh
+
+before_script:
+  - bundle install
 
 script:
   - open -a "simulator" --args -CurrentDeviceUDID AB104968-7058-4AE2-A95D-DBB77634C642

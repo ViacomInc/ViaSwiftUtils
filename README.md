@@ -3,7 +3,6 @@
 [![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://swift.org/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Swift Utilities written with and for Viacom Inc.
 
 What can `ViaSwiftUtils` do for you? Here are some examples we compiled:
 
@@ -51,7 +50,7 @@ let minutes = twelveDays / TimeInterval.minute // 17280
 
 Need to create an image with rounded corners from an existing image?
 
-![](/content/images/2017/07/puppy.png )
+![Rounded image](/Images/puppy.png)
 
 --------
 
@@ -80,11 +79,11 @@ These are just a few examples. We are expanding the library continuously and we 
 &nbsp;
 
 
-### How to install [ViaSwiftUtils](https://github.com/ViacomInc/ViaSwiftUtils)
+## How to install [ViaSwiftUtils](https://github.com/ViacomInc/ViaSwiftUtils)
 
 &nbsp;
 
-##### Via Cocoapods
+#### Via Cocoapods
 Add the following line to your `Podfile`.
 Remember you'll need to enable `use_frameworks!`.
 ```
@@ -92,13 +91,13 @@ pod 'ViaSwiftUtils', '1.0.1'
 ```
 
 
-##### Via Carthage
+#### Via Carthage
 Add the following line to your `Cartfile`
 ```
 github "ViacomInc/ViaSwiftUtils" ~> 1.0.1
 ```
 
-##### Via Swift package manager
+#### Via Swift package manager
 
 Add the following to your `Package.swift` dependencies
 ```swift
@@ -107,7 +106,7 @@ Add the following to your `Package.swift` dependencies
 I should mention that only the `Foundation` functions that are part of `ViaSwiftUtils` work via SPM, as `UIKit` is not available on Linux or MacOS.
 
 
-##### Importing
+#### Importing
 After you installed the framework via one of the 3 above methods, import it in your `.swift` file.
 ```swift
 import ViaSwiftUtils

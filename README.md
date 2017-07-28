@@ -32,7 +32,6 @@ var numbers = [1, 2, 3, 4, 5, 6]
 numbers.shuffleInPlace() //e.g. [4, 1, 5, 2, 6, 3]
 ```
 
-
 --------
 
 Want all the unique entries in a `Sequence` with `Hashable` elements?

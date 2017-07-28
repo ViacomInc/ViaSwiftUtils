@@ -2,7 +2,9 @@
 
 [![Swift 3.1](https://img.shields.io/badge/Swift-3.1-orange.svg?style=flat)](https://swift.org/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
+[![Version](https://img.shields.io/cocoapods/v/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
+[![Platform](https://img.shields.io/cocoapods/p/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
+[![License](https://img.shields.io/cocoapods/l/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
 
 What can `ViaSwiftUtils` do for you? Here are some examples we compiled:
 

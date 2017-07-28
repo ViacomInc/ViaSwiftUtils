@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "74E064031D1D7F7D00C0B56B"
                BuildableName = "ViaSwiftUtils.framework"
-               BlueprintName = "ViaSwiftUtils tvOS"
+               BlueprintName = "ViaSwiftUtils_tvOS"
                ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74E064031D1D7F7D00C0B56B"
             BuildableName = "ViaSwiftUtils.framework"
-            BlueprintName = "ViaSwiftUtils tvOS"
+            BlueprintName = "ViaSwiftUtils_tvOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74E064031D1D7F7D00C0B56B"
             BuildableName = "ViaSwiftUtils.framework"
-            BlueprintName = "ViaSwiftUtils tvOS"
+            BlueprintName = "ViaSwiftUtils_tvOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74E064031D1D7F7D00C0B56B"
             BuildableName = "ViaSwiftUtils.framework"
-            BlueprintName = "ViaSwiftUtils tvOS"
+            BlueprintName = "ViaSwiftUtils_tvOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

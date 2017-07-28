@@ -254,7 +254,7 @@
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		74DC1C371D1D87E5007F1853 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViaSwiftUtils.h; sourceTree = "<group>"; };
-		74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ViaSwiftUtils iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViaSwiftUtils_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC1C701D1D8D17007F1853 /* ViaSwiftUtils Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC1C941D1D8D6E007F1853 /* ViaSwiftUtils Example Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViaSwiftUtils Example Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DC1CA01D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ViaSwiftUtils Example Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -528,7 +528,7 @@
 				74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */,
 				74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */,
 				74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */,
-				74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils iOSTests.xctest */,
+				74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils_iOSTests.xctest */,
 				74DC1C701D1D8D17007F1853 /* ViaSwiftUtils Example.app */,
 				74DC1C941D1D8D6E007F1853 /* ViaSwiftUtils Example Watch.app */,
 				74DC1CA01D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension.appex */,
@@ -567,9 +567,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		74DC1C601D1D8CF5007F1853 /* ViaSwiftUtils iOSTests */ = {
+		74DC1C601D1D8CF5007F1853 /* ViaSwiftUtils_iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74DC1C691D1D8CF5007F1853 /* Build configuration list for PBXNativeTarget "ViaSwiftUtils iOSTests" */;
+			buildConfigurationList = 74DC1C691D1D8CF5007F1853 /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_iOSTests" */;
 			buildPhases = (
 				74DC1C5D1D1D8CF5007F1853 /* Sources */,
 				74DC1C5E1D1D8CF5007F1853 /* Frameworks */,
@@ -580,9 +580,9 @@
 			dependencies = (
 				74DC1C681D1D8CF5007F1853 /* PBXTargetDependency */,
 			);
-			name = "ViaSwiftUtils iOSTests";
+			name = ViaSwiftUtils_iOSTests;
 			productName = "ViaSwiftUtils iOSTests";
-			productReference = 74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils iOSTests.xctest */;
+			productReference = 74DC1C611D1D8CF5007F1853 /* ViaSwiftUtils_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		74DC1C6F1D1D8D17007F1853 /* ViaSwiftUtils Example */ = {
@@ -658,9 +658,9 @@
 			productReference = 74DC1CBF1D1D8DA0007F1853 /* ViaSwiftUtilsTests tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils iOS */ = {
+		74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74E063EC1D1D7E8000C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils iOS" */;
+			buildConfigurationList = 74E063EC1D1D7E8000C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_iOS" */;
 			buildPhases = (
 				74E063D61D1D7E8000C0B56B /* Sources */,
 				74E063D71D1D7E8000C0B56B /* Frameworks */,
@@ -672,14 +672,14 @@
 			);
 			dependencies = (
 			);
-			name = "ViaSwiftUtils iOS";
+			name = ViaSwiftUtils_iOS;
 			productName = "ViaSwiftUtils iOS";
 			productReference = 74E063DB1D1D7E8000C0B56B /* ViaSwiftUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		74E063F61D1D7F4700C0B56B /* ViaSwiftUtils watchOS */ = {
+		74E063F61D1D7F4700C0B56B /* ViaSwiftUtils_watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74E063FC1D1D7F4800C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils watchOS" */;
+			buildConfigurationList = 74E063FC1D1D7F4800C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_watchOS" */;
 			buildPhases = (
 				74E063F21D1D7F4700C0B56B /* Sources */,
 				74E063F31D1D7F4700C0B56B /* Frameworks */,
@@ -690,14 +690,14 @@
 			);
 			dependencies = (
 			);
-			name = "ViaSwiftUtils watchOS";
+			name = ViaSwiftUtils_watchOS;
 			productName = "ViaSwiftUtils watchOS";
 			productReference = 74E063F71D1D7F4700C0B56B /* ViaSwiftUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		74E064031D1D7F7D00C0B56B /* ViaSwiftUtils tvOS */ = {
+		74E064031D1D7F7D00C0B56B /* ViaSwiftUtils_tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74E064151D1D7F7D00C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils tvOS" */;
+			buildConfigurationList = 74E064151D1D7F7D00C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_tvOS" */;
 			buildPhases = (
 				74E063FF1D1D7F7D00C0B56B /* Sources */,
 				74E064001D1D7F7D00C0B56B /* Frameworks */,
@@ -708,7 +708,7 @@
 			);
 			dependencies = (
 			);
-			name = "ViaSwiftUtils tvOS";
+			name = ViaSwiftUtils_tvOS;
 			productName = "ViaSwiftUtils tvOS";
 			productReference = 74E064041D1D7F7D00C0B56B /* ViaSwiftUtils.framework */;
 			productType = "com.apple.product-type.framework";
@@ -777,10 +777,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils iOS */,
-				74E063F61D1D7F4700C0B56B /* ViaSwiftUtils watchOS */,
-				74E064031D1D7F7D00C0B56B /* ViaSwiftUtils tvOS */,
-				74DC1C601D1D8CF5007F1853 /* ViaSwiftUtils iOSTests */,
+				74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils_iOS */,
+				74E063F61D1D7F4700C0B56B /* ViaSwiftUtils_watchOS */,
+				74E064031D1D7F7D00C0B56B /* ViaSwiftUtils_tvOS */,
+				74DC1C601D1D8CF5007F1853 /* ViaSwiftUtils_iOSTests */,
 				74DC1C6F1D1D8D17007F1853 /* ViaSwiftUtils Example */,
 				74DC1C931D1D8D6E007F1853 /* ViaSwiftUtils Example Watch */,
 				74DC1C9F1D1D8D6E007F1853 /* ViaSwiftUtils Example Watch Extension */,
@@ -1026,7 +1026,7 @@
 /* Begin PBXTargetDependency section */
 		74DC1C681D1D8CF5007F1853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils iOS */;
+			target = 74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils_iOS */;
 			targetProxy = 74DC1C671D1D8CF5007F1853 /* PBXContainerItemProxy */;
 		};
 		74DC1CA31D1D8D6E007F1853 /* PBXTargetDependency */ = {
@@ -1041,12 +1041,12 @@
 		};
 		74DC1CC61D1D8DA0007F1853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74E064031D1D7F7D00C0B56B /* ViaSwiftUtils tvOS */;
+			target = 74E064031D1D7F7D00C0B56B /* ViaSwiftUtils_tvOS */;
 			targetProxy = 74DC1CC51D1D8DA0007F1853 /* PBXContainerItemProxy */;
 		};
 		74DC1CF11D214B97007F1853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils iOS */;
+			target = 74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils_iOS */;
 			targetProxy = 74DC1CF01D214B97007F1853 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1985,7 +1985,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74DC1C691D1D8CF5007F1853 /* Build configuration list for PBXNativeTarget "ViaSwiftUtils iOSTests" */ = {
+		74DC1C691D1D8CF5007F1853 /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74DC1C6A1D1D8CF5007F1853 /* Debug */,
@@ -2039,7 +2039,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74E063EC1D1D7E8000C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils iOS" */ = {
+		74E063EC1D1D7E8000C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74E063ED1D1D7E8000C0B56B /* Debug */,
@@ -2048,7 +2048,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74E063FC1D1D7F4800C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils watchOS" */ = {
+		74E063FC1D1D7F4800C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74E063FD1D1D7F4800C0B56B /* Debug */,
@@ -2057,7 +2057,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74E064151D1D7F7D00C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils tvOS" */ = {
+		74E064151D1D7F7D00C0B56B /* Build configuration list for PBXNativeTarget "ViaSwiftUtils_tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74E064161D1D7F7D00C0B56B /* Debug */,

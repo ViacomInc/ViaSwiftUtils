@@ -4,4 +4,4 @@
 language: objective-c
 osx_image: xcode8.3
 xcode_workspace: ViaSwiftUtils.xcworkspace
-xcode_scheme: ViaSwiftUtils iOS
+xcode_scheme: ViaSwiftUtils_iOS

@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "74E063F61D1D7F4700C0B56B"
                BuildableName = "ViaSwiftUtils.framework"
-               BlueprintName = "ViaSwiftUtils watchOS"
+               BlueprintName = "ViaSwiftUtils_watchOS"
                ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74E063F61D1D7F4700C0B56B"
             BuildableName = "ViaSwiftUtils.framework"
-            BlueprintName = "ViaSwiftUtils watchOS"
+            BlueprintName = "ViaSwiftUtils_watchOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "74E063F61D1D7F4700C0B56B"
             BuildableName = "ViaSwiftUtils.framework"
-            BlueprintName = "ViaSwiftUtils watchOS"
+            BlueprintName = "ViaSwiftUtils_watchOS"
             ReferencedContainer = "container:ViaSwiftUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

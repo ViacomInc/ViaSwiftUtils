@@ -3,30 +3,6 @@ import XCTest
 
 class ViaSwiftUtilsTests: XCTestCase {
     
-    func testPlusOperator() {
-        // Given:
-        let vector1 = CGVector(dx: 1.0, dy: 1.0)
-        let vector2 = CGVector(dx: 1.0, dy: 1.0)
-        
-        // When:
-        let vector3 = vector1 + vector2
-        
-        // Then:
-        XCTAssertEqual(vector3, CGVector(dx: 2.0, dy: 2.0))
-    }
-    
-    func testMinusOperator() {
-        // Given:
-        let vector1 = CGVector(dx: 2.0, dy: 2.0)
-        let vector2 = CGVector(dx: 1.0, dy: 1.0)
-        
-        // When:
-        let vector3 = vector1 - vector2
-        
-        // Then:
-        XCTAssertEqual(vector3, CGVector(dx: 1.0, dy: 1.0))
-    }
-    
     func testShuffleDoesNotChangeCount() {
         // Given a shuffled
         var mutableNumberList = [1, 2, 3, 4, 5, 6]
@@ -98,8 +74,6 @@ class ViaSwiftUtilsTests: XCTestCase {
 
 
     static var allTests = [
-        ("testPlusOperator", testPlusOperator),
-        ("testMinusOperator", testMinusOperator),
         ("testShuffleDoesNotChangeCount", testShuffleDoesNotChangeCount),
         ("testShuffledArraysKeepElements", testShuffledArraysKeepElements),
         ("testTomorrow", testTomorrow),

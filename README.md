@@ -89,14 +89,14 @@ These are just a few examples. We are expanding the library continuously and we 
 Add the following line to your `Podfile`.
 Remember you'll need to enable `use_frameworks!`.
 ```
-pod 'ViaSwiftUtils', '1.0.1'
+pod 'ViaSwiftUtils', '1.0.2'
 ```
 
 
 #### Via Carthage
 Add the following line to your `Cartfile`
 ```
-github "ViacomInc/ViaSwiftUtils" ~> 1.0.1
+github "ViacomInc/ViaSwiftUtils" ~> 1.0.2
 ```
 
 #### Via Swift package manager

@@ -25,15 +25,6 @@
 		740CDBD51F2613270071BF63 /* Locale+Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */; };
 		740CDBD71F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */; };
 		742194991D785F1000A73CF0 /* Date_TimesBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */; };
-		742C87891F2748F500DC39AE /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C876E1F2748F500DC39AE /* CGPoint+Operators.swift */; };
-		742C878A1F2748F500DC39AE /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C876E1F2748F500DC39AE /* CGPoint+Operators.swift */; };
-		742C878B1F2748F500DC39AE /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C876E1F2748F500DC39AE /* CGPoint+Operators.swift */; };
-		742C878C1F2748F500DC39AE /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C876F1F2748F500DC39AE /* CGRect+AspectRatio.swift */; };
-		742C878D1F2748F500DC39AE /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C876F1F2748F500DC39AE /* CGRect+AspectRatio.swift */; };
-		742C878E1F2748F500DC39AE /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C876F1F2748F500DC39AE /* CGRect+AspectRatio.swift */; };
-		742C878F1F2748F500DC39AE /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87701F2748F500DC39AE /* CGVector+Operators.swift */; };
-		742C87901F2748F500DC39AE /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87701F2748F500DC39AE /* CGVector+Operators.swift */; };
-		742C87911F2748F500DC39AE /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87701F2748F500DC39AE /* CGVector+Operators.swift */; };
 		742C87921F2748F500DC39AE /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87711F2748F500DC39AE /* CountableRange+Random.swift */; };
 		742C87931F2748F500DC39AE /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87711F2748F500DC39AE /* CountableRange+Random.swift */; };
 		742C87941F2748F500DC39AE /* CountableRange+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87711F2748F500DC39AE /* CountableRange+Random.swift */; };
@@ -218,9 +209,6 @@
 		740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Swizzling.swift"; sourceTree = "<group>"; };
 		740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+ConverterTestsArabic.swift"; sourceTree = "<group>"; };
 		742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_TimesBetween.swift; path = iOSTests/Date_TimesBetween.swift; sourceTree = SOURCE_ROOT; };
-		742C876E1F2748F500DC39AE /* CGPoint+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
-		742C876F1F2748F500DC39AE /* CGRect+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectRatio.swift"; sourceTree = "<group>"; };
-		742C87701F2748F500DC39AE /* CGVector+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
 		742C87711F2748F500DC39AE /* CountableRange+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableRange+Random.swift"; sourceTree = "<group>"; };
 		742C87721F2748F500DC39AE /* Date+ComponentAccessors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ComponentAccessors.swift"; sourceTree = "<group>"; };
 		742C87731F2748F500DC39AE /* Date+TimesBetweenDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+TimesBetweenDates.swift"; sourceTree = "<group>"; };
@@ -251,6 +239,9 @@
 		7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterForceUnwrappingTests.swift; sourceTree = "<group>"; };
 		745D354B1F2F0FF90039BC14 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = SOURCE_ROOT; };
 		745D354C1F2F10070039BC14 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
+		745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
+		745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectRatio.swift"; sourceTree = "<group>"; };
+		745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
 		74DC1C341D1D87E5007F1853 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
@@ -350,9 +341,6 @@
 		742C876D1F2748F500DC39AE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				742C876E1F2748F500DC39AE /* CGPoint+Operators.swift */,
-				742C876F1F2748F500DC39AE /* CGRect+AspectRatio.swift */,
-				742C87701F2748F500DC39AE /* CGVector+Operators.swift */,
 				742C87711F2748F500DC39AE /* CountableRange+Random.swift */,
 				742C87721F2748F500DC39AE /* Date+ComponentAccessors.swift */,
 				742C87731F2748F500DC39AE /* Date+TimesBetweenDates.swift */,
@@ -376,6 +364,9 @@
 		742C87801F2748F500DC39AE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */,
+				745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */,
+				745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */,
 				742C87811F2748F500DC39AE /* Bundle+ApplicationInfo.swift */,
 				742C87821F2748F500DC39AE /* NibView.swift */,
 				742C87831F2748F500DC39AE /* UIButton+States.swift */,
@@ -945,16 +936,13 @@
 				742C87AD1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87C21F2748F500DC39AE /* NibView.swift in Sources */,
 				742C87921F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
-				742C87891F2748F500DC39AE /* CGPoint+Operators.swift in Sources */,
 				742C879E1F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
-				742C878F1F2748F500DC39AE /* CGVector+Operators.swift in Sources */,
 				742C87D41F2748F500DC39AE /* UIView+Xib.swift in Sources */,
 				742C87CB1F2748F500DC39AE /* UIImage+Color.swift in Sources */,
 				742C87CE1F2748F500DC39AE /* UIImage+Rounding.swift in Sources */,
 				742C87BF1F2748F500DC39AE /* Bundle+ApplicationInfo.swift in Sources */,
 				742C87C81F2748F500DC39AE /* UIControlState+States.swift in Sources */,
 				742C87D11F2748F500DC39AE /* UIImageView+Rotation.swift in Sources */,
-				742C878C1F2748F500DC39AE /* CGRect+AspectRatio.swift in Sources */,
 				742C87A71F2748F500DC39AE /* ObserverType.swift in Sources */,
 				742C87B31F2748F500DC39AE /* String+Localized.swift in Sources */,
 				742C87A41F2748F500DC39AE /* Observable.swift in Sources */,
@@ -976,10 +964,7 @@
 				742C87BD1F2748F500DC39AE /* TimeInterval+Intervals.swift in Sources */,
 				742C87AE1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87931F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
-				742C878A1F2748F500DC39AE /* CGPoint+Operators.swift in Sources */,
 				742C879F1F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
-				742C87901F2748F500DC39AE /* CGVector+Operators.swift in Sources */,
-				742C878D1F2748F500DC39AE /* CGRect+AspectRatio.swift in Sources */,
 				742C87A81F2748F500DC39AE /* ObserverType.swift in Sources */,
 				742C87B41F2748F500DC39AE /* String+Localized.swift in Sources */,
 				742C87A51F2748F500DC39AE /* Observable.swift in Sources */,
@@ -1003,16 +988,13 @@
 				742C87AF1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87C41F2748F500DC39AE /* NibView.swift in Sources */,
 				742C87941F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
-				742C878B1F2748F500DC39AE /* CGPoint+Operators.swift in Sources */,
 				742C87A01F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
-				742C87911F2748F500DC39AE /* CGVector+Operators.swift in Sources */,
 				742C87D61F2748F500DC39AE /* UIView+Xib.swift in Sources */,
 				742C87CD1F2748F500DC39AE /* UIImage+Color.swift in Sources */,
 				742C87D01F2748F500DC39AE /* UIImage+Rounding.swift in Sources */,
 				742C87C11F2748F500DC39AE /* Bundle+ApplicationInfo.swift in Sources */,
 				742C87CA1F2748F500DC39AE /* UIControlState+States.swift in Sources */,
 				742C87D31F2748F500DC39AE /* UIImageView+Rotation.swift in Sources */,
-				742C878E1F2748F500DC39AE /* CGRect+AspectRatio.swift in Sources */,
 				742C87A91F2748F500DC39AE /* ObserverType.swift in Sources */,
 				742C87B51F2748F500DC39AE /* String+Localized.swift in Sources */,
 				742C87A61F2748F500DC39AE /* Observable.swift in Sources */,

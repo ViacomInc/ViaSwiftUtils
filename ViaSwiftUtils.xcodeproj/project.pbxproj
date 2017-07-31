@@ -249,6 +249,8 @@
 		742C87F91F27673400DC39AE /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LinuxMain.swift; path = ../LinuxMain.swift; sourceTree = "<group>"; };
 		742C87FB1F27674600DC39AE /* ViaSwiftUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaSwiftUtilsTests.swift; sourceTree = "<group>"; };
 		7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterForceUnwrappingTests.swift; sourceTree = "<group>"; };
+		745D354B1F2F0FF90039BC14 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = SOURCE_ROOT; };
+		745D354C1F2F10070039BC14 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
 		74DC1C341D1D87E5007F1853 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
@@ -414,10 +416,12 @@
 		74DC1C4F1D1D8B61007F1853 /* Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				742C87F81F275B1100DC39AE /* Package.swift */,
-				742C87D71F2749BB00DC39AE /* ViaSwiftUtils.podspec */,
-				74DC1D211D227075007F1853 /* README.md */,
+				745D354C1F2F10070039BC14 /* .travis.yml */,
+				745D354B1F2F0FF90039BC14 /* Dangerfile */,
 				74DC1D221D2276AB007F1853 /* LICENSE */,
+				742C87F81F275B1100DC39AE /* Package.swift */,
+				74DC1D211D227075007F1853 /* README.md */,
+				742C87D71F2749BB00DC39AE /* ViaSwiftUtils.podspec */,
 			);
 			path = Metadata;
 			sourceTree = "<group>";

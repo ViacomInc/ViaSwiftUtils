@@ -87,6 +87,12 @@
 		742C87D41F2748F500DC39AE /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87881F2748F500DC39AE /* UIView+Xib.swift */; };
 		742C87D61F2748F500DC39AE /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87881F2748F500DC39AE /* UIView+Xib.swift */; };
 		7453400B1DDCC061008029C1 /* BetterForceUnwrappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */; };
+		745D35741F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */; };
+		745D35751F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */; };
+		745D35761F2F76F60039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */; };
+		745D35771F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */; };
+		745D35781F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */; };
+		745D35791F2F76F60039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */; };
 		74DC1C4C1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4D1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4E1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -936,6 +942,7 @@
 				742C87AD1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87C21F2748F500DC39AE /* NibView.swift in Sources */,
 				742C87921F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
+				745D35781F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */,
 				742C879E1F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
 				742C87D41F2748F500DC39AE /* UIView+Xib.swift in Sources */,
 				742C87CB1F2748F500DC39AE /* UIImage+Color.swift in Sources */,
@@ -945,6 +952,8 @@
 				742C87D11F2748F500DC39AE /* UIImageView+Rotation.swift in Sources */,
 				742C87A71F2748F500DC39AE /* ObserverType.swift in Sources */,
 				742C87B31F2748F500DC39AE /* String+Localized.swift in Sources */,
+				745D35771F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */,
+				745D35791F2F76F60039BC14 /* CGVector+Operators.swift in Sources */,
 				742C87A41F2748F500DC39AE /* Observable.swift in Sources */,
 				742C879B1F2748F500DC39AE /* Dictionary+MapValues.swift in Sources */,
 				742C87951F2748F500DC39AE /* Date+ComponentAccessors.swift in Sources */,
@@ -988,6 +997,7 @@
 				742C87AF1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87C41F2748F500DC39AE /* NibView.swift in Sources */,
 				742C87941F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
+				745D35751F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */,
 				742C87A01F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
 				742C87D61F2748F500DC39AE /* UIView+Xib.swift in Sources */,
 				742C87CD1F2748F500DC39AE /* UIImage+Color.swift in Sources */,
@@ -997,6 +1007,8 @@
 				742C87D31F2748F500DC39AE /* UIImageView+Rotation.swift in Sources */,
 				742C87A91F2748F500DC39AE /* ObserverType.swift in Sources */,
 				742C87B51F2748F500DC39AE /* String+Localized.swift in Sources */,
+				745D35741F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */,
+				745D35761F2F76F60039BC14 /* CGVector+Operators.swift in Sources */,
 				742C87A61F2748F500DC39AE /* Observable.swift in Sources */,
 				742C879D1F2748F500DC39AE /* Dictionary+MapValues.swift in Sources */,
 				742C87971F2748F500DC39AE /* Date+ComponentAccessors.swift in Sources */,

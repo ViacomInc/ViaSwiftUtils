@@ -16,7 +16,9 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-import CoreGraphics
+#if os(OSX) || os(iOS) || os(tvOS)
+    import CoreGraphics
+#endif
 import Foundation
 
 public extension CGPoint {

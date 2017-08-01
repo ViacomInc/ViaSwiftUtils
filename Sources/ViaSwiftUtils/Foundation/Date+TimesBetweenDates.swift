@@ -20,30 +20,30 @@ import Foundation
 
 public extension Date {
     
-    /// returns the days from the receiver 'NSDate' to the parameter
+    /// returns the days from the receiver `Date` to the parameter
     /// - parameter date: the date to compare too
     /// - returns: the days between the two dates as Int
     func days(to date: Date) -> Int? {
-        let calendar = NSCalendar.current
-        let components = (calendar as NSCalendar).components([.day], from: self, to: date, options: [])
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.day], from: self, to: date)
         return components.day
     }
     
-    /// returns the minutes from the receiver 'NSDate' to the parameter
+    /// returns the minutes from the receiver `Date` to the parameter
     /// - parameter date: the date to compare too
     /// - returns: the minutes between the two dates as Int
     func minutes(to date: Date) -> Int? {
-        let calendar = NSCalendar.current
-        let components = (calendar as NSCalendar).components([.minute], from: self, to: date, options: [])
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.minute], from: self, to: date)
         return components.minute
     }
     
-    /// returns the seconds from the receiver 'NSDate' to the parameter
+    /// returns the seconds from the receiver `Date` to the parameter
     /// - parameter date: the date to compare too
     /// - returns: the seconds between the two dates as Int
     func seconds(to date: Date) -> Int? {
-        let calendar = NSCalendar.current
-        let components = (calendar as NSCalendar).components([.second], from: self, to: date, options: [])
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.second], from: self, to: date)
         return components.second
     }
 }

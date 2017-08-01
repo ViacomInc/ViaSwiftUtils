@@ -58,9 +58,6 @@
 		742C87B01F2748F500DC39AE /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877B1F2748F500DC39AE /* SignedInteger+Random.swift */; };
 		742C87B11F2748F500DC39AE /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877B1F2748F500DC39AE /* SignedInteger+Random.swift */; };
 		742C87B21F2748F500DC39AE /* SignedInteger+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877B1F2748F500DC39AE /* SignedInteger+Random.swift */; };
-		742C87B31F2748F500DC39AE /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877C1F2748F500DC39AE /* String+Localized.swift */; };
-		742C87B41F2748F500DC39AE /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877C1F2748F500DC39AE /* String+Localized.swift */; };
-		742C87B51F2748F500DC39AE /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877C1F2748F500DC39AE /* String+Localized.swift */; };
 		742C87B61F2748F500DC39AE /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877D1F2748F500DC39AE /* String+Words.swift */; };
 		742C87B71F2748F500DC39AE /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877D1F2748F500DC39AE /* String+Words.swift */; };
 		742C87B81F2748F500DC39AE /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C877D1F2748F500DC39AE /* String+Words.swift */; };
@@ -87,12 +84,14 @@
 		742C87D41F2748F500DC39AE /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87881F2748F500DC39AE /* UIView+Xib.swift */; };
 		742C87D61F2748F500DC39AE /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C87881F2748F500DC39AE /* UIView+Xib.swift */; };
 		7453400B1DDCC061008029C1 /* BetterForceUnwrappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */; };
-		745D35741F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */; };
-		745D35751F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */; };
-		745D35761F2F76F60039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */; };
-		745D35771F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */; };
-		745D35781F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */; };
-		745D35791F2F76F60039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */; };
+		745D357B1F3070FE0039BC14 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357A1F3070FE0039BC14 /* String+Localized.swift */; };
+		745D357C1F3070FE0039BC14 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357A1F3070FE0039BC14 /* String+Localized.swift */; };
+		745D35801F3071E00039BC14 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357D1F3071E00039BC14 /* CGPoint+Operators.swift */; };
+		745D35811F3071E00039BC14 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357D1F3071E00039BC14 /* CGPoint+Operators.swift */; };
+		745D35821F3071E00039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357E1F3071E00039BC14 /* CGRect+AspectRatio.swift */; };
+		745D35831F3071E00039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357E1F3071E00039BC14 /* CGRect+AspectRatio.swift */; };
+		745D35AA1F307F840039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35A91F307F840039BC14 /* CGVector+Operators.swift */; };
+		745D35AB1F307F840039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35A91F307F840039BC14 /* CGVector+Operators.swift */; };
 		74DC1C4C1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4D1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4E1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -226,7 +225,6 @@
 		742C87791F2748F500DC39AE /* RandomAccessCollection+SafeAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+SafeAccess.swift"; sourceTree = "<group>"; };
 		742C877A1F2748F500DC39AE /* SequenceType+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SequenceType+Helpers.swift"; sourceTree = "<group>"; };
 		742C877B1F2748F500DC39AE /* SignedInteger+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignedInteger+Random.swift"; sourceTree = "<group>"; };
-		742C877C1F2748F500DC39AE /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		742C877D1F2748F500DC39AE /* String+Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Words.swift"; sourceTree = "<group>"; };
 		742C877E1F2748F500DC39AE /* TimeInterval+Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Converter.swift"; sourceTree = "<group>"; };
 		742C877F1F2748F500DC39AE /* TimeInterval+Intervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Intervals.swift"; sourceTree = "<group>"; };
@@ -245,9 +243,10 @@
 		7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterForceUnwrappingTests.swift; sourceTree = "<group>"; };
 		745D354B1F2F0FF90039BC14 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = SOURCE_ROOT; };
 		745D354C1F2F10070039BC14 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
-		745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectRatio.swift"; sourceTree = "<group>"; };
-		745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
+		745D357A1F3070FE0039BC14 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		745D357D1F3071E00039BC14 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
+		745D357E1F3071E00039BC14 /* CGRect+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectRatio.swift"; sourceTree = "<group>"; };
+		745D35A91F307F840039BC14 /* CGVector+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
 		74DC1C341D1D87E5007F1853 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
@@ -347,6 +346,8 @@
 		742C876D1F2748F500DC39AE /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				745D357D1F3071E00039BC14 /* CGPoint+Operators.swift */,
+				745D357E1F3071E00039BC14 /* CGRect+AspectRatio.swift */,
 				742C87711F2748F500DC39AE /* CountableRange+Random.swift */,
 				742C87721F2748F500DC39AE /* Date+ComponentAccessors.swift */,
 				742C87731F2748F500DC39AE /* Date+TimesBetweenDates.swift */,
@@ -358,7 +359,6 @@
 				742C87791F2748F500DC39AE /* RandomAccessCollection+SafeAccess.swift */,
 				742C877A1F2748F500DC39AE /* SequenceType+Helpers.swift */,
 				742C877B1F2748F500DC39AE /* SignedInteger+Random.swift */,
-				742C877C1F2748F500DC39AE /* String+Localized.swift */,
 				742C877D1F2748F500DC39AE /* String+Words.swift */,
 				742C877E1F2748F500DC39AE /* TimeInterval+Converter.swift */,
 				742C877F1F2748F500DC39AE /* TimeInterval+Intervals.swift */,
@@ -370,11 +370,10 @@
 		742C87801F2748F500DC39AE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				745D35711F2F6BE70039BC14 /* CGPoint+Operators.swift */,
-				745D35721F2F6BE70039BC14 /* CGRect+AspectRatio.swift */,
-				745D35731F2F6BE70039BC14 /* CGVector+Operators.swift */,
+				745D35A91F307F840039BC14 /* CGVector+Operators.swift */,
 				742C87811F2748F500DC39AE /* Bundle+ApplicationInfo.swift */,
 				742C87821F2748F500DC39AE /* NibView.swift */,
+				745D357A1F3070FE0039BC14 /* String+Localized.swift */,
 				742C87831F2748F500DC39AE /* UIButton+States.swift */,
 				742C87841F2748F500DC39AE /* UIControlState+States.swift */,
 				742C87851F2748F500DC39AE /* UIImage+Color.swift */,
@@ -939,10 +938,11 @@
 				742C87AA1F2748F500DC39AE /* RandomAccessCollection+SafeAccess.swift in Sources */,
 				742C87BC1F2748F500DC39AE /* TimeInterval+Intervals.swift in Sources */,
 				742C87C51F2748F500DC39AE /* UIButton+States.swift in Sources */,
+				745D357B1F3070FE0039BC14 /* String+Localized.swift in Sources */,
 				742C87AD1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87C21F2748F500DC39AE /* NibView.swift in Sources */,
+				745D35821F3071E00039BC14 /* CGRect+AspectRatio.swift in Sources */,
 				742C87921F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
-				745D35781F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */,
 				742C879E1F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
 				742C87D41F2748F500DC39AE /* UIView+Xib.swift in Sources */,
 				742C87CB1F2748F500DC39AE /* UIImage+Color.swift in Sources */,
@@ -951,15 +951,14 @@
 				742C87C81F2748F500DC39AE /* UIControlState+States.swift in Sources */,
 				742C87D11F2748F500DC39AE /* UIImageView+Rotation.swift in Sources */,
 				742C87A71F2748F500DC39AE /* ObserverType.swift in Sources */,
-				742C87B31F2748F500DC39AE /* String+Localized.swift in Sources */,
-				745D35771F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */,
-				745D35791F2F76F60039BC14 /* CGVector+Operators.swift in Sources */,
+				745D35801F3071E00039BC14 /* CGPoint+Operators.swift in Sources */,
 				742C87A41F2748F500DC39AE /* Observable.swift in Sources */,
 				742C879B1F2748F500DC39AE /* Dictionary+MapValues.swift in Sources */,
 				742C87951F2748F500DC39AE /* Date+ComponentAccessors.swift in Sources */,
 				742C87981F2748F500DC39AE /* Date+TimesBetweenDates.swift in Sources */,
 				742C87B91F2748F500DC39AE /* TimeInterval+Converter.swift in Sources */,
 				742C87B61F2748F500DC39AE /* String+Words.swift in Sources */,
+				745D35AA1F307F840039BC14 /* CGVector+Operators.swift in Sources */,
 				742C87B01F2748F500DC39AE /* SignedInteger+Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -975,7 +974,6 @@
 				742C87931F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
 				742C879F1F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
 				742C87A81F2748F500DC39AE /* ObserverType.swift in Sources */,
-				742C87B41F2748F500DC39AE /* String+Localized.swift in Sources */,
 				742C87A51F2748F500DC39AE /* Observable.swift in Sources */,
 				742C879C1F2748F500DC39AE /* Dictionary+MapValues.swift in Sources */,
 				742C87961F2748F500DC39AE /* Date+ComponentAccessors.swift in Sources */,
@@ -994,10 +992,11 @@
 				742C87AC1F2748F500DC39AE /* RandomAccessCollection+SafeAccess.swift in Sources */,
 				742C87BE1F2748F500DC39AE /* TimeInterval+Intervals.swift in Sources */,
 				742C87C71F2748F500DC39AE /* UIButton+States.swift in Sources */,
+				745D357C1F3070FE0039BC14 /* String+Localized.swift in Sources */,
 				742C87AF1F2748F500DC39AE /* SequenceType+Helpers.swift in Sources */,
 				742C87C41F2748F500DC39AE /* NibView.swift in Sources */,
+				745D35831F3071E00039BC14 /* CGRect+AspectRatio.swift in Sources */,
 				742C87941F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
-				745D35751F2F76F60039BC14 /* CGRect+AspectRatio.swift in Sources */,
 				742C87A01F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
 				742C87D61F2748F500DC39AE /* UIView+Xib.swift in Sources */,
 				742C87CD1F2748F500DC39AE /* UIImage+Color.swift in Sources */,
@@ -1006,15 +1005,14 @@
 				742C87CA1F2748F500DC39AE /* UIControlState+States.swift in Sources */,
 				742C87D31F2748F500DC39AE /* UIImageView+Rotation.swift in Sources */,
 				742C87A91F2748F500DC39AE /* ObserverType.swift in Sources */,
-				742C87B51F2748F500DC39AE /* String+Localized.swift in Sources */,
-				745D35741F2F76F60039BC14 /* CGPoint+Operators.swift in Sources */,
-				745D35761F2F76F60039BC14 /* CGVector+Operators.swift in Sources */,
+				745D35811F3071E00039BC14 /* CGPoint+Operators.swift in Sources */,
 				742C87A61F2748F500DC39AE /* Observable.swift in Sources */,
 				742C879D1F2748F500DC39AE /* Dictionary+MapValues.swift in Sources */,
 				742C87971F2748F500DC39AE /* Date+ComponentAccessors.swift in Sources */,
 				742C879A1F2748F500DC39AE /* Date+TimesBetweenDates.swift in Sources */,
 				742C87BB1F2748F500DC39AE /* TimeInterval+Converter.swift in Sources */,
 				742C87B81F2748F500DC39AE /* String+Words.swift in Sources */,
+				745D35AB1F307F840039BC14 /* CGVector+Operators.swift in Sources */,
 				742C87B21F2748F500DC39AE /* SignedInteger+Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

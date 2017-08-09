@@ -22,7 +22,7 @@ import Foundation
 public extension MutableCollection where Indices.SubSequence: Sequence, Indices.SubSequence.Iterator.Element == Index, Index: Strideable, Index.Stride: SignedInteger {
 
     /// implements [FisherYates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle) to shuffle elements in place
-    final mutating func shuffleInPlace() {
+    mutating func shuffleInPlace() {
         if count <= 1 { return }
         
         for i in indices.dropLast() {

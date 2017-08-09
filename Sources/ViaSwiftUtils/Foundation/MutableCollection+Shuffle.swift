@@ -19,7 +19,7 @@
 import Foundation
 
 // swiftlint:disable:next line_length
-public extension MutableCollection where Indices.SubSequence: Sequence, Indices.SubSequence.Iterator.Element == Index, Index: Strideable, Index.Stride: SignedInteger {
+public extension MutableCollection where Index: Strideable, Index.Stride: SignedInteger {
 
     /// implements [FisherYates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle) to shuffle elements in place
     mutating func shuffleInPlace() {
@@ -28,7 +28,7 @@ public extension MutableCollection where Indices.SubSequence: Sequence, Indices.
         for i in indices.dropLast() {
             let j = (i..<endIndex).arc4random
             if i == j { continue }
-            swap(&self[i], &self[j])
+            self.swapAt(i, j)
         }
     }
 }

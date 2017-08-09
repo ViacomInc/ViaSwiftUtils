@@ -3,7 +3,7 @@
 
 language: objective-c
 cache: bundler
-osx_image: xcode8.3
+osx_image: xcode9
 xcode_workspace: ViaSwiftUtils.xcworkspace
 xcode_scheme: ViaSwiftUtils_iOS
 

@@ -17,6 +17,7 @@
 //  limitations under the License.
 
 import Foundation
+@testable import ViaSwiftUtils
 
 // swiftlint:disable identifier_name
 
@@ -24,6 +25,7 @@ extension NSLocale {
     @nonobjc static var ttt_locale = "en_US"
     @nonobjc static var ttt_swizzled = false
     
+    @objc
     class func customizedLocale() -> NSLocale {
         return NSLocale(localeIdentifier: NSLocale.ttt_locale)
     }
@@ -38,15 +40,14 @@ extension NSLocale {
             let originalSelector = #selector(getter: NSLocale.current)
             let swizzledSelector = #selector(self.customizedLocale)
             
-            let originalMethod = class_getClassMethod(self, originalSelector)
-            let swizzledMethod = class_getClassMethod(self, swizzledSelector)
+            let originalMethod = class_getClassMethod(self, originalSelector) !! "Expected NSLocale.current exists"
+            let swizzledMethod = class_getClassMethod(self, swizzledSelector) !! "Expected customizedLocale exists"
             
             method_exchangeImplementations(originalMethod, swizzledMethod)
         }
     }
     
     class func undoForcing() {
-        
         print("Undoing the swizzling")
         
         if NSLocale.ttt_swizzled {
@@ -54,8 +55,8 @@ extension NSLocale {
             let swizzledSelector = #selector(self.customizedLocale)
             let originalSelector = #selector(getter: NSLocale.current)
             
-            let originalMethod = class_getClassMethod(self, originalSelector)
-            let swizzledMethod = class_getClassMethod(self, swizzledSelector)
+            let originalMethod = class_getClassMethod(self, originalSelector) !! "Expected NSLocale.current exists"
+            let swizzledMethod = class_getClassMethod(self, swizzledSelector) !! "Expected customizedLocale exists"
             
             method_exchangeImplementations(originalMethod, swizzledMethod)
         }

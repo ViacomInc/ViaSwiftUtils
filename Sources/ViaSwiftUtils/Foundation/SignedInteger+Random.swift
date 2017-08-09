@@ -21,7 +21,7 @@ import Foundation
 public extension SignedInteger {
     
     static func arc4random_uniform(_ upperBound: Self) -> Self {
-        precondition(upperBound > 0 && upperBound.toIntMax() < UInt32.max.toIntMax(),
+        precondition(upperBound > 0 && Int64(upperBound) < UInt32.max,
                      "arc4random_uniform only callable up to \(UInt32.max)")
         #if os(OSX) || os(iOS) || os(tvOS)
             return numericCast(Darwin.arc4random_uniform(numericCast(upperBound)))

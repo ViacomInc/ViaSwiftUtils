@@ -11,7 +11,12 @@ install:
   - ./install_swiftlint.sh
   - bundle install
 
+env:
+  matrix:
+    - TEST_DESTINATION="OS=11.0,name=iPhone 7"
+    - TEST_DESTINATION="OS=9.3,name=iPhone 6S"
+
 script:
   - bundle exec danger
   - open -a "simulator" --args -CurrentDeviceUDID AB104968-7058-4AE2-A95D-DBB77634C642
-  - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -sdk iphonesimulator -destination "OS=10.3.1,name=iPhone 6s" | xcpretty
+  - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -sdk iphonesimulator -destination "$TEST_DESTINATION" | xcpretty

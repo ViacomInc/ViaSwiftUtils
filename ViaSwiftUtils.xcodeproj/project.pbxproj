@@ -122,6 +122,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		748C61D91F72CF56009E3FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E063C21D1D7DB300C0B56B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74DC1C6F1D1D8D17007F1853;
+			remoteInfo = "ViaSwiftUtils Example";
+		};
 		74DC1C671D1D8CF5007F1853 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 74E063C21D1D7DB300C0B56B /* Project object */;
@@ -247,6 +254,7 @@
 		745D357D1F3071E00039BC14 /* CGPoint+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operators.swift"; sourceTree = "<group>"; };
 		745D357E1F3071E00039BC14 /* CGRect+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+AspectRatio.swift"; sourceTree = "<group>"; };
 		745D35A91F307F840039BC14 /* CGVector+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Operators.swift"; sourceTree = "<group>"; };
+		748C61D61F72C9A7009E3FA5 /* Package@swift-4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.swift"; sourceTree = "<group>"; };
 		74DC1C341D1D87E5007F1853 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		74DC1C351D1D87E5007F1853 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		74DC1C361D1D87E5007F1853 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
@@ -416,6 +424,7 @@
 				745D354B1F2F0FF90039BC14 /* Dangerfile */,
 				74DC1D221D2276AB007F1853 /* LICENSE */,
 				742C87F81F275B1100DC39AE /* Package.swift */,
+				748C61D61F72C9A7009E3FA5 /* Package@swift-4.swift */,
 				74DC1D211D227075007F1853 /* README.md */,
 				742C87D71F2749BB00DC39AE /* ViaSwiftUtils.podspec */,
 			);
@@ -579,6 +588,7 @@
 			);
 			dependencies = (
 				74DC1C681D1D8CF5007F1853 /* PBXTargetDependency */,
+				748C61DA1F72CF56009E3FA5 /* PBXTargetDependency */,
 			);
 			name = ViaSwiftUtils_iOSTests;
 			productName = "ViaSwiftUtils iOSTests";
@@ -726,6 +736,7 @@
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = W7PDGJHBGF;
 						LastSwiftMigration = 0900;
+						TestTargetID = 74DC1C6F1D1D8D17007F1853;
 					};
 					74DC1C6F1D1D8D17007F1853 = {
 						CreatedOnToolsVersion = 7.3;
@@ -1020,6 +1031,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		748C61DA1F72CF56009E3FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74DC1C6F1D1D8D17007F1853 /* ViaSwiftUtils Example */;
+			targetProxy = 748C61D91F72CF56009E3FA5 /* PBXContainerItemProxy */;
+		};
 		74DC1C681D1D8CF5007F1853 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 74E063DA1D1D7E8000C0B56B /* ViaSwiftUtils_iOS */;
@@ -1124,6 +1140,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViaSwiftUtils Example.app/ViaSwiftUtils Example";
 			};
 			name = Debug;
 		};
@@ -1168,6 +1185,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViaSwiftUtils Example.app/ViaSwiftUtils Example";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1221,7 +1239,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1267,7 +1285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vimn.ViaSwiftUtils-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1319,7 +1337,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -1363,7 +1381,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
@@ -1803,7 +1821,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1860,7 +1878,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1925,7 +1943,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1981,7 +1999,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;

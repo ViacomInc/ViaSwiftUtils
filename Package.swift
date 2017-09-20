@@ -4,5 +4,5 @@ import PackageDescription
 
 let package = Package(
     name: "ViaSwiftUtils",
-    exclude: ["iOSTests", "Example","Carthage","Images","Sources/ViaSwiftUtils/UIKit"]
+    exclude: ["iOSTests", "Example", "Carthage", "Images", "Sources/ViaSwiftUtils/UIKit"]
 )

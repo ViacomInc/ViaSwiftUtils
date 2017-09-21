@@ -20,7 +20,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ViaSwiftUtils"
-  s.version          = "2.0.0"
+  s.version          = "2.0.1"
   s.summary          = "Swift Utilities written with and for Viacom Inc."
 
 # This description is used to generate tags and improve search results.

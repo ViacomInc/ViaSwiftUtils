@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "ViaSwiftUtils",
-            dependencies: []
+            dependencies: [],
+            path: "Sources/ViaSwiftUtils/Foundation"
         ),
         .testTarget(
             name: "ViaSwiftUtilsTests",

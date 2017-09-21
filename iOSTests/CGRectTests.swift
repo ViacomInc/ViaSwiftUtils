@@ -26,7 +26,7 @@ class CGRectTests: XCTestCase {
         let rect = CGRect(x: 0.0, y: 0.0, width: 10.0, height: 5.0)
         
         // Then
-        XCTAssertEqualWithAccuracy(Double(rect.aspectRatio), 2.0, accuracy: Double.ulpOfOne, "Expected Aspect ratio of 2.0")
+        XCTAssertEqual(Double(rect.aspectRatio), 2.0, accuracy: Double.ulpOfOne, "Expected Aspect ratio of 2.0")
     }
     
     func testRectWithZeroWidth() {
@@ -34,7 +34,7 @@ class CGRectTests: XCTestCase {
         let rect = CGRect(x: 0.0, y: 0.0, width: 0.0, height: 5.0)
         
         // Then
-        XCTAssertEqualWithAccuracy(Double(rect.aspectRatio), 0.0, accuracy: Double.ulpOfOne, "Expected Aspect ratio of 0.0")
+        XCTAssertEqual(Double(rect.aspectRatio), 0.0, accuracy: Double.ulpOfOne, "Expected Aspect ratio of 0.0")
    }
 
     func testRectWithZeroHeight() {
@@ -42,7 +42,7 @@ class CGRectTests: XCTestCase {
         let rect = CGRect(x: 0.0, y: 0.0, width: 10.0, height: 0.0)
         
         // Then
-        XCTAssertEqualWithAccuracy(Double(rect.aspectRatio), 0.0, accuracy: Double.ulpOfOne, "Expected Aspect ratio of 0.0")
+        XCTAssertEqual(Double(rect.aspectRatio), 0.0, accuracy: Double.ulpOfOne, "Expected Aspect ratio of 0.0")
     }
     
     func testRectWithLinearCombineRectsHalf() {
@@ -54,16 +54,16 @@ class CGRectTests: XCTestCase {
         let combinedRect = rect1.linearCombined(with: rect2, by: 0.5)
         
         // Then
-        XCTAssertEqualWithAccuracy(Double(combinedRect.origin.x), 2.0,
-                                   accuracy: .ulpOfOne, "Expected x to be 2.0")
-        XCTAssertEqualWithAccuracy(Double(combinedRect.origin.y), -2.0,
-                                   accuracy: .ulpOfOne, "Expected y to be -2.0")
-        XCTAssertEqualWithAccuracy(Double(combinedRect.size.width), 15,
-                                   accuracy: .ulpOfOne, "Expected width to be 15.0")
-        XCTAssertEqualWithAccuracy(Double(combinedRect.size.height), 15.0,
-                                   accuracy: .ulpOfOne, "Expected height to be 15.0")
+        XCTAssertEqual(Double(combinedRect.origin.x), 2.0,
+                       accuracy: .ulpOfOne, "Expected x to be 2.0")
+        XCTAssertEqual(Double(combinedRect.origin.y), -2.0,
+                       accuracy: .ulpOfOne, "Expected y to be -2.0")
+        XCTAssertEqual(Double(combinedRect.size.width), 15,
+                       accuracy: .ulpOfOne, "Expected width to be 15.0")
+        XCTAssertEqual(Double(combinedRect.size.height), 15.0,
+                       accuracy: .ulpOfOne, "Expected height to be 15.0")
     }
-
+    
     func testRectWithLinearCombineRectsIllegalRatio() {
         // Given a two given rects
         let rect1 = CGRect(x: 4.0, y: -4.0, width: 20.0, height: 10.0)
@@ -73,15 +73,15 @@ class CGRectTests: XCTestCase {
         let combinedRect = rect1.linearCombined(with: rect2, by: -1.5)
         
         // Then
-        XCTAssertEqualWithAccuracy(Double(combinedRect.origin.x), Double(rect1.origin.x),
-                                   accuracy: .ulpOfOne, "Expected x to be equal to rect1.x")
-
+        XCTAssertEqual(Double(combinedRect.origin.x), Double(rect1.origin.x),
+                       accuracy: .ulpOfOne, "Expected x to be equal to rect1.x")
+        
         // When combined with a value > 1
         let combinedRect2 = rect1.linearCombined(with: rect2, by: 1.5)
         
         // Then
-        XCTAssertEqualWithAccuracy(Double(combinedRect2.origin.y), Double(rect2.origin.y),
-                                   accuracy: .ulpOfOne, "Expected y to be equal to rect2.y")
+        XCTAssertEqual(Double(combinedRect2.origin.y), Double(rect2.origin.y),
+                       accuracy: .ulpOfOne, "Expected y to be equal to rect2.y")
     }
 
 }

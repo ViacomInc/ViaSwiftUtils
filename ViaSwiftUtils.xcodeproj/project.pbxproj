@@ -92,6 +92,7 @@
 		745D35831F3071E00039BC14 /* CGRect+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357E1F3071E00039BC14 /* CGRect+AspectRatio.swift */; };
 		745D35AA1F307F840039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35A91F307F840039BC14 /* CGVector+Operators.swift */; };
 		745D35AB1F307F840039BC14 /* CGVector+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D35A91F307F840039BC14 /* CGVector+Operators.swift */; };
+		748C622F1F73E713009E3FA5 /* CGPoint+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745D357D1F3071E00039BC14 /* CGPoint+Operators.swift */; };
 		74DC1C4C1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4D1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74DC1C4E1D1D894B007F1853 /* ViaSwiftUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 74DC1C4B1D1D894B007F1853 /* ViaSwiftUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -985,6 +986,7 @@
 				742C87931F2748F500DC39AE /* CountableRange+Random.swift in Sources */,
 				742C879F1F2748F500DC39AE /* ForceUnwrappingOperators.swift in Sources */,
 				742C87A81F2748F500DC39AE /* ObserverType.swift in Sources */,
+				748C622F1F73E713009E3FA5 /* CGPoint+Operators.swift in Sources */,
 				742C87A51F2748F500DC39AE /* Observable.swift in Sources */,
 				742C879C1F2748F500DC39AE /* Dictionary+MapValues.swift in Sources */,
 				742C87961F2748F500DC39AE /* Date+ComponentAccessors.swift in Sources */,

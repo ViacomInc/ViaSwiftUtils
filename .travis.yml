@@ -19,4 +19,4 @@ env:
 script:
   - bundle exec danger
   - open -a "simulator" --args -CurrentDeviceUDID AB104968-7058-4AE2-A95D-DBB77634C642
-  - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -sdk iphonesimulator -destination "$TEST_DESTINATION" | xcpretty
+  - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -destination "$TEST_DESTINATION" | xcpretty

@@ -43,5 +43,4 @@ public extension Dictionary {
             return (key, transform(value))
         })
     }
-    
 }

@@ -16,6 +16,9 @@ env:
     - TEST_DESTINATION="OS=11.0,name=iPhone 7"
     - TEST_DESTINATION="OS=9.3,name=iPhone 6"
 
+before_script:
+  - killall "Simulator"
+  
 script:
   - bundle exec danger
   - instruments -s devices

@@ -21,6 +21,11 @@ import XCTest
 
 class CollectionShuffledTest: XCTestCase {
     
+    static var allTests = [
+        ("testShuffleDoesNotChangeCount", testShuffleDoesNotChangeCount),
+        ("testShuffledArraysKeepElements", testShuffledArraysKeepElements)
+    ]
+    
     func testShuffleDoesNotChangeCount() {
         // Given a shuffled
         var mutableNumberList = [1, 2, 3, 4, 5, 6]

@@ -21,6 +21,13 @@ import XCTest
 
 class BetterForceUnwrappingTests: XCTestCase {
     
+    static var allTests = [
+        ("testForceUnwrapping", testForceUnwrapping),
+        ("testIntegerConvertible", testIntegerConvertible),
+        ("testStringConvertible", testStringConvertible),
+        ("testGeneralConvertible", testGeneralConvertible)
+    ]
+    
     func testForceUnwrapping() {
         // Given
         let someURLString = "www.test.com/something"

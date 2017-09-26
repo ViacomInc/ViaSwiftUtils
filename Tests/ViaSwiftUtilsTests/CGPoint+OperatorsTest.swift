@@ -21,6 +21,11 @@ import XCTest
 
 class CGPointOperatorsTest: XCTestCase {
 
+    static var allTests = [
+        ("testPlusOperator", testPlusOperator),
+        ("testMinusOperator", testMinusOperator)
+    ]
+    
     func testPlusOperator() {
         // Given:
         let point1 = CGPoint(x: 1.0, y: 1.0)

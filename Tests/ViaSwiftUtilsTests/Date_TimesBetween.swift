@@ -21,6 +21,12 @@ import XCTest
 
 class DateTimesBetweenTests: XCTestCase {
     
+    static var allTests = [
+        ("testTomorrow", testTomorrow),
+        ("testNextMinute", testNextMinute),
+        ("testNextSecond", testNextSecond)
+    ]
+    
     func testTomorrow() {
         // Given the current date
         let now = Date()

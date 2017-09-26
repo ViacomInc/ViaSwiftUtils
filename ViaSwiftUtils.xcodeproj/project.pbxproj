@@ -213,15 +213,15 @@
 		3C5C995D1DB8F7D300083A4E /* TestViewWithOwner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewWithOwner.xib; sourceTree = "<group>"; };
 		3C5C99691DB8F9BE00083A4E /* NibViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibViewTest.swift; sourceTree = "<group>"; };
 		740682701D3630AA00FEA974 /* CollectionShuffledTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionShuffledTest.swift; path = Tests/ViaSwiftUtilsTests/CollectionShuffledTest.swift; sourceTree = SOURCE_ROOT; };
-		740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequenceTypeHelperTests.swift; path = iOSTests/SequenceTypeHelperTests.swift; sourceTree = SOURCE_ROOT; };
-		740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+MapValuesTests.swift"; path = "iOSTests/Dictionary+MapValuesTests.swift"; sourceTree = SOURCE_ROOT; };
-		740682761D3696A500FEA974 /* Date_ComponentAccessorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_ComponentAccessorsTest.swift; path = iOSTests/Date_ComponentAccessorsTest.swift; sourceTree = SOURCE_ROOT; };
-		740682781D3696AA00FEA974 /* Date_ComparableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_ComparableTest.swift; path = iOSTests/Date_ComparableTest.swift; sourceTree = SOURCE_ROOT; };
+		740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequenceTypeHelperTests.swift; path = Tests/ViaSwiftUtilsTests/SequenceTypeHelperTests.swift; sourceTree = SOURCE_ROOT; };
+		740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Dictionary+MapValuesTests.swift"; path = "Tests/ViaSwiftUtilsTests/Dictionary+MapValuesTests.swift"; sourceTree = SOURCE_ROOT; };
+		740682761D3696A500FEA974 /* Date_ComponentAccessorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_ComponentAccessorsTest.swift; path = Tests/ViaSwiftUtilsTests/Date_ComponentAccessorsTest.swift; sourceTree = SOURCE_ROOT; };
+		740682781D3696AA00FEA974 /* Date_ComparableTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_ComparableTest.swift; path = Tests/ViaSwiftUtilsTests/Date_ComparableTest.swift; sourceTree = SOURCE_ROOT; };
 		7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+StateTests.swift"; path = "iOSTests/UIButton+StateTests.swift"; sourceTree = SOURCE_ROOT; };
 		7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageView_RotationTests.swift; path = iOSTests/UIImageView_RotationTests.swift; sourceTree = SOURCE_ROOT; };
 		740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+Swizzling.swift"; sourceTree = "<group>"; };
 		740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+ConverterTestsArabic.swift"; sourceTree = "<group>"; };
-		742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_TimesBetween.swift; path = iOSTests/Date_TimesBetween.swift; sourceTree = SOURCE_ROOT; };
+		742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_TimesBetween.swift; path = Tests/ViaSwiftUtilsTests/Date_TimesBetween.swift; sourceTree = SOURCE_ROOT; };
 		742C87711F2748F500DC39AE /* CountableRange+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableRange+Random.swift"; sourceTree = "<group>"; };
 		742C87721F2748F500DC39AE /* Date+ComponentAccessors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ComponentAccessors.swift"; sourceTree = "<group>"; };
 		742C87731F2748F500DC39AE /* Date+TimesBetweenDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+TimesBetweenDates.swift"; sourceTree = "<group>"; };
@@ -403,6 +403,12 @@
 				CE18E17B1D912A82003C8267 /* CGPoint+OperatorsTest.swift */,
 				740682701D3630AA00FEA974 /* CollectionShuffledTest.swift */,
 				74DC1CCE1D212967007F1853 /* CGRectTests.swift */,
+				740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */,
+				740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */,
+				740682781D3696AA00FEA974 /* Date_ComparableTest.swift */,
+				33AED1831ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift */,
+				740682761D3696A500FEA974 /* Date_ComponentAccessorsTest.swift */,
+				742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */,
 			);
 			name = ViaSwiftUtilsTests;
 			path = Tests/ViaSwiftUtilsTests;
@@ -440,12 +446,6 @@
 			isa = PBXGroup;
 			children = (
 				CE2433261D913EB0001D6CC1 /* CGVector+OperatorsTest.swift */,
-				740682721D36969C00FEA974 /* SequenceTypeHelperTests.swift */,
-				740682731D36969D00FEA974 /* Dictionary+MapValuesTests.swift */,
-				740682781D3696AA00FEA974 /* Date_ComparableTest.swift */,
-				33AED1831ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift */,
-				740682761D3696A500FEA974 /* Date_ComponentAccessorsTest.swift */,
-				742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */,
 				7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */,
 				7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */,
 				CE65B3611D8AAD9700AA9B2B /* String+WordsTest.swift */,

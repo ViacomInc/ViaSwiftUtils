@@ -21,6 +21,12 @@ import XCTest
 
 class DictionaryMapValuesTests: XCTestCase {
     
+    static var allTests = [
+        ("testMergeDictionariesOfEqualType", testMergeDictionariesOfEqualType),
+        ("testMergeDictionariesWithOverlappingKeys", testMergeDictionariesWithOverlappingKeys),
+        ("testMapValues", testMapValues)
+    ]
+    
     func testMergeDictionariesOfEqualType() {
         // Given two dictionarys of the same types
         var dict1 = ["One": 1, "Two": 2, "Three": 3]

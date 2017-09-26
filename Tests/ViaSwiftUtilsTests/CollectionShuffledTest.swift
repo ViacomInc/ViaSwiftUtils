@@ -42,7 +42,7 @@ class CollectionShuffledTest: XCTestCase {
     func testShuffledArraysKeepElements() {
         // Given hundred random arrays
         for _ in 0..<100 {
-            let array = (0..<100).map({ _ in  return Int(arc4random() % 200) - 100 })
+            let array = (0..<100).map({ _ in  return (100..<200).arc4random })
             var shuffledArray = array
 
             // When shuffled

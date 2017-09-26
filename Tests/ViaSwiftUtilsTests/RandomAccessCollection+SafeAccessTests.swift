@@ -21,6 +21,15 @@ import XCTest
 
 class RandomAccessCollectionSafeAccessTests: XCTestCase {
     
+    static var allTests = [
+        ("testOutOfBoundsIndex", testOutOfBoundsIndex),
+        ("testValidIndex", testValidIndex),
+        ("testNegativeIndex", testNegativeIndex),
+        ("testArraySliceOutOfBounds", testArraySliceOutOfBounds),
+        ("testArraySliceInBounds", testArraySliceInBounds),
+        ("testContiguousArray", testContiguousArray)
+    ]
+    
     private let testArray = ["zero", "one", "two", "three", "four"]
 
     func testOutOfBoundsIndex() {

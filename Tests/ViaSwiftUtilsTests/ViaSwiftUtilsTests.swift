@@ -30,21 +30,7 @@ class ViaSwiftUtilsTests: XCTestCase {
         // Then
         XCTAssertEqual(now.days(to: tomorrow), 1, "Expected today to be 1 day from tomorrow")
     }
-    
-    func testUniqueElements() {
-        // Given an already unique arrays of elements, When
-        let elements = [1, 2, 3, 4, 5, 6]
         
-        // Then
-        XCTAssertEqual(elements.unique().count, elements.count, "Expected elements to be equal to unique elements")
-        
-        // Given a bigger array of elements, When
-        let moreElements = [1, 2, 3, 4, 5, 6, 1, 2, 3, 8]
-        
-        // Then
-        XCTAssertEqual(moreElements.unique().count, 7, "Expected elements to be equal to unique elements")
-    }
-    
     func testANYALLNONE() {
         // Given, When
         let elements = [1, 2, 3, 4, 5, 6]
@@ -61,7 +47,6 @@ class ViaSwiftUtilsTests: XCTestCase {
     
     static var allTests = [
         ("testTomorrow", testTomorrow),
-        ("testUniqueElements", testUniqueElements),
         ("testANYALLNONE", testANYALLNONE)
     ]
 }

@@ -62,7 +62,7 @@ class DictionaryMapValuesTests: XCTestCase {
         }
         
         // Then
-        XCTAssertEqual(Array(dict.keys), Array(mappedDict.keys), "Expected both dicts to have the same keys")
+        XCTAssertEqual(Array(dict.keys.sorted()), Array(mappedDict.keys.sorted()), "Expected both dicts to have the same keys")
     }
     
 }

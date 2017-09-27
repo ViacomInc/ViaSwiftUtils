@@ -13,4 +13,5 @@ XCTMain([
     testCase(RandomAccessCollectionSafeAccessTests.allTests),
     testCase(DateComponentAccessorsTest.allTests),
     testCase(DateTimesBetweenTests.allTests),
+    testCase(StringWordsTest.allTests)
 ])

@@ -246,7 +246,6 @@
 		742C87881F2748F500DC39AE /* UIView+Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
 		742C87D71F2749BB00DC39AE /* ViaSwiftUtils.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ViaSwiftUtils.podspec; sourceTree = SOURCE_ROOT; };
 		742C87F81F275B1100DC39AE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
-		742C87FB1F27674600DC39AE /* ViaSwiftUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViaSwiftUtilsTests.swift; sourceTree = "<group>"; };
 		7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterForceUnwrappingTests.swift; sourceTree = "<group>"; };
 		745D354B1F2F0FF90039BC14 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = SOURCE_ROOT; };
 		745D354C1F2F10070039BC14 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
@@ -398,7 +397,6 @@
 			isa = PBXGroup;
 			children = (
 				749A2D091F7AB4FC0068C521 /* LinuxMain.swift */,
-				742C87FB1F27674600DC39AE /* ViaSwiftUtilsTests.swift */,
 				7453400A1DDCC061008029C1 /* BetterForceUnwrappingTests.swift */,
 				CE18E17B1D912A82003C8267 /* CGPoint+OperatorsTest.swift */,
 				740682701D3630AA00FEA974 /* CollectionShuffledTest.swift */,
@@ -409,6 +407,7 @@
 				33AED1831ECE0814002B70CD /* RandomAccessCollection+SafeAccessTests.swift */,
 				740682761D3696A500FEA974 /* Date_ComponentAccessorsTest.swift */,
 				742194951D785C5F00A73CF0 /* Date_TimesBetween.swift */,
+				CE65B3611D8AAD9700AA9B2B /* String+WordsTest.swift */,
 			);
 			name = ViaSwiftUtilsTests;
 			path = Tests/ViaSwiftUtilsTests;
@@ -445,13 +444,12 @@
 		74DC1C621D1D8CF5007F1853 /* iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				3C5C99571DB8E8EC00083A4E /* TimeInterval+ConverterTest.swift */,
+				740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */,
 				CE2433261D913EB0001D6CC1 /* CGVector+OperatorsTest.swift */,
 				7406827A1D3696B100FEA974 /* UIButton+StateTests.swift */,
 				7406827C1D3696B700FEA974 /* UIImageView_RotationTests.swift */,
-				CE65B3611D8AAD9700AA9B2B /* String+WordsTest.swift */,
 				3C48A8231DB8CD060014CBE9 /* UIImage+ColorTest.swift */,
-				3C5C99571DB8E8EC00083A4E /* TimeInterval+ConverterTest.swift */,
-				740CDBD61F2614FF0071BF63 /* TimeInterval+ConverterTestsArabic.swift */,
 				3C5C99591DB8EDE700083A4E /* UIView+XibTest.swift */,
 				3C5C99691DB8F9BE00083A4E /* NibViewTest.swift */,
 				740CDBD41F2613270071BF63 /* Locale+Swizzling.swift */,

@@ -21,9 +21,21 @@ import XCTest
 
 class StringWordsTest: XCTestCase {
 
-    /*
-        longestWord()
-     */
+    static var allTests = [
+        ("test_longestWordWithSuccessScenario", test_longestWordWithSuccessScenario),
+        ("test_longestWordWithFailureScenario", test_longestWordWithFailureScenario),
+        ("test_longestWordWithCommaSuccessScenario", test_longestWordWithCommaSuccessScenario),
+        ("test_longestWordWithCommaFailureScenario", test_longestWordWithCommaFailureScenario),
+        ("test_wordCountWithSuccessScenario", test_wordCountWithSuccessScenario),
+        ("test_wordCountWithFailureScenario", test_wordCountWithFailureScenario),
+        ("test_wordCountWithCommaSuccessScenario", test_wordCountWithCommaSuccessScenario),
+        ("test_wordCountWithCommaFailureScenario", test_wordCountWithCommaFailureScenario),
+        ("test_isOneWordWithSuccessScenario", test_isOneWordWithSuccessScenario),
+        ("test_isOneWordWithFailureScenario", test_isOneWordWithFailureScenario),
+        ("test_isOneWordWithCommaFailureScenario", test_isOneWordWithCommaFailureScenario),
+        ("test_isOneWordWithFailureScenario_Japanese", test_isOneWordWithFailureScenario_Japanese)
+    ]
+
     func test_longestWordWithSuccessScenario() {
         // Given:
         let source = "This is a test string"
@@ -72,10 +84,6 @@ class StringWordsTest: XCTestCase {
         XCTAssertNotEqual(notTheLongestWord, longestWordCalculated)
     }
 
-    /*
-        wordCount()
-     */
-
     func test_wordCountWithSuccessScenario() {
         // Given:
         let source = "This is a test string"
@@ -119,10 +127,6 @@ class StringWordsTest: XCTestCase {
         // Then:
         XCTAssertNotEqual(wordCount, 4)
     }
-
-    /*
-        isOneWord()
-     */
 
     func test_isOneWordWithSuccessScenario() {
         // Given:

@@ -21,6 +21,14 @@ import XCTest
 
 class CGRectTests: XCTestCase {
     
+    static var allTests = [
+        ("testRectSize10x5", testRectSize10x5),
+        ("testRectWithZeroWidth", testRectWithZeroWidth),
+        ("testRectWithZeroHeight", testRectWithZeroHeight),
+        ("testRectWithLinearCombineRectsHalf", testRectWithLinearCombineRectsHalf),
+        ("testRectWithLinearCombineRectsIllegalRatio", testRectWithLinearCombineRectsIllegalRatio)
+    ]
+    
     func testRectSize10x5() {
         // Given a rect sized 10 x 5
         let rect = CGRect(x: 0.0, y: 0.0, width: 10.0, height: 5.0)

@@ -21,6 +21,12 @@ import XCTest
 
 class SequenceTypeHelperTests: XCTestCase {
     
+    static var allTests = [
+        ("testFindFirstExistentOfMultiple", testFindFirstExistentOfMultiple),
+        ("testUniqueElements", testUniqueElements),
+        ("testANYALLNONE", testANYALLNONE)
+    ]
+    
     private struct TestElement {
         let number: Int
         let value: Int

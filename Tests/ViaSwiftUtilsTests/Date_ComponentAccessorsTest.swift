@@ -21,6 +21,12 @@ import XCTest
 
 class DateComponentAccessorsTest: XCTestCase {
     
+    static var allTests = [
+        ("testDateComponentAsInts", testDateComponentAsInts),
+        ("testCurrentYear", testCurrentYear),
+        ("testHistoricalYear", testHistoricalYear)
+    ]
+    
     func testDateComponentAsInts() {
         // Given
         let eightAM1970 = Date(timeIntervalSince1970: 8 * TimeInterval.hour + 0.5 * TimeInterval.minute)

@@ -21,6 +21,10 @@ import XCTest
 
 class DateComparableTest: XCTestCase {
     
+    static var allTests = [
+        ("testComparable", testComparable)
+    ]
+    
     func testComparable() {
         // Given, When
         let earlyDate = Date(timeIntervalSince1970: 0)

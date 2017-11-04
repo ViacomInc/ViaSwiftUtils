@@ -29,7 +29,7 @@ public extension String {
 
         self.enumerateSubstrings(in: range, options: .byWords) { (substring, _, _, _) in
             if let word = substring {
-                newLongestWord = word.characters.count > newLongestWord.characters.count ? word : newLongestWord
+                newLongestWord = word.count > newLongestWord.count ? word : newLongestWord
             }
         }
 

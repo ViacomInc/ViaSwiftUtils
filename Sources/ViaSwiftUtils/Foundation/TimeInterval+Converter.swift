@@ -18,7 +18,7 @@
 
 import Foundation
 
-fileprivate let formatter = DateFormatter()
+private let formatter = DateFormatter()
 
 extension TimeInterval {
     

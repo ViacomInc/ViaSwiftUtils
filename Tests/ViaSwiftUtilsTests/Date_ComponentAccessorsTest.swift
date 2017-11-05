@@ -45,7 +45,7 @@ class DateComponentAccessorsTest: XCTestCase {
         let currentYear = Date().localizedYear
         
         // Then
-        XCTAssertEqual(currentYear.characters.count, 4, "Expected currentyear to have 4 characters")
+        XCTAssertEqual(currentYear.count, 4, "Expected currentyear to have 4 characters")
     }
         
     func testHistoricalYear() {
@@ -56,7 +56,7 @@ class DateComponentAccessorsTest: XCTestCase {
         let localizedString = fallOfRome.localizedYear
 
         // Then
-        XCTAssertEqual(localizedString.characters.count, 3, "Expected year of the fall of west rome to have 3 characters")
+        XCTAssertEqual(localizedString.count, 3, "Expected year of the fall of west rome to have 3 characters")
     }
     
 }

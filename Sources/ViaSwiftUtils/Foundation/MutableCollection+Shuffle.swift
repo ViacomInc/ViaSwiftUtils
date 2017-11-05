@@ -18,7 +18,6 @@
 
 import Foundation
 
-// swiftlint:disable:next line_length
 public extension MutableCollection where Index == Int {
 
     /// implements [FisherYates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle) to shuffle elements in place

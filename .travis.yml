@@ -10,10 +10,10 @@ matrix:
         - git clone https://github.com/IBM-Swift/Package-Builder.git
       script: ./Package-Builder/build-package.sh -projectDir $TRAVIS_BUILD_DIR
     - os: osx
-      osx_image: xcode9.1
+      osx_image: xcode9.2
       sudo: required
       language: objective-c
-      env: TEST_DESTINATION="OS=11.1,name=iPhone 7"
+      env: TEST_DESTINATION="OS=11.2,name=iPhone 7"
       install:
         - ./install_swiftlint.sh
         - bundle install
@@ -21,7 +21,7 @@ matrix:
         - bundle exec danger
         - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -destination "$TEST_DESTINATION" | xcpretty
     - os: osx
-      osx_image: xcode9.1
+      osx_image: xcode9.2
       sudo: required
       language: objective-c
       env: TEST_DESTINATION="OS=9.3,name=iPhone 6"

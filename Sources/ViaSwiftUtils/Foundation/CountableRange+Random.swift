@@ -21,6 +21,6 @@ import Foundation
 public extension CountableRange {
     
     var arc4random: Bound {
-        return lowerBound.advanced(by: Bound.Stride.arc4random_uniform(count))
+        return lowerBound.advanced(by: Bound.Stride.arc4random_uniform(numericCast(count)))
     }
 }

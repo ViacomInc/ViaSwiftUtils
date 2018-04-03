@@ -16,6 +16,8 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
+// swiftlint:disable identifier_name
+
 #if os(OSX) || os(iOS) || os(tvOS) || os(watchOS)
     import CoreGraphics
 #endif

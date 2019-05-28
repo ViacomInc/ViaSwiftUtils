@@ -22,7 +22,7 @@ internal let viewRotationAnimationKey = "ViaSwiftUtils.SpinAnimation"
 
 public extension UIView {
     
-    public enum AnimationDuration {
+    enum AnimationDuration {
         case slow
         case normal
         case fast

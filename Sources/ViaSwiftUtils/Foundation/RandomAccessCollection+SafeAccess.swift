@@ -25,7 +25,7 @@ public extension RandomAccessCollection {
     ///     when practical, favor iteration like for-in, `map`, `first` etc
     /// - parameter index: The Index at which the access happens
     /// - returns: the element at `index`, if out of bounds returns nil
-    public subscript (safe index: Self.Index) -> Self.Iterator.Element? {
+    subscript (safe index: Self.Index) -> Self.Iterator.Element? {
         return index >= self.startIndex && index < self.endIndex ? self[index] : nil
     }
     

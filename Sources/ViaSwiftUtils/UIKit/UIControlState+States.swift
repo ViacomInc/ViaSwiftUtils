@@ -17,16 +17,10 @@
 //  limitations under the License.
 import UIKit
 
-public extension UIControlState {
+public extension UIControl.State {
     
     /// array of all values of UIControlState
-    static var allValues: [UIControlState] {
-        return [UIControlState.normal,
-                UIControlState.highlighted,
-                UIControlState.selected,
-                UIControlState.disabled,
-                UIControlState.focused,
-                UIControlState.application,
-                UIControlState.reserved]
+    static var allValues: [UIControl.State] {
+        return [.normal, .highlighted, .selected, .disabled, .focused, .application, .reserved]
     }
 }

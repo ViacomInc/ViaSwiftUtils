@@ -23,7 +23,7 @@ public extension UIButton {
     /// Convenience method to set a title for all possible states of the receiver
     /// - parameter title: The title being set
     func setTitleForAllStates(_ title: String?) {
-        for controlstate in UIControlState.allValues {
+        for controlstate in UIControl.State.allValues {
             setTitle(title, for: controlstate)
         }
     }
@@ -31,7 +31,7 @@ public extension UIButton {
     /// Convenience method to set a background image for all possible states of the receiver
     /// - parameter image: The image being set for all states
     func setBackgroundImageForAllStates(_ image: UIImage?) {
-        for controlstate in UIControlState.allValues {
+        for controlstate in UIControl.State.allValues {
             setBackgroundImage(image, for: controlstate)
         }
     }
@@ -39,7 +39,7 @@ public extension UIButton {
     /// Convenience method to set an image for all possible states of the receiver
     /// - parameter image: The image being set for all states
     func setImageForAllStates(_ image: UIImage?) {
-        for controlstate in UIControlState.allValues {
+        for controlstate in UIControl.State.allValues {
             setImage(image, for: controlstate)
         }
     }
@@ -47,7 +47,7 @@ public extension UIButton {
     /// Convenience method to set a title color for all possible states of the receiver
     /// - parameter color: The color being set for all states
     func setTitleColorForAllStates(_ color: UIColor?) {
-        for controlstate in UIControlState.allValues {
+        for controlstate in UIControl.State.allValues {
             setTitleColor(color, for: controlstate)
         }
     }

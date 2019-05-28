@@ -114,5 +114,5 @@ public func !? <T>(wrapped: T?, nilDefault: @autoclosure () -> (value: T, text: 
 /// - Note:
 /// [chapter 'When to Force Unwrap' from Advanced Swift](https://www.objc.io/books/advanced-swift/)
 public func !? (wrapped: ()?, failureText: @autoclosure () -> String) {
-    assert(wrapped != nil, failureText)
+    assert(wrapped != nil, failureText())
 }

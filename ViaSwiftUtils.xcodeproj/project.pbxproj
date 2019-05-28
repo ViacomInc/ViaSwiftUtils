@@ -775,10 +775,9 @@
 			};
 			buildConfigurationList = 74E063C51D1D7DB300C0B56B /* Build configuration list for PBXProject "ViaSwiftUtils" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);

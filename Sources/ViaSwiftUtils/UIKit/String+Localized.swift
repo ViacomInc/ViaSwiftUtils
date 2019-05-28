@@ -27,11 +27,6 @@ public extension String {
     
     /// localized uppercase version of this string, with newline characters escaped
     var customLocalizedUppercaseString: String {
-        if #available(macOS 10.11, iOS 9.0, tvOS 9.0, watchOS 2.0, *) {
-            return self.localizedUppercase.replacingOccurrences(of: "\\N", with: "\n")
-        } else {
-            return self.uppercased(with: NSLocale.current)
-                .replacingOccurrences(of: "\\N", with: "\n")
-        }
+        return localizedUppercase.replacingOccurrences(of: "\\N", with: "\n")
     }
 }

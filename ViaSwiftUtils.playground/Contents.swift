@@ -72,7 +72,7 @@ let daysSince = idesOfMarch.days(to: Date())
 formatter.string(from: idesOfMarch)
 formatter.string(from: Date())
 
-formatter.locale = NSLocale(localeIdentifier: "hi_IN") as Locale!
+formatter.locale = Locale(identifier: "hi_IN")
 
 formatter.string(from: idesOfMarch)
 formatter.string(from: Date())

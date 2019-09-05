@@ -83,20 +83,17 @@ These are just a few examples. We are expanding the library continuously and we 
 
 ## Requirements
 
-&nbsp;
-
 #### Versions support
 
 | **Swift** | **Xcode** | **ViaSwiftUtils** |
+| -- | -- | -- |
 | 4.2 - 5.0 | 10.X | 2.1.0 |
 | 4.0 | 10.X | 2.0.5 |
-| 3.2 - 4.1 | 9.X | 2.0.5 | 
+| 3.2 - 4.1 | 9.X | 2.0.5 |
 
 &nbsp;
 
 ## How to install [ViaSwiftUtils](https://github.com/ViacomInc/ViaSwiftUtils)
-
-&nbsp;
 
 #### Via Cocoapods
 Add the following line to your `Podfile`.
@@ -120,7 +117,7 @@ dependencies: [
   .package(url: "https://github.com/ViacomInc/ViaSwiftUtils.git", .exact("2.1.0")),
 ]
 
-.target(name: "yourTarget", dependencies: ["ViaSwiftUtils"]),
+.target(name: <#yourTarget#>, dependencies: ["ViaSwiftUtils"]),
 ```
 I should mention that only the `Foundation` functions that are part of `ViaSwiftUtils` work via SPM, as `UIKit` is not available on Linux or MacOS.
 

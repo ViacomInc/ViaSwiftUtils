@@ -13,6 +13,8 @@ matrix:
       osx_image: xcode10.2
       sudo: required
       language: objective-c
+      xcode_workspace: ViaSwiftUtils.xcworkspace
+      xcode_scheme: ViaSwiftUtils_iOS
       env: TEST_DESTINATION="OS=12.1,name=iPhone 8"
       install:
         - ./install_swiftlint.sh
@@ -24,6 +26,8 @@ matrix:
       osx_image: xcode10.2
       sudo: required
       language: objective-c
+      xcode_workspace: ViaSwiftUtils.xcworkspace
+      xcode_scheme: ViaSwiftUtils_iOS
       env: TEST_DESTINATION="OS=12.1,name=iPhone 8"
       install:
         - ./install_swiftlint.sh

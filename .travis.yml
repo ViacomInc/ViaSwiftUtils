@@ -24,6 +24,6 @@ matrix:
         - bundle install
       script:
         - bundle exec danger
-        - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -destination "$TEST_DESTINATION" | xcpretty
+        - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -destination "platform=iOS Simulator,name=iPhone 8,OS=12.4" | xcpretty
 
 cache: bundler

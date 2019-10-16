@@ -1,6 +1,6 @@
 # ViaSwiftUtils
 
-[![Swift 4.1](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org/)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
 [![Platform](https://img.shields.io/cocoapods/p/ViaSwiftUtils.svg?style=flat)](http://cocoapods.org/pods/ViaSwiftUtils)
@@ -81,29 +81,43 @@ These are just a few examples. We are expanding the library continuously and we 
 &nbsp;
 
 
-## How to install [ViaSwiftUtils](https://github.com/ViacomInc/ViaSwiftUtils)
+## Requirements
+
+#### Versions support
+
+| **Swift** | **Xcode** | **ViaSwiftUtils** |
+| -- | -- | -- |
+| 4.2 - 5.0 | 10.X | 2.1.0 |
+| 4.0 | 10.X | 2.0.5 |
+| 3.2 - 4.1 | 9.X | 2.0.5 |
 
 &nbsp;
+
+## How to install [ViaSwiftUtils](https://github.com/ViacomInc/ViaSwiftUtils)
 
 #### Via Cocoapods
 Add the following line to your `Podfile`.
 Remember you'll need to enable `use_frameworks!`.
 ```
-pod 'ViaSwiftUtils', '1.0.2'
+pod 'ViaSwiftUtils', '2.1.0'
 ```
 
 
 #### Via Carthage
 Add the following line to your `Cartfile`
 ```
-github "ViacomInc/ViaSwiftUtils" ~> 1.0.2
+github "ViacomInc/ViaSwiftUtils" == 2.1.0
 ```
 
 #### Via Swift package manager
 
-Add the following to your `Package.swift` dependencies
+Add the following to your `Package.swift` 
 ```swift
-.Package(url: "https://github.com/ViacomInc/ViaSwiftUtils", majorVersion: 1, minor: 0),
+dependencies: [
+  .package(url: "https://github.com/ViacomInc/ViaSwiftUtils.git", .exact("2.1.0")),
+]
+
+.target(name: <#yourTarget#>, dependencies: ["ViaSwiftUtils"]),
 ```
 I should mention that only the `Foundation` functions that are part of `ViaSwiftUtils` work via SPM, as `UIKit` is not available on Linux or MacOS.
 

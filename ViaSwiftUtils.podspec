@@ -1,4 +1,4 @@
-# Copyright 2017 Viacom, Inc.
+# Copyright 2019 Viacom, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ViaSwiftUtils"
-  s.version          = "2.0.5"
+  s.version          = "2.1.0"
   s.summary          = "Swift Utilities written with and for Viacom Inc."
 
 # This description is used to generate tags and improve search results.

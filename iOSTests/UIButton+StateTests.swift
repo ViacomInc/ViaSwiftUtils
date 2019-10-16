@@ -23,16 +23,16 @@ class UIButtonStateTests: XCTestCase {
     
     func testAllControlStates() {
         // Given
-        for state in [UIControlState.normal, .highlighted, .selected, .disabled, .application, .reserved ] {
+        for state in [UIControl.State.normal, .highlighted, .selected, .disabled, .application, .reserved] {
             
             // When, Then
-            XCTAssertTrue(UIControlState.allValues.contains(state), "Expected allValues to contain \(state)")
+            XCTAssertTrue(UIControl.State.allValues.contains(state), "Expected allValues to contain \(state)")
         }
     }
     
     func testFunctionsForAllControlStates() {
         // Given a button
-        let button = UIButton(type: UIButtonType.custom)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         let title = "Click me!"
         let backgroundImage = UIImage()
         let frontImage = UIImage()
@@ -45,7 +45,7 @@ class UIButtonStateTests: XCTestCase {
         button.setTitleColorForAllStates(color)
         
         // Then
-        for state in UIControlState.allValues {
+        for state in UIControl.State.allValues {
             //title is set for all states
             XCTAssertEqual(button.title(for: state), title, "Expected title for state \(state) to be \(title)")
             XCTAssertEqual(button.backgroundImage(for: state), backgroundImage, "Expected background image for state \(state) to be backgroundImage")
@@ -57,7 +57,7 @@ class UIButtonStateTests: XCTestCase {
 
     func testImageForState() {
         // Given
-        let button = UIButton(type: UIButtonType.custom)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         let frontImageNormal = UIImage()
         let frontImageHighlighted = UIImage()
         let frontImageSelected = UIImage()
@@ -68,13 +68,13 @@ class UIButtonStateTests: XCTestCase {
 
         // Then
         XCTAssertEqual(button.image(for: .normal), frontImageNormal,
-                       "Expected image for state \(UIControlState.normal) to be frontImageNormal")
+                       "Expected image for state \(UIControl.State.normal) to be frontImageNormal")
         XCTAssertEqual(button.image(for: .highlighted), frontImageHighlighted,
-                       "Expected image for state \(UIControlState.highlighted) to be frontImageHighlighted")
+                       "Expected image for state \(UIControl.State.highlighted) to be frontImageHighlighted")
         XCTAssertEqual(button.image(for: .selected), frontImageSelected,
-                       "Expected image for state \(UIControlState.selected) to be frontImageSelected")
+                       "Expected image for state \(UIControl.State.selected) to be frontImageSelected")
         XCTAssertEqual(button.image(for: [.selected, .highlighted]), frontImageClimax,
-                       "Expected image for state \([UIControlState.selected, UIControlState.highlighted]) to be frontImageClimax")
+                       "Expected image for state \([UIControl.State.selected, UIControl.State.highlighted]) to be frontImageClimax")
     }
 
 }

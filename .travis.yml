@@ -13,17 +13,29 @@ matrix:
 
 # Mac OS latest Xcode build and test      
     - os: osx
-      osx_image: xcode10.3
+      osx_image: xcode11.1
       sudo: required
       language: objective-c
       xcode_workspace: ViaSwiftUtils.xcworkspace
       xcode_scheme: ViaSwiftUtils_iOS
-      xcode_destination: platform=iOS Simulator,OS=12.4,name=iPhone 8
+      xcode_destination: platform=iOS Simulator,OS=13.1,name=iPhone 11 Pro
       install:
         - ./install_swiftlint.sh
         - bundle install
       script:
         - bundle exec danger
-        - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -destination "platform=iOS Simulator,name=iPhone 8,OS=12.4" | xcpretty
+        - set -o pipefail && xcodebuild test -workspace ViaSwiftUtils.xcworkspace -scheme ViaSwiftUtils_iOS -destination "platform=iOS Simulator,name=iPhone 11 Pro,OS=13.1" | xcpretty
 
-cache: bundler
+# Mac OS older Xcode build
+    - os: osx
+        osx_image: xcode10.3
+        sudo: required
+        language: objective-c
+        xcode_workspace: ViaSwiftUtils.xcworkspace
+        xcode_scheme: ViaSwiftUtils_iOS
+        xcode_destination: platform=iOS Simulator,OS=12.4,name=iPhone 8
+        install:
+        - ./install_swiftlint.sh
+        - bundle install
+
+    cache: bundler

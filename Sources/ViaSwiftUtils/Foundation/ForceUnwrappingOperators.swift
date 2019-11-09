@@ -36,7 +36,7 @@ infix operator !!
 public func !! <T>(wrapped: T?, failureText: @autoclosure () -> String) -> T {
     // swiftlint:disable:next identifier_name
     if let x = wrapped { return x }
-    fatalError(failureText ())
+    fatalError(failureText())
 }
 
 infix operator !?

@@ -87,7 +87,7 @@ These are just a few examples. We are expanding the library continuously and we 
 
 | **Swift** | **Xcode** | **ViaSwiftUtils** |
 | -- | -- | -- |
-| 4.2 - 5.0 | 10.X | 2.1.0 |
+| 4.2 - 5.0 | 10.X, 11.X | 2.1.0 |
 | 4.0 | 10.X | 2.0.5 |
 | 3.2 - 4.1 | 9.X | 2.0.5 |
 

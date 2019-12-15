@@ -1,5 +1,5 @@
 //
-//  TimeInterval+ConverterTest.swift
+//  TimeIntervalConverterArabicTest.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -20,12 +20,12 @@ import Foundation
 @testable import ViaSwiftUtils
 import XCTest
 
-class TimeIntervalConverterTest: XCTestCase {
+class TimeIntervalConverterArabicTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
         
-        NSLocale.forceLocale(identifier: "en_US")
+        NSLocale.forceLocale(identifier: "ar_SA")
     }
     
     override func tearDown() {
@@ -42,54 +42,50 @@ class TimeIntervalConverterTest: XCTestCase {
         let formattedString = interval.asMediaDuration
         
         // Then
-        let expected = "18:37"
-        XCTAssertEqual(formattedString, expected,
-                       "Expected string \(expected)")
+        let expected = "١٨:٣٧"
+        XCTAssertEqual(formattedString, expected, "Expected string \(expected)")
     }
-
+    
     func testToStringMinutes() {
         // Given
         let format = "mm:ss"
         let interval = 600
         let expected = "10:00"
         let timeInterval = TimeInterval(interval)
-
+        
         // When
         let formattedString = timeInterval.string(withFormat: format)
-
+        
         // Then
-        XCTAssertEqual(formattedString, expected,
-                       "Expected string \(expected)")
+        XCTAssertEqual(formattedString, expected, "Expected string \(expected) even when locale is \(Locale.current)")
     }
-
+    
     func testSecondsToStringHours() {
         // Given
         let format = "mm:ss"
         let interval = 3603
         let expected = "00:03"
         let timeInterval = TimeInterval(interval)
-
+        
         // When
         let formattedString = timeInterval.string(withFormat: format)
-
+        
         // Then
-        XCTAssertEqual(formattedString, expected,
-                       "Expected string \(expected)")
+        XCTAssertEqual(formattedString, expected, "Expected string \(expected) even when locale is \(Locale.current)")
     }
-
+    
     func testSecondsToStringYears() {
         // Given
         let format = "yyyy, mm:ss"
         let interval = 360_045_003
         let expected = "1981, 30:03"
         let timeInterval = TimeInterval(interval)
-
+        
         // When
         let formattedString = timeInterval.string(withFormat: format)
-
+        
         // Then
-        XCTAssertEqual(formattedString, expected,
-                       "Expected string \(expected)")
+        XCTAssertEqual(formattedString, expected, "Expected string \(expected) even when locale is \(Locale.current)")
     }
     
 }

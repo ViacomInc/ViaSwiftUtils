@@ -18,13 +18,13 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
 
     /// Convenience initializer to create an image with a uniform color
     ///
     /// - parameter color:       The color of the image created
     /// - parameter size:        The size of the image created
-    public convenience init?(color: UIColor?, size: CGSize = CGSize(width: 1.0, height: 1.0)) {
+    convenience init?(color: UIColor?, size: CGSize = CGSize(width: 1.0, height: 1.0)) {
         defer {
             UIGraphicsEndImageContext()
         }

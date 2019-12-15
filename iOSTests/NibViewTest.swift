@@ -20,11 +20,12 @@ import Foundation
 @testable import ViaSwiftUtils
 import XCTest
 
+//swiftlint:disable strict_fileprivate
 class TestViewController: UIViewController {
 
     @IBOutlet fileprivate var horizontalTestViewConstraint: NSLayoutConstraint?
     @IBOutlet fileprivate var testView: TestViewWithOwner?
-    
+
 }
 
 class TestViewWithOwner: NibView {
@@ -33,6 +34,7 @@ class TestViewWithOwner: NibView {
     @IBOutlet fileprivate var testLabel: UILabel?
 
 }
+//swiftlint:enable strict_fileprivate
 
 class NibViewTest: XCTestCase {
 
@@ -64,12 +66,10 @@ class NibViewTest: XCTestCase {
         let testView = TestViewWithOwner(frame: frame)
 
         // Then
-        XCTAssertEqual(testView.subviews.count, expectedNumberOfSubviews,
-                       "Expected number of subviews to be \(expectedNumberOfSubviews)")
+        XCTAssertEqual(testView.subviews.count, expectedNumberOfSubviews, "Expected number of subviews to be \(expectedNumberOfSubviews)")
 
         let subviewType = String(describing: type(of: testView.subviews[0]))
-        XCTAssertEqual(subviewType, expectedSubviewType,
-                       "Expected subview type to be \(expectedSubviewType)")
+        XCTAssertEqual(subviewType, expectedSubviewType, "Expected subview type to be \(expectedSubviewType)")
     }
 
     func testInitializationWithCoder() {
@@ -87,12 +87,10 @@ class NibViewTest: XCTestCase {
         // Then
         XCTAssertNotNil(unarchivedTestView, "Expected unarchived view not to be nil")
         unarchivedTestView.map {
-            XCTAssertEqual($0.subviews.count, expectedNumberOfSubviews,
-                           "Expected number of subviews to be \(expectedNumberOfSubviews)")
+            XCTAssertEqual($0.subviews.count, expectedNumberOfSubviews, "Expected number of subviews to be \(expectedNumberOfSubviews)")
 
             let subviewType = String(describing: type(of: $0.subviews[0]))
-            XCTAssertEqual(subviewType, expectedSubviewType,
-                           "Expected subview type to be \(expectedSubviewType)")
+            XCTAssertEqual(subviewType, expectedSubviewType, "Expected subview type to be \(expectedSubviewType)")
         }
     }
 

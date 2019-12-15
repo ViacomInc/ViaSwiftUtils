@@ -32,7 +32,7 @@ open class NibView: UIView {
     ///
     /// - parameter coder: The instance of class NSCoder
     ///
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.didEncode = aDecoder.decodeBool(forKey: didEncodeKey)
         if didEncode == false {

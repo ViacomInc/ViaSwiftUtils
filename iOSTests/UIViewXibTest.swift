@@ -1,5 +1,5 @@
 //
-//  UIView+XibTest.swift
+//  UIViewXibTest.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -38,12 +38,10 @@ class UIViewXibTest: XCTestCase {
         testView.loadNibView(owner)
 
         // Then
-        XCTAssertEqual(testView.subviews.count, expectedNumberOfSubviews,
-                       "Expected number of subviews to be \(expectedNumberOfSubviews)")
+        XCTAssertEqual(testView.subviews.count, expectedNumberOfSubviews, "Expected number of subviews to be \(expectedNumberOfSubviews)")
         
         let subviewType = String(describing: type(of: testView.subviews[0]))
-        XCTAssertEqual(subviewType, expectedSubviewType,
-                       "Expected subview type to be \(expectedSubviewType)")
+        XCTAssertEqual(subviewType, expectedSubviewType, "Expected subview type to be \(expectedSubviewType)")
     }
 
     func testLoadFromNib() {
@@ -58,8 +56,7 @@ class UIViewXibTest: XCTestCase {
         XCTAssertNotNil(view, "Expected view not to be nil")
         view.map {
             let subviewType = String(describing: type(of: $0))
-            XCTAssertEqual(subviewType, expectedSubviewType,
-                           "Expected view type to be \(expectedSubviewType)")
+            XCTAssertEqual(subviewType, expectedSubviewType, "Expected view type to be \(expectedSubviewType)")
         }
     }
 

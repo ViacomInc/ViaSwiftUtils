@@ -1,5 +1,5 @@
 //
-//  UIImage+ColorTest.swift
+//  UIImageColorTest.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -19,7 +19,7 @@
 @testable import ViaSwiftUtils
 import XCTest
 
-class UIButtonColorTest: XCTestCase {
+class UIImageColorTest: XCTestCase {
 
     func testConvenienceFailableInitializer() {
         // Given

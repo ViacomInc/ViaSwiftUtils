@@ -27,7 +27,7 @@ public extension String {
         let range = startIndex..<endIndex
         var newLongestWord = ""
 
-        self.enumerateSubstrings(in: range, options: .byWords) { (substring, _, _, _) in
+        self.enumerateSubstrings(in: range, options: .byWords) { substring, _, _, _ in
             if let word = substring {
                 newLongestWord = word.count > newLongestWord.count ? word : newLongestWord
             }
@@ -43,7 +43,7 @@ public extension String {
         let range = startIndex..<endIndex
         var count = 0
 
-        self.enumerateSubstrings(in: range, options: .byWords) { (word, _, _, _) in
+        self.enumerateSubstrings(in: range, options: .byWords) { word, _, _, _ in
             if word != nil { count += 1 }
         }
 

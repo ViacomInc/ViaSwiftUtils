@@ -18,7 +18,9 @@
 
 import UIKit
 
-internal let viewRotationAnimationKey = "ViaSwiftUtils.SpinAnimation"
+enum RotationAnimation {
+    static let key = "ViaSwiftUtils.SpinAnimation"
+}
 
 public extension UIView {
     
@@ -43,13 +45,13 @@ public extension UIView {
     }
     
     final var isRotating: Bool {
-        return layer.animation(forKey: viewRotationAnimationKey) != nil
+        return layer.animation(forKey: RotationAnimation.key) != nil
     }
     
     ///  Starts animating the image like an activityIndicator.
     /// - parameter duration: an NSTimeInterval duration the animation should take
     final func startRotating(_ animationDuration: AnimationDuration = .normal, isRemovedOnCompletion: Bool = true) {
-        layer.removeAnimation(forKey: viewRotationAnimationKey)
+        layer.removeAnimation(forKey: RotationAnimation.key)
         isHidden = false
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.fromValue = CGFloat(0.0)
@@ -57,12 +59,12 @@ public extension UIView {
         animation.duration = animationDuration.duration
         animation.repeatCount = HUGE
         animation.isRemovedOnCompletion = isRemovedOnCompletion
-        layer.add(animation, forKey: viewRotationAnimationKey)
+        layer.add(animation, forKey: RotationAnimation.key)
     }
     
     /// Stops rotating the image
     final func stopRotating() {
-        layer.removeAnimation(forKey: viewRotationAnimationKey)
+        layer.removeAnimation(forKey: RotationAnimation.key)
         isHidden = true
     }
 }

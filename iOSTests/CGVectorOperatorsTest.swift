@@ -1,5 +1,5 @@
 //
-//  CGVector+OperatorsTest.swift
+//  CGVectorOperatorsTest.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.

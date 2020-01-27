@@ -1,5 +1,5 @@
 //
-//  UIImageView_RotationTests.swift
+//  UIImageViewRotationTests.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -86,10 +86,10 @@ class UIImageViewRotationTests: XCTestCase {
         imageView.startRotating(isRemovedOnCompletion: false)
         
         // Then
-        if let animation = imageView.layer.animation(forKey: viewRotationAnimationKey) {
+        if let animation = imageView.layer.animation(forKey: RotationAnimation.key) {
             XCTAssertFalse(animation.isRemovedOnCompletion)
         } else {
-            XCTFail("imageView is missing animation for \(viewRotationAnimationKey)")
+            XCTFail("imageView is missing animation for \(RotationAnimation.key)")
         }
     }
     

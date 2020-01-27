@@ -1,5 +1,5 @@
 //
-//  Locale+Swizzling.swift
+//  NSLocale+Swizzling.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.

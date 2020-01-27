@@ -1,5 +1,5 @@
 //
-//  CollectionType+Helpers.swift
+//  Sequence+Helpers.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -24,14 +24,14 @@ public extension Sequence where Iterator.Element: Hashable {
     /// - returns: an array containing the unique elements
     func unique() -> [Iterator.Element] {
         var seen: Set<Iterator.Element> = []
-        return filter({ (element) -> Bool in
+        return filter { element -> Bool in
             if seen.contains(element) {
                 return false
-            } else {
-                seen.insert(element)
-                return true
             }
-        })
+
+            seen.insert(element)
+            return true
+        }
     }
     
 }

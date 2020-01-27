@@ -1,5 +1,5 @@
 //
-//  UIButton+StateTests.swift
+//  UIButtonStateTests.swift
 //  ViaSwiftUtils
 //
 //  Copyright 2017 Viacom, Inc.
@@ -67,13 +67,17 @@ class UIButtonStateTests: XCTestCase {
         button.setImagesForStates(normal: frontImageNormal, highlighted: frontImageHighlighted, selected: frontImageSelected, climax: frontImageClimax )
 
         // Then
-        XCTAssertEqual(button.image(for: .normal), frontImageNormal,
+        XCTAssertEqual(button.image(for: .normal),
+                       frontImageNormal,
                        "Expected image for state \(UIControl.State.normal) to be frontImageNormal")
-        XCTAssertEqual(button.image(for: .highlighted), frontImageHighlighted,
+        XCTAssertEqual(button.image(for: .highlighted),
+                       frontImageHighlighted,
                        "Expected image for state \(UIControl.State.highlighted) to be frontImageHighlighted")
-        XCTAssertEqual(button.image(for: .selected), frontImageSelected,
+        XCTAssertEqual(button.image(for: .selected),
+                       frontImageSelected,
                        "Expected image for state \(UIControl.State.selected) to be frontImageSelected")
-        XCTAssertEqual(button.image(for: [.selected, .highlighted]), frontImageClimax,
+        XCTAssertEqual(button.image(for: [.selected, .highlighted]),
+                       frontImageClimax,
                        "Expected image for state \([UIControl.State.selected, UIControl.State.highlighted]) to be frontImageClimax")
     }
 
